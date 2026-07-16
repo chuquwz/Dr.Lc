@@ -1,0 +1,8 @@
+# Data Processing
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# Embedding & Vector Database
+google-genai>=1.0
+chromadb>=1.0
+python-dotenv>=1.0

@@ -1,0 +1,27 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Environments (Virtual environments)
+.venv/
+venv/
+ENV/
+env/
+
+# Project database & raw data (Too heavy for GitHub)
+vector-store/
+data-raw/
+data-processed/chunks.json
+
+# Local configurations & secrets
+.env
+.agents/
+.gemini/
+*task*.log
+check_chroma.py
+debug_*.py
+test_*.py
+analyze_*.py

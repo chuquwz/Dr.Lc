@@ -1,0 +1,83 @@
+{
+  "sku": "00048113",
+  "name": "Thuốc Alchysin 8400 Reliv điều trị các trường hợp phù nề sau chấn thương (2 vỉ x 10 viên)",
+  "short_name": "ALCHYSIN 8400 RELIV 2X10",
+  "official_name": "ALCHYSIN 8400",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/alchysin-8400-reliv-2-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/thuoc_alchysin_8400_reliv_2x10_00048113_4f084287b8.png",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc giảm đau, hạ sốt, kháng viêm"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc kháng viêm"
+    }
+  ],
+  "brand": "Reliv",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nén",
+  "registration_number": "893110218624",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Chymotrypsin",
+      "amount": "8400usp"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 2 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "2 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Alchysin 8400 chỉ định điều trị trong các trường hợp sau:\nThuốc này được dùng để điều trị các trường hợp phù nề sau chấn thương, sau phẫu thuật hoặc bỏng.\nDược lực học\nChymotrypsin (Alpha- Chymotrypsin) là một enzym phân giải protein có tác dụng xúc tác chọn lọc trên các nối peptid ở liền kề các acid amin có nhân thơm. Thuốc đã được dùng trong điều trị phù nề do viêm, sau chấn thương, sau phẫu thuật.\nDược động học\nChưa có tài liệu đề cập.",
+  "dosage": "Cách dùng\nThuốc Alchysin 8400 uống với nhiều nước hay ngậm dưới lưỡi để thuốc tan dần.\nLiều dùng\nMỗi lần 1 viên, 3 - 4 lần mỗi ngày. Hoặc tùy trường hợp theo sự hướng dẫn của thầy thuốc.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Một vài trường hợp có thể có các biểu hiện dị ứng, khi đó nên ngưng thuốc.\nThông báo cho bác sĩ những tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Alchysin 8400 chống chỉ định trong các trường hợp sau:\nQuá mẫn cảm với Chymotrypsin hay bất kỳ thành phần nào của thuốc.\nThận trọng khi sử dụng\nDùng thận trọng cho người bị rối loạn đông máu, đang dùng thuốc chống đông, dị ứng với protein.\nKhông nên để thuốc tiếp xúc nhiều với nhiệt độ vì có thể làm enzym bị hỏng.\nĐể tăng hoạt tính của thuốc, nên uống thuốc với nhiều nước (240 ml) hay ngậm cho tan dần dưới lưỡi.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa rõ ảnh hưởng của thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nDo tính an toàn chưa được hoàn toàn xác lập, tốt nhất không dùng thuốc cho phụ nữ có thai hoặc cho con bú.\nTương tác thuốc\nKhông có báo cáo về tương tác thuốc.",
+  "storage": "Nhiệt độ không quá 30\no\nC, tránh ánh sáng và ẩm.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Những ai cần thận trọng khi sử dụng thuốc Alchysin 8400?",
+      "answer": "Dùng thận trọng thuốc Alchysin 8400 cho người bị rối loạn đông máu, đang dùng thuốc chống đông, dị ứng với protein."
+    },
+    {
+      "question": "Thuốc Alchysin 8400 nên uống hay ngậm dưới lưỡi?",
+      "answer": "Để tăng hoạt tính của thuốc Alchysin 8400, bạn nên uống thuốc với nhiều nước (240 ml) hay ngậm cho tan dần dưới lưỡi."
+    },
+    {
+      "question": "Thuốc Alchysin 8400 có chứa thành phần nào?",
+      "answer": "Thuốc Alchysin 8400 có chứa thành phần Chymotrypsin (Alpha- Chymotrypsin) là một enzym phân giải protein có tác dụng xúc tác chọn lọc trên các nối peptid ở liền kề các acid amin có nhân thơm. Thuốc đã được dùng trong điều trị phù nề do viêm, sau chấn thương, sau phẫu thuật."
+    },
+    {
+      "question": "Thuốc Alchysin 8400 có dùng được cho phụ nữ có thai hay không?",
+      "answer": "Do tính an toàn chưa được hoàn toàn xác lập, tốt nhất không dùng thuốc Alchysin 8400 cho phụ nữ có thai hoặc cho con bú."
+    },
+    {
+      "question": "Thuốc Alchysin 8400 dùng trong trường hợp nào?",
+      "answer": "Thuốc Alchysin 8400 được dùng để điều trị các trường hợp phù nề sau chấn thương, sau phẫu thuật hoặc bỏng."
+    }
+  ]
+}

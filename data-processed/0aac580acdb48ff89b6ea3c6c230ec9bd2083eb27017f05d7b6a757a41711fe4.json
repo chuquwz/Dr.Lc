@@ -1,0 +1,71 @@
+{
+  "sku": "00502525",
+  "name": "Thuốc Aziphar Mekophar điều trị nhiễm khuẩn đường hô hấp dưới, viêm phế quản cấp (15ml)",
+  "short_name": "AZIPHAR 200MG/5ML MEKOPHAR 15ML",
+  "official_name": "AZIPHAR",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/aziphar-200mg5ml-mekophar-hop-1-chai-36781.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/aziphar_93b0231251.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc kháng sinh, kháng nấm"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc kháng sinh"
+    }
+  ],
+  "brand": "Mekophar",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Bột pha hỗn dịch uống",
+  "registration_number": "893110299700",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Azithromycin",
+      "amount": "200mg"
+    }
+  ],
+  "ingredient_per": "5ml",
+  "prices": [
+    {
+      "unit": "Chai",
+      "price": null,
+      "currency": "đ",
+      "specs": "Chai x 15ml"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Aziphar chỉ định điều trị trong các trường hợp sau:\nAzithromycin được chỉ định dùng trong các trường hợp nhiễm khuẩn do các vi khuẩn nhạy cảm với thuốc như:\nNhiễm khuẩn đường hô hấp dưới: Viêm phế quản cấp, viêm phổi.\nNhiễm khuẩn hô hấp trên: Viêm xoang, viêm họng và amidan, viêm tai giữa, viêm yết.\nDược lực học\nChưa có dữ liệu.\nDược động học\nChưa có dữ liệu.",
+  "dosage": "Cách dùng\nThuốc dùng đường uống.\nLiều dùng\nLiều khuyến cáo:\nTrẻ em: 10mg/kg/ngày trong 3 ngày.\nNgười lớn: 500mg 1 lần duy nhất trong ngày đầu tiên, sau đó 250 mg nột lần duy nhất trong 4 ngày tiếp theo.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc thường gặp các tác dụng không mong muốn (ADR) như:\nHay gặp nhất là rối loạn tiêu hóa với các triệu chứng như buồn nôn, đau bụng, co cứng cơ bụng, nôn, đầy hơi, tiêu chảy, nhưng thường nhẹ và ít xảy ra hơn so với dùng Erythromycin. Có thể thấy biến đổi nhất thời số lượng bạch cầu trung tính hay tăng nhất thời enzym gan, đôi khi có thể gặp phát ban, đau đầu và chóng mặt.\nẢnh hưởng thính giác: Sử dụng lâu dài ở liều cao, Azithromycin có thể làm giảm sức nghe có hồi phục ở một số người bệnh. Ngừng sử dụng thuốc và thông báo cho bác sỹ biết.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Aziphar chống chỉ định trong các trường hợp sau:\nKhông sử dụng cho người bệnh quá mẫn với Azithromycin hoặc các kháng sinh thuộc nhóm Macrolid.\nThận trọng khi sử dụng\nCần điều chỉnh liều Azithromycin thích hợp cho các người bị bệnh thận có hệ số thanh thải creatinin nhỏ hơn 40ml/phút.\nThận trọng khi dùng cho những bệnh nhân suy gan vì Azithromycin được bài tiết chủ yếu qua gan.\nTương tác thuốc\nVì thức ăn làm giảm sinh khả dụng của thuốc tới 50%, do đó Azithromycin chỉ được uống 1 giờ trước hoặc 2 giờ sau khi ăn.\nKhông sử dụng đồng thời Azithromycin với các dẫn chất nấm cựa gà vì có khả năng gây ngộ độc.\nAzithromycin chỉ được dùng ít nhất 1 giờ trước hoặc 2 giờ sau khi dùng các thuốc kháng acid.\nKhi sử dụng đồng thời Azithromycin với Cyclosporin hoặc Digoxin cần theo dõi nồng độ và điều chỉnh liều dùng của Cyclosporin hoặc Digoxin cho thích hợp.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

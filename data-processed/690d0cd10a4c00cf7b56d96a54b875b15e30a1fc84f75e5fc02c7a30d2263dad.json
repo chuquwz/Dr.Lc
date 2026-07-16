@@ -1,0 +1,83 @@
+{
+  "sku": "00039480",
+  "name": "Thuốc Mekopen Mekophar điều trị các nhiễm khuẩn do các vi khuẩn nhạy cảm (10 vỉ x 10 viên)",
+  "short_name": "MEKOPEN 1.000.000IU MEKOPHAR 10X10",
+  "official_name": "MEKOPEN",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/mekopen-10-vi-x-10-vien.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00039480_e02b9c60eb.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc kháng sinh, kháng nấm"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc kháng sinh"
+    }
+  ],
+  "brand": "Mekophar",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nén bao phim",
+  "registration_number": "893110239600",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Penicillin V",
+      "amount": "1.000.000iu"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Mekopen được chỉ định dùng trong các trường hợp sau:\nĐiều trị các nhiễm khuẩn do các vi khuẩn nhạy cảm:\nNhiễm khuẩn đường hô hấp trên, viêm họng - amidan, viêm tai giữa.\nNhiễm khuẩn ở miệng, họng.\nViêm phổi thể nhẹ do Pneumococcus.\nNhiễm khuẩn da, mô mềm.\nPhòng thấp khớp cấp tái phát.\nDược lực học\nPenicillin V là một penicillin bền vững với acid dịch vị, có tác dụng diệt khuẩn bằng cách ức chế sự tổng hợp thành tế bào vi khuẩn.\nPenicillin V có tác dụng tốt trên các cầu khuẩn Gram dương thường gặp như các liên cầu tan huyết nhóm beta, các liên cầu viridansvà phế cầu. Penicillin cũng có tác dụng với Staphylococcus(ngoại trừ chủng sinh penicillinase).\nDược động học\nPenicillin V không bị mất tác dụng bởi acid dịch vị và được hấp thu tốt qua đường tiêu hóa sau khi uống. Thuốc được hấp thu nhanh khoảng 60% liều uống. Nửa đời huyết tương khoảng 30– 60 phút. Thuốc được chuyển hóa ở gan, một trong các chất chuyển hóa đã được xác định là acid peniciloic. Thuốc được bài tiết nhanh qua nước tiểu cả ở dạng không đổi và dạng chuyển hóa. Chỉ một lượng nhỏ bài tiết qua đường mật.",
+  "dosage": "Cách dùng\nThuốc dạng viên dùng đường uống. Uống trọn viên thuốc với một ly nước.\nNên uống thuốc 30 phút trước hoặc 2 giờ sau bữa ăn.\nLiều dùng\nLiều đề nghị:\nNgười lớn và trẻ em ≥ 12 tuổi: uống 1 viên x 3 - 4 lần/ngày.\nTrẻ em < 12 tuổi: uống 40.000 - 80.000 IU/ kg/ ngày, chia 3 - 4 lần.\nThời gian điều trị thông thường khoảng 10 ngày.\nĐiều chỉnh liều khi có suy thận:\nĐộ thanh thải creatinin ≥ 10ml/phút : 400.000 - 800.000 IU, 6 giờ một lần.\nĐộ thanh thải creatinin < 10ml/phút : 400.000 IU, 6 giờ một lần.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Mekopen bạn có thể gặp các tác dụng không mong muốn (ADR) như:\nThường gặp:\nĐường tiêu hóa: Tiêu chảy, buồn nôn.\nDa: Ngoại ban.\nÍt gặp:\nMáu: Tăng bạch cầu ưa eosin.\nDa: Nổi mày đay.\nHiếm gặp:\nToàn thân: Sốc phản vệ.\nTiêu hóa: Tiêu chảy có liên quan tới Clostridium difficile.\nHướng dẫn cách xử trí ADR:\nThông báo cho bác sỹ những tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Mekopen chống chỉ định trong các trường hợp sau:\nMẫn cảm với các Penicillin, Cephalosporin.\nThận trọng khi sử dụng\nCần rất thận trọng khi dùng thuốc cho người bệnh trong các trường hợp sau:\nDị ứng chéo với các Cephalosporin.\nNgười có tiền sử dị ứng hoặc hen.\nNhiễm khuẩn đường hô hấp nặng (như viêm phổi nặng) không thể điều trị bằng Penicillin V.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa rõ ảnh hưởng của thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nTuân theo chỉ định từ bác sĩ. Chỉ nên dùng thuốc khi lợi ích vượt trội nguy cơ có thể xảy ra.\nTương tác thuốc\nHấp thu của Penicillin V bị giảm bởi chất gôm nhựa.\nNeomycin dạng uống có thể làm giảm hấp thu của Penicillin V tới 50%.\nVui lòng xem thêm các thông tin về thuốc trong tờ hướng dẫn sử dụng thuốc đính kèm sản phẩm.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

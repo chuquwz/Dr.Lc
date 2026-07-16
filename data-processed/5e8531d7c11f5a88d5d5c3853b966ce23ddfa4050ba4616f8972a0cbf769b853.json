@@ -1,0 +1,83 @@
+{
+  "sku": "00041278",
+  "name": "Thuốc Flibga 25 Medisun điều trị buồn nôn, chóng mặt (3 vỉ x 10 viên)",
+  "short_name": "FLIBGA 25MG MEDISUN 3X10",
+  "official_name": "FLIBGA-N",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/flibga-25-mg-medisun-3-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00041278_695d910409.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc hệ thần kinh"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc thần kinh"
+    }
+  ],
+  "brand": "Medisun",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nhai",
+  "registration_number": "VD-35547-22",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Meclizin HCl",
+      "amount": "25mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 3 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "3 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Flibga 25 được chỉ định dùng trong các trường hợp sau:\nFlibga được chỉ định để điều trị buồn nôn và nôn, và chóng mặt liên quan đến say tàu xe.\nFlibga được chỉ định để điều trị chóng mặt liên quan đến các bệnh ảnh hưởng hệ thống tiền đình.\nDược lực học\nCơ chế tác dụng:\nFlibga là thuốc kháng histamin thể hiện tác động bảo vệ rõ rệt chống lại sự phóng thích histamin và là liều gây chết chuột lang nhà khi tiêm tĩnh mạch. Nó có tác động rõ rệt trong việc ngăn chặn đáp ứng gây trụy tim mạch đối với histamin, nhưng chỉ ngăn chặn nhẹ tác động kháng acetylcholin. Tác động của nó tương đối yếu trong việc ức chế hoạt động co thắt phế quản của histamin ở chuột lang bị cô lập.\nDược động học\nHấp thu:\nMeclizine được hấp thu sau khi uống với nồng độ tối đa đạt được trong huyết tương ở giá trị Tmax trung bình là 3 giờ sau khi uống (khoảng từ 1,5 – 6 giờ) đối với thuốc viên\nPhân bố:\nĐặc điểm phân bố thuốc meclizine ở người chưa được biết rõ.\nChuyển hóa:\nSự chuyển hóa meclizine ở người chưa được biết rõ. Trong nghiên cứu chuyển hóa in-vitro sử dụng microsome gan người và enzyme CYP tái tổ hợp, CYP2D6 được tìm thấy là enzyme chính cho chuyển hóa meclizine.\nTính đa hình di truyền của CYP2D6 dẫn đến kiểu hình chuyển hóa rộng, chậm, trung bình và cực nhanh góp phần vào sự biến thiên lớn giữa các cá thể dùng meclizine.\nThải trừ:\nỞ người, meclizine có thời gian bán hủy trong huyết tương khoảng 5-6 giờ.",
+  "dosage": "Cách dùng\nThuốc dạng viên dùng đường uống. Uống trọn viên thuốc với một ly nước.\nLiều dùng\nChóng mặt\nĐể kiểm soát chứng chóng mặt liên quan đến các bệnh ảnh hưởng đến hệ thống tiền đình: Liều khuyến cáo là 25 đến 100 mg mỗi ngày, chia làm hai lần, tùy theo đáp ứng lâm sàng.\nSay tàu xe\nLiều khởi đầu 25 đến 50 mg, nên uống trước 1 giờ khi bắt đầu cuộc hành trình. Sau đó, liều có thể được lặp lại cứ mỗi 24 giờ trong suốt hành trình.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nDùng thuốc nhiều hơn khuyến cáo có thể gây ngộ độc hoặc những tác dụng phụ nghiêm trọng.\nNếu quá liều xảy ra, bệnh nhân phải được theo dõi các triệu chứng ngộ độc, sử dụng các biện pháp hỗ trợ cơ bản khi cần thiết hoặc đến cơ sở y tế gần nhất để được cấp cứu kịp thời.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Flibga 25 bạn có thể gặp các tác dụng không mong muốn (ADR) như:\nPhản ứng phản vệ, buồn ngủ, khô miệng, đau đầu, mệt mỏi, nôn mửa hiếm gặp. Đã có báo cáo nhìn mờ mắt.\nHướng dẫn cách xử trí ADR:\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Flibga 25 chống chỉ định trong các trường hợp sau:\nQuá mẫn với bất cứ thành phần nào của thuốc.\nThận trọng khi sử dụng\nCần rất thận trọng khi dùng thuốc cho người bệnh trong các trường hợp sau:\nBệnh nhân nên tránh dùng thức uống có cồn trong khi dùng thuốc.\nDo tác động kháng cholinergic tiềm ẩn của nó, thuốc này nên được sử dụng thận trọng ở những bệnh nhân hen suyễn, tăng nhãn áp và phì đại tuyến tiền liệt.\nCác nghiên cứu lâm sàng về hiệu quả và an toàn ở trẻ em vẫn chưa được thiết lập, do đó khuyến cáo không nên dùng ở trẻ dưới 12 tuổi.\nBệnh nhân suy gan: ảnh hưởng của suy gan lên dược động học của meclizine chưa được đánh giá. Khi meclizine trải qua chuyển hóa, thuốc được lưu giữ lâu ở bệnh nhân suy gan. Điều trị với meclizine nên được dùng thận trọng ở bệnh nhân bị suy gan.\nBệnh nhân suy thận: ảnh hưởng của suy thận lên dược động học của meclizine chưa được đánh giá. Do khả năng tích lũy thuốc/ chất chuyển hóa, meclizine nên dùng thận trọng ở bệnh nhân suy thận và người cao tuổi vì chức năng thận giảm theo tuổi tác.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nBuồn ngủ có thể xảy ra đối với bệnh nhân sử dụng Flibga. Bệnh nhân nên được cảnh báo không được lái xe hay vận hành máy móc trong khi sử dụng thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nPhụ nữ có thai\nXếp loại nguy cơ: Loại B.\nNghiên cứu sinh sản ở chuột cho thấy hở hàm ếch xuất hiện ở liều gấp 25-50 lần liều sử dụng ở người. Tuy nhiên, các nghiên cứu dịch tễ học ở phụ nữ mang thai không chỉ ra rằng meclizine làm tăng nguy cơ bất thường khi sử dụng trong thai kỳ. Mặc dù phát hiện ở động vật, khả năng gây hại cho phôi thai hiếm. Tuy nhiên, meclizine, hoặc bất kỳ thuốc nào khác, nên được sử dụng trong thai kỳ chỉ khi thật cần thiết.\nPhụ nữ cho con bú\nNgười ta không biết liệu thuốc có bài tiết vào sữa mẹ không. Bởi vì nhiều thuốc được bài tiết vào trong sữa mẹ, nên thận trọng khi sử dụng thuốc meclizine ở phụ nữ cho con bú.\nTương tác thuốc\nGia tăng tình trạng ức chế thần kinh trung ương khi meclizine được uống đồng thời với các chất ức chế thần kinh trung ương khác bao gồm rượu, thuốc giảm đau, và thuốc an thần.\nDựa trên đánh giá in-vitro, meclizine được chuyển hóa bởi CYP2D6. Do đó, khả năng có tương tác thuốc giữa meclizine và chất ức chế CYP2D6.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

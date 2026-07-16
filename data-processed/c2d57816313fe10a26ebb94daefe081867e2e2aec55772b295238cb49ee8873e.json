@@ -1,0 +1,83 @@
+{
+  "sku": "00050805",
+  "name": "Thuốc Cynaphytol Ladophar Giải độc gan, thông mật, lợi tiểu, nhuận tràng (10 vỉ x 10 viên)",
+  "short_name": "CYNAPHYTOL LADOPHAR 10X10",
+  "official_name": "CYNAPHYTOL",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/cynaphytol-ladophar-10-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/thuoc_cynaphytol_ladophar_10x10_00050805_1_5aed1a7bcf.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc tiêu hoá & gan mật"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc trị bệnh gan"
+    }
+  ],
+  "brand": "Ladophar",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nén bao đường",
+  "registration_number": "893200123700",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Cao khô actiso",
+      "amount": "0.16g"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nCynaPhytol được chỉ định trong giải độc gan, thông mật, lợi tiểu và nhuận tràng.",
+  "dosage": "Cách dùng\nĐường uống, uống trước bữa ăn.\nLiều dùng\nUống trước bữa ăn, uống liên tục 10 - 20 ngày/tháng.\nNgười lớn: 2 - 3 viên/ lần, ngày 3 lần.\nTrẻ em 5 - 12 tuổi: 1 - 2 viên/ lần, ngày 3 lần.\nXử trí quá liều\nKhông được sử dụng quá liều.\nTriệu chứng quá liều và cách xử trí: Dùng thuốc quá liều có thể dẫn đến tiêu chảy, cần ngưng thuốc và điều trị triệu chứng.\nQuên liều\nKhông dùng gấp đôi liều đã bỏ lỡ.\nMọi thông tin chỉ mang tính chất tham khảo. Việc sử dụng thuốc phải tuân theo hướng dẫn của bác sĩ chuyên môn.",
+  "side_effects": "Nhuận tràng nhẹ.\nThông báo cho Bác sỹ những tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Chống chỉ định\nThuốc Cynaphytol chống chỉ định trong các trường hợp:\nNgười có huyết áp thấp, tắc ống dẫn mật, tiêu chảy.\nDị ứng với bất cứ thành phần nào của thuốc.\nThận trọng khi sử dụng\nTắc đường mật, suy gan nặng.\nTương tác thuốc\nKhông có.",
+  "storage": "Nơi khô, nhiệt độ dưới 30°C, tránh ánh sáng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Thuốc CynaPhytol được chỉ định để điều trị những bệnh lý gì?",
+      "answer": "CynaPhytol được chỉ định trong giải độc gan, thông mật, lợi tiểu và nhuận tràng."
+    },
+    {
+      "question": "Người có huyết áp thấp dùng thuốc CynaPhytol được không?",
+      "answer": "Người có huyết áp thấp\nkhông\nđược dùng thuốc CynaPhytol."
+    },
+    {
+      "question": "Thuốc CynaPhytol có dùng được cho trẻ em không?",
+      "answer": "Thuốc CynaPhytol dùng được cho trẻ em trên 5 tuổi."
+    },
+    {
+      "question": "Thuốc CynaPhytol nên uống trước hay sau bữa ăn?",
+      "answer": "Thuốc CynaPhytol nên uống trước bữa ăn."
+    },
+    {
+      "question": "Cần xử trí ra sao nếu vô tình uống quá liều thuốc CynaPhytol?",
+      "answer": "Tuyệt đối không được sử dụng quá liều quy định. Việc dùng thuốc CynaPhytol quá liều có thể dẫn đến tình trạng tiêu chảy. Trong trường hợp này, bệnh nhân cần ngưng sử dụng thuốc ngay lập tức và tiến hành điều trị triệu chứng theo sự chỉ dẫn của nhân viên y tế."
+    }
+  ]
+}

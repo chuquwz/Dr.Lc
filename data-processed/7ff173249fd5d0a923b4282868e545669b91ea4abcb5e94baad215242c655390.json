@@ -1,0 +1,83 @@
+{
+  "sku": "00039215",
+  "name": "Thuốc Zensalbu 5mg CPC1HN kiểm soát co thắt phế quản mạn, điều trị hen nặng cấp tính (2 vỉ x 5 ống)",
+  "short_name": "ZENSALBU 5MG CPC1 2X5 ỐNG",
+  "official_name": "ZENSALBU NEBULES 5.0",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/zensalbu-5-mg-cpc-1-2-x5-ong.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/thuoc_zensalbu_5mg_cpc1_2x5_ong_00039215_4093b57bf4.png",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc hô hấp"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc trị hen suyễn"
+    }
+  ],
+  "brand": "CPC1HN",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Dung dịch khí dung",
+  "registration_number": "893115019100",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Salbutamol",
+      "amount": "5mg"
+    }
+  ],
+  "ingredient_per": "2.5ml",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 2 Vỉ x 5 Ống"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "2 Vỉ x 5 Ống"
+    },
+    {
+      "unit": "Ống",
+      "price": null,
+      "currency": "đ",
+      "specs": "5 Ống"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Zensalbu nebules 5.0 chỉ định điều trị trong các trường hợp sau:\nDùng kiểm soát thường xuyên\nco thắt phế quản\nmạn không đáp ứng với điều trị quy ước.\nĐiều trị hen nặng cấp tính (cơn kích thích hen nặng và kéo dài không đáp ứng với điều trị chuẩn).\nDược lực học\nNhóm dược lý: Thuốc adrenergic dùng toàn thân\nMã ATC: RO3CC02\nSalbutamol có tác dụng chọn lọc kích thích các thụ thể beta2 adrenergic (có ở cơ trơn phế quản, cơ tử cung, cơ trơn mạch máu) làm tăng tổng hợp AMPv, làm giãn cơ trơn khí phế quản, tử cung, mạch máu; kích thích cơ vân và ít tác dụng tới thụ thể betal adrenergic trên cơ tim ít tác dụng trên tim.\nTác dụng giãn cơ trơn tùy thuộc vào liều dùng và được cho rằng xảy ra thông qua hệ thống adenyl cyclase-AMP vòng, với việc thuốc gắn vào thụ thể beta-2-adrenergic tại màng tế bào gây ra sự biến đổi ATP thành AMP vòng làm hoạt hóa protein kinase. Điều này dẫn đến sự phosphoryl hóa các protein và cuối cùng làm gia tăng calci nội bào loại liên kết; calci nội bào ion hóa bị giảm bớt gây ức chế liên kết actin-myosin, do đó làm giãn cơ trơn.\nLà một thuốc chủ vận beta 2-adrenergic, salbutamol có tác dụng chống dị ứng bằng cách tác dụng lên dưỡng bào làm ức chế sự phóng thích các hóa chất trung gian gây co thắt phế quản như histamin, yếu tố hóa ứng động bạch cầu đa nhân trung tính (NCF) và prostaglandin D2.\nZensalbu nebules 5.0 làm giãn phế quản ở cả người bình thường lẫn bệnh nhân suyễn hay bệnh\nphổi tắc nghẽn mạn tính\n(COPD) sau khi uống. Thuốc còn làm gia tăng sự thanh thải tiêm mao nhầy (đã được chứng minh ở bệnh nhân COPD lẫn ở người bình thường).\nThuốc kích thích thụ thể beta-2-adrenergic gây ra các tác dụng chuyển hóa lan rộng: Tăng lượng acid béo tự do, insulin, lactat và đường; giảm nồng độ kali trong huyết thanh.\nDược động học\nSalbutamol được thải trừ chủ yếu qua phân. Phần lớn liều\nsalbutamol\ndùng theo đường hít được đào thải trong vòng 72 giờ. Salbutamol được gắn kết với protein huyết tương tới mức 10%.\nSau khi dùng đường hít, khoảng 10 đến 20% liều dùng đến được đường dẫn khí thấp hơn. Phần còn lại được giữ trong thiết bị khí dung hoặc lắng đọng tại vùng miệng hầu, nơi thuốc được nuốt vào. Phần lắng đọng trên đường dẫn khí được hấp thu vào mô phổi và vòng tuần hoàn nhưng không được chuyển hóa ở phổi.\nĐến vòng tuần hoàn, salbutamol được chuyển hóa tại gan và được đào thải chủ yếu qua nước tiểu dưới dạng không đổi và dạng phenolic sulphate.\nPhần nuốt vào từ liều hít được hấp thu từ đường tiêu hóa và được chuyển hóa đáng kể bước đầu thành phenolic sulphat. Cả phần thuốc không biến đổi và phần liên kết được đào thải chủ yếu qua nước tiểu.",
+  "dosage": "Cách dùng\nThuốc Zensalbu nebules 5.0 không được tiêm hoặc uống dung dịch khí dung.\nZensalbu nebules được sử dụng với máy khí dung theo hướng dẫn của bác sĩ.\nĐối với hầu hết bệnh nhân, thời gian tác dụng của Zensalbu nebules từ 4 - 6 giờ. Zensalbu nebules được thiết kế để sử dụng dưới dạng không pha loãng. Tuy nhiên, nếu muốn kéo dài thời gian phân phối thuốc (hơn 10 phút) thì có thể cần pha loãng bằng nước muối vô trùng thông thường.\nSử dụng ngày càng nhiều các thuốc chủ vận beta - 2-adrenergic có thể làm biểu hiện của bệnh hen nặng lên. Trong những trường hợp này có thể tiến hành việc đánh giá lại phác đồ điều trị của bệnh nhân và nên xem xét việc điều trị kết hợp đồng thời với glucocorticosteroid.\nDung dịch thuốc Zensalbu nebules dùng để hít qua máy khí dung.\nCách chuẩn bị thuốc cho\nmáy phun khí dung\n:\nBẻ một ống Zensalbu nebules ra bằng cách xoay một ống xuống phía dưới và tách ra trong khi vẫn giữ chắc phần còn lại của vỉ Nebules.\nGiữ chắc một đầu của ống Zensalbu nebules, xoay phần thân ống để mở nắp.\nĐưa đầu hở của ống Zensalbu nebules vào trong chén đựng dung dịch của máy phun khí dung. Bóp từ từ ống Zensalbu nebules để rót dung dịch thuốc vào trong chén. Chú ý rút hết dung dịch thuốc Zensalbu nebules vào trong chén.\nChuẩn bị máy khí dung và sử dụng theo chỉ dẫn.\nSau khi sử dụng xong, cần bỏ hết dung dịch còn thừa trong chén dựng của máy khí dung, sau đó lau sạch máy phun khi dung theo như hướng dẫn trong máy.\nCó thể sử dụng mặt nạ, thiết bị chữ \"T\" hoặc qua ống nội khí quản để phân phối thuốc. Có thể sử dụng thông khi áp lực dương ngắt quãng nhưng hiếm khi là cần thiết.\nCần cho thở oxy khi có nguy cơ\nthiếu oxy huyết\ndo giảm thông khí.\nDo nhiều loại máy khí dung hoạt động trên nguyên tắc dòng khí liên tục, có thể thuốc khi dung sẽ được giải phóng vào môi trường xung quanh. Do đó, nên sử dụng Zensalbu nebules trong phòng có thông khí tốt, nhất là ở bệnh viện khi có nhiều bệnh nhân sử dụng máy khí dung cùng một lúc.\nChỉ sử dụng thuốc khi có chỉ định của bác sĩ.\nLiều dùng\nNgười lớn và trẻ em: Liều khởi đầu thích hợp của salbutamol dung dịch khi dung là 2,5mg.\nCó thể tăng liều lên 5mg. Có thể dùng đến 4 lần/ngày. Khi điều trị tắc nghẽn đường dẫn khí nặng ở người lớn, liều dùng có thể cao hơn, lên đến 40mg/ngày, dưới sự giám sát nghiêm ngặt của bác sĩ tại bệnh viện.\nHiệu quả lâm sàng của Zensalbu nebules ở trẻ em dưới 18 tháng tuổi là không được biết rõ ràng. Nên cân nhắc dùng liệu pháp bổ sung oxy do có thể xuất hiện thiếu oxy huyết thóang qua.\nKhi dùng liều quá cao có thể gây ra tác dụng ngoại ý do đó chỉ nên tăng liều hoặc tăng tần suất sử dụng khi có chỉ định của bác sĩ.\nNếu liều dùng hiệu quả trước đây tỏ ra kém đáp ứng trong vòng ít nhất 3 giờ, cần đến bác sĩ ngay.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTriệu chứng\nTrong trường hợp dùng thuốc quá liều gây ngộ độc, tùy theo mức độ nặng nhẹ có thể biểu hiện một số các triệu chứng như: Khó chịu, nhức đầu,\nhoa mắt, chóng mặt\n, buồn nôn, bồn chồn, run các đầu chi, tim đập nhanh, loạn nhịp tim, biến đổi huyết áp,\nco giật\n, có thể hạ kali huyết.\nXử trí\nNgừng dùng salbutamol ngay. Điều trị các triệu chứng. Cho\nthuốc chẹn beta\n(ví dụ metoprolol tartrat) nếu thấy cần thiết và phải thân trong vì có nguy cơ dẫn đến co thắt phế quản. Việc điều trị như trên phải được tiến hành trong bệnh viện.\nKhi dùng liều quá cao có thể gây ra tác dụng ngoại ý do đó chỉ nên tăng liều hoặc tăng tần suất sử dụng khi có chỉ định của bác sĩ. Trong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nChưa có dữ liệu.",
+  "side_effects": "Nhìn chung, thuốc Zensalbu nebules 5.0 được dung nạp tốt và các tác dụng độc nguy hiểm là hiếm gặp.\nCác phản ứng bất lợi của thuốc nếu có, tương tự như với các thuốc cường giao cảm khác, tuy nhiên tác động của salbutamol trên tim mạch thấp hơn các thuốc kích thích không chọn lọc beta giao cảm. Nhìn chung, các phản ứng phụ chỉ thoáng qua và thường không cần phải ngưng điều trị với Zensalbu nebules 5.0.\nPhổ biến (1/10 > ADR ≥ 1/100)\nRun,\nđau đầu\n, nhịp tim nhanh.\nKhông phổ biến (1/100 > ADR ≥ 1/1000)\nĐánh trống ngực.\nKích ứng họng và miệng.\nChuột rút.\nHiếm gặp (1/1 000 > ADR ≥1/10 000)\nHạ kali huyết.\nGiãn mạch máu ngoại biên.\nRất hiếm (1/10 000 > ADR ≥ 1/100 000)\nCác phản ứng quá mẫn bao gồm phù mạch, mày đay, co thắt phế quản, hạ huyết áp và trụy tim mạch.\nNhiễm toan lactic, ở những bệnh nhân dùng salbutamol khí dung để điều trị cơn hen kịch phát cấp tính.\nTăng hoạt động hệ thần kinh.\nLoạn nhịp tim bao gồm rung nhĩ, nhịp tim nhanh trên thất, ngoại tâm thu.\nCo thắt phế quản nghịch lý, có thể xuất hiện với việc tăng tức thì triệu chứng khò khè sau khi dùng thuốc. Nên được điều trị ngay bằng dạng thuốc khác hoặc hít thuốc giãn phế quản tác dụng nhanh khác. Ngừng sử dụng Zensalbu nebules 5.0 ngay, đánh giá bệnh nhân và thay thế bằng phương pháp điều trị khác nếu cần thiết.\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Zensalbu nebules 5.0 chống chỉ định trong các trường hợp sau:\nChống chỉ định dùng salbutamol dạng khí dung ở những bệnh nhân có tiền sử quá mẫn với bất kỳ thành phần nào của thuốc.\nChống chỉ định dùng salbutamol dạng khí dung để xử trí chuyển dạ sớm, dọa sinh non hoặc dọa\nsảy thai\n.\nCảnh báo và thận trọng khi dùng thuốc\nỞ những bệnh nhân hen nặng hoặc hen không ổn định, không nên điều trị hoặc không nên điều trị chủ yếu bằng thuốc giãn phế quản.\nThận trọng khi dùng với bệnh nhân nhiễm độc giáp.\nĐã có báo cáo hiện tượng glaucom góc đóng cấp ở một số bệnh nhân dùng kết hợp với ipratropium bromid.\nDo đó, thận trọng khi dùng với các thuốc kháng cholinergic khí dung khác.\nKhông được để dung dịch hoặc sương khí dung bay vào mắt.\nĐiều trị bằng chất chủ vận beta-2-adrenergic chủ yếu bằng đường tiêm và khí dung có nguy cơ gây giảm kali huyết nặng.\nĐặc biệt thận trọng ở những bệnh nhân hen nặng do tác dụng phụ này có thể tăng lên khi dùng cùng với các dẫn chất xanthin,\nthuốc lợi tiểu\nvà khi thiếu oxy huyết. Cần theo dõi lượng kali huyết ở những trường hợp này.\nSalbutamol có thể gây ra các thay đổi về chuyển hóa có hồi phục, ví dụ như tăng lượng đường trong máu.\nBệnh nhân đái tháo đường có thể không bù trừ được những thay đổi về chuyển hóa này và đã có báo cáo về nhiễm toan xeton. Tác dụng này có thể tăng lên khi dùng kèm các corticoid. Thận trọng khi dùng liều cao ở những bệnh nhân đang điều trị cơn\nhen suyễn\nkịch phát cấp tính, theo dõi sự tăng nồng độ lactat huyết thanh và tình trạng nhiễm toan chuyển hóa.\nSử dụng thuốc cho phụ nữ có thai và cho con bú\nThời kì mang thai\nSalbutamol đã được chứng minh gây quái thai ở chuột khi tiêm dưới da với liều tương ứng gấp 14 lần liều khí dung ở người. Chưa có công trình nghiên cứu quy mô nào ở người mang thai. Không nên dùng thuốc ở đối tượng này khi chưa biết rõ mối liên quan giữa salbutamol và dị tật.\nThời kỳ cho con bú\nSalbutamol được bài tiết một lượng nhỏ vào sữa mẹ. Tác động của thuốc trên trẻ bú sữa mẹ chưa được biết đến, nên thận trọng khi dùng thuốc ở phụ nữ cho con bú.\nTrong các trường hợp cần thiết thầy thuốc phải cân nhắc giữa lợi ích và nguy cơ có thể gặp phải.\nẢnh hưởng đến khả năng lái xe và vận hành máy móc\nSalbutamol có thể gây ra các tác dụng thường gặp nhất là bứt rứt, run hay nhức đầu, chóng mặt. Do đó làm ảnh hưởng đến khả năng lái xe và vận hành máy móc.\nTương tác thuốc\nTránh dùng kết hợp với các thuốc chủ vận beta không chọn lọc như propanolol, isoprenalin, dobutamin, vì làm tăng tác động trên tim mạch.\nKhông dùng cho những bệnh nhân đang điều trị bằng các IMAO (thuốc ức chế enzym monoamin oxydase) hay các\nthuốc chống trầm cảm ba vòng\n: Tác dụng của salbutamol lên hệ thống mạch máu có thể bị ảnh hưởng.\nKhi chỉ định salbutamol cần phải giảm liều thuốc kích thích beta khác nếu đang dùng thuốc đó để điều trị.\nCác thuốc chẹn thụ thể beta và salbutamol ức chế tác dụng của nhau làm mất hiệu quả điều trị và có thể làm bệnh cảnh nặng hơn.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Thuốc Zensalbu nebules 5.0 thuộc nhóm dược lý nào và thuộc mã ATC nào?",
+      "answer": "Thuốc Zensalbu nebules 5.0 thuộc nhóm dược lý: Thuốc adrenergic dùng toàn thân. Mã ATC: RO3CC02."
+    },
+    {
+      "question": "Cơ chế tác động của thuốc Zensalbu nebules 5.0?",
+      "answer": "Salbutamol có tác dụng chọn lọc kích thích các thụ thể beta2 adrenergic (có ở cơ trơn phế quản, cơ tử cung, cơ trơn mạch máu) làm tăng tổng hợp AMPv, làm giãn cơ trơn khí phế quản, tử cung, mạch máu; kích thích cơ vân và ít tác dụng tới thụ thể betal adrenergic trên cơ tim ít tác dụng trên tim.\nTác dụng giãn cơ trơn tùy thuộc vào liều dùng và được cho rằng xảy ra thông qua hệ thống adenyl cyclase-AMP vòng, với việc thuốc gắn vào thụ thể beta-2-adrenergic tại màng tế bào gây ra sự biến đổi ATP thành AMP vòng làm hoạt hóa protein kinase. Điều này dẫn đến sự phosphoryl hóa các protein và cuối cùng làm gia tăng calci nội bào loại liên kết; calci nội bào ion hóa bị giảm bớt gây ức chế liên kết actin-myosin, do đó làm giãn cơ trơn."
+    },
+    {
+      "question": "Có bao nhiêu hàm lượng Salbutamol sulfat trong mỗi ống thuốc Zensalbu nebules 5.0?",
+      "answer": "Trong mỗi ống 2.5ml thuốc Zensalbu nebules 5.0 có hàm lượng Salbutamol sulfat là 5.0mg."
+    },
+    {
+      "question": "Cách sử dụng thuốc Zensalbu nebules 5.0 cho máy phun khí dung?",
+      "answer": "Cách chuẩn bị thuốc cho máy phun khí dung:\nBẻ một ống Zensalbu nebules ra bằng cách xoay một ống xuống phía dưới và tách ra trong khi vẫn giữ chắc phần còn lại của vỉ Nebules.\nGiữ chắc một đầu của ống Zensalbu nebules, xoay phần thân ống để mở nắp.\nĐưa đầu hở của ống Zensalbu nebules vào trong chén đựng dung dịch của máy phun khí dung. Bóp từ từ ống Zensalbu nebules để rót dung dịch thuốc vào trong chén. Chú ý rút hết dung dịch thuốc Zensalbu nebules vào trong chén.\nChuẩn bị máy khí dung và sử dụng theo chỉ dẫn.\nSau khi sử dụng xong, cần bỏ hết dung dịch còn thừa trong chén dựng của máy khí dung, sau đó lau sạch máy phun khi dung theo như hướng dẫn trong máy."
+    },
+    {
+      "question": "Có cần thay đổi liều điều trị thuốc kích thích beta khác khi dùng thuốc Zensalbu nebules 5.0?",
+      "answer": "Khi chỉ định salbutamol cần phải giảm liều thuốc kích thích beta khác nếu đang dùng thuốc đó để điều trị."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "sku": "00050178",
+  "name": "Cao sao vàng TW3 với thành phần tinh dầu dược liệu dùng trị nhức đầu, sổ mũi, cảm cúm, muỗi và côn trùng đốt (6 lọ 17G)",
+  "short_name": "CAO SAO VÀNG TW3 6 LỌ X 17G",
+  "official_name": "CAO SAO VÀNG TW3",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/cao-sao-vang-tw-3-6-lo-x-17-g.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/DSC_07769_4dd7263858.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Miếng dán, cao xoa, dầu"
+    },
+    {
+      "level": 3,
+      "name": "Cao xoa"
+    }
+  ],
+  "brand": "Tw3",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Cao",
+  "registration_number": "893100072900",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Long não",
+      "amount": "584.16mg"
+    },
+    {
+      "name": "Menthol",
+      "amount": "33.66mg"
+    },
+    {
+      "name": "Tinh dầu bạc hà",
+      "amount": "178.22mg"
+    },
+    {
+      "name": "Tinh dầu tràm",
+      "amount": "643.56mg"
+    },
+    {
+      "name": "Hương nhu trắng",
+      "amount": "56.44mg"
+    },
+    {
+      "name": "Tinh dầu quế",
+      "amount": "56.44mg"
+    }
+  ],
+  "ingredient_per": "",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": 228000,
+      "currency": "đ",
+      "specs": "Hộp 6 Lọ x 17g"
+    },
+    {
+      "unit": "Lọ",
+      "price": 38000,
+      "currency": "đ",
+      "specs": "6 Lọ x 17g"
+    }
+  ],
+  "description": "",
+  "usage": "Cao sao vàng TW3 dùng trị nhức đầu, sổ mũi, cảm cúm, muỗi và côn trùng đốt.",
+  "dosage": "Cách dùng\nBôi vào hai bên thái dương, hai cánh mũi và nơi côn trùng đốt.\nLiều dùng\nĐể có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nKhông dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Thông báo cho bác sĩ những tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nCao sao vàng TW3\nchống chỉ định trong các trường hợp sau:\nTrẻ em dưới 30 tháng tuổi, trẻ em có tiền sử\nđộng kinh\nhoặc\nco giật\ndo sốt cao.\nKhông bôi vào mắt, không bôi lên vết thương hở và vùng vú khi cho con bú.\nThận trọng khi sử dụng\nThận trọng khi sử dụng cho phụ nữ có thai.\nTương tác thuốc\nKhông có.",
+  "storage": "Nơi khô ráo, thoáng mát, nhiệt độ không quá 30°C.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Cao Sao Vàng dùng được trong trường hợp nào?",
+      "answer": "Cao Sao Vàng giúp giảm nghẹt mũi, đau đầu, chóng mặt, đau mỏi cơ và hỗ trợ giảm triệu chứng cảm lạnh."
+    },
+    {
+      "question": "Có cần lưu ý gì khi bảo quản sản phẩm Cao Sao Vàng?",
+      "answer": "Bảo quản Cao Sao Vàng nơi khô ráo, tránh ánh nắng, đậy nắp ngay sau khi dùng để giữ mùi tinh dầu lâu bền."
+    },
+    {
+      "question": "Sản phẩm có dùng được cho phụ nữ mang thai không?",
+      "answer": "Phụ nữ mang thai cần thận trọng và nên tham khảo ý kiến bác sĩ trước khi dùng, đặc biệt khi có cơ địa nhạy cảm."
+    },
+    {
+      "question": "Bôi Cao Sao Vàng vào đâu để giảm nghẹt mũi?",
+      "answer": "Người dùng có thể thoa một ít vào hai bên thái dương, hai cánh mũi để tạo cảm giác thông thoáng."
+    },
+    {
+      "question": "Cao Sao Vàng có dùng cho trẻ em được không?",
+      "answer": "Cao Sao Vàng chống chỉ định cho trẻ em dưới 30 tháng tuổi, trẻ em có tiền sử động kinh hoặc co giật do sốt cao."
+    }
+  ]
+}

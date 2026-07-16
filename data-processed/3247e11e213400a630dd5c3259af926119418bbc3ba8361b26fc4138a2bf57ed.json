@@ -1,0 +1,95 @@
+{
+  "sku": "00050514",
+  "name": "Thuốc Cozz DHG điều trị các chứng ho, đau họng, sổ mũi, cảm cúm (10 vỉ x 10 viên)",
+  "short_name": "COZZ DHG PHARMA 10X10",
+  "official_name": "COZZ",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/cozz-dhg-pharma-10-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/thuoc_cozz_10x10_dhg_pharma_00050514_acc7fc5623.png",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc hô hấp"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc trị ho cảm"
+    }
+  ],
+  "brand": "Dhg",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nang mềm",
+  "registration_number": "893100115723",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Eucalyptol",
+      "amount": "100mg"
+    },
+    {
+      "name": "Menthol",
+      "amount": "0.5mg"
+    },
+    {
+      "name": "Tinh dầu tần",
+      "amount": "0.18mg"
+    },
+    {
+      "name": "Tinh dầu gừng",
+      "amount": "0.5mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": 68000,
+      "currency": "đ",
+      "specs": "Hộp 10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": 6800,
+      "currency": "đ",
+      "specs": "10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": 680,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Cozz dùng trị các chứng ho, sổ mũi, cảm cúm do hàn. Sát trùng đường hô hấp, làm dịu cơn đau họng.\nDược lực học\nChưa có dữ liệu.\nDược động học\nChưa có dữ liệu.",
+  "dosage": "Cách dùng\nThuốc Cozz dạng viên nang dùng đường uống.\nLiều dùng\nTrẻ em trên 30 tháng tuổi: Uống 1 viên x 3 lần/ ngày.\nNgười lớn: Uống 2 viên x 3 lần/ ngày.\nHoặc theo chỉ dẫn của Thầy thuốc.\nLiều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nCó báo cáo rằng dùng menthol liều lớn qua đường tiêu hóa có thể có đau bụng, nôn ói, chóng mặt, buồn ngủ.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Có báo cáo rằng dùng menthol liều lớn qua đường tiêu hóa có thể có đau bụng, nôn ói, chóng mặt, buồn ngủ.\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Cozz chống chỉ định trong các trường hợp sau:\nQuá mẫn cảm với một trong các thành phần của thuốc.\nCác trường hợp: Ho do suyễn, ho lao, suy hô hấp.\nTrẻ em dưới 30 tháng tuổi, trẻ em có tiền sử động kinh hoặc co giật do sốt cao.\nPhụ nữ có thai.\nThận trọng khi sử dụng\nMenthol có tính ức chế hô hấp qua đường thở (hít vào mũi) nhất là đối với trẻ con ít tuổi.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nChống chỉ định khi sử dụng cho phụ nữ có thai và đang cho con bú.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa có nghiên cứu nào về ảnh hưởng của thuốc lên khả năng vận hành máy móc, lái tàu xe, người làm việc trên cao và các trường hợp khác.\nTương tác thuốc\nChưa có dữ liệu.",
+  "storage": "Nơi khô, nhiệt độ không quá 30\no\nC, tránh ánh sáng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Cách dùng thuốc Cozz cho người lớn như thế nào?",
+      "answer": "Cách dùng thuốc Cozz cho người lớn: Uống 2 viên x 3 lần/ ngày."
+    },
+    {
+      "question": "Cách dùng thuốc Cozz cho trẻ em như thế nào?",
+      "answer": "Trẻ em trên 30 tháng tuổi: Uống 1 viên x 3 lần/ ngày. Không dùng cho trẻ em dưới 30 tháng tuổi, trẻ em có tiền sử động kinh hoặc co giật do sốt cao."
+    },
+    {
+      "question": "Thuốc Cozz có dùng được cho phụ nữ có thai hay không?",
+      "answer": "Thuốc Cozz chống chỉ định khi sử dụng cho phụ nữ có thai và đang cho con bú."
+    },
+    {
+      "question": "Thuốc Cozz có dùng được cho trẻ em hay không?",
+      "answer": "Thuốc Cozz không được dùng cho trẻ em dưới 30 tháng tuổi, trẻ em có tiền sử động kinh hoặc co giật do sốt cao."
+    },
+    {
+      "question": "Thuốc Cozz dùng trong trường hợp nào?",
+      "answer": "Thuốc Cozz dùng trị các chứng ho, sổ mũi, cảm cúm do hàn. Sát trùng đường hô hấp, làm dịu cơn đau họng."
+    }
+  ]
+}

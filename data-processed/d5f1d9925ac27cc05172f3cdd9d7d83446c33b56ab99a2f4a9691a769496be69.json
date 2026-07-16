@@ -1,0 +1,79 @@
+{
+  "sku": "00502517",
+  "name": "Viên bổ sung lợi khuẩn cho cơ thể Optibac For Women (90 viên)",
+  "short_name": "OPTIBAC FOR WOMEN 90V",
+  "official_name": "",
+  "url": "https://nhathuoclongchau.com.vn/thuc-pham-chuc-nang/optibac-for-women-90-v.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/4c234d7f1b8196dfcf90_1_7becf4032c.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thực phẩm chức năng"
+    },
+    {
+      "level": 2,
+      "name": "Sinh lý - Nội tiết tố"
+    },
+    {
+      "level": 3,
+      "name": "Sinh lý nữ"
+    }
+  ],
+  "brand": "OPTIBAC PROBIOTICS",
+  "manufacturer_country": "Đan Mạch",
+  "dosage_form": "Viên nang cứng",
+  "registration_number": "7861/2024/ĐKSP",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Lactobacillus rhamnosus",
+      "amount": "0.5X10^9cfu"
+    },
+    {
+      "name": "Lactobacillus reuteri",
+      "amount": "0.5X10^9cfu"
+    },
+    {
+      "name": "Lactobacillus paracasei",
+      "amount": "1.5X10^9cfu"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": 1155000,
+      "currency": "đ",
+      "specs": "Hộp 90 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Optibac For Women bổ sung lợi khuẩn cho cơ thể.",
+  "dosage": "Cách dùng\nUống 1 viên ngày cùng bữa ăn sáng.\nCó thể uống 2 viên/ngày theo ý muốn hoặc theo chỉ dẫn của chuyên gia. Có thể sử dụng liên tục.\nCó thể mở vỏ nang và trộn thành phần sản phẩm với thức ăn/đồ uống nguội.\nĐối tượng sử dụng\nOptibac For Women thích hợp dùng cho phụ nữ trưởng thành.",
+  "side_effects": "Chưa có thông tin về tác dụng phụ của sản phẩm.",
+  "precautions": "Không sử dụng cho người mẫn cảm với bất cứ thành phần nào của sản phẩm.\nKhông nên sử dụng thực phẩm bổ sung thay thế cho lối sống lành mạnh và chế độ ăn uống đa dạng.\nKhông chứa sữa, gluten, nấm men. Phù hợp cho người ăn chay.\nNhững người có tình trạng bệnh nghiêm trọng nên tham khảo ý kiến bác sĩ trước khi sử dụng.\nKhông dùng quá liều khuyến cáo.\nSản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\nĐọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "storage": "Bảo quản trong tủ lạnh sau khi đã mở hộp dùng lần đầu và luôn vặn chặt nắp đóng sau mỗi lần dùng. Tránh xa tầm tay trẻ em.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Optibac For Women có thực sự hữu ích cho sức khỏe phụ nữ không?",
+      "answer": "Optibac For Women được thiết kế riêng để hỗ trợ vi khuẩn âm đạo, cung cấp một sự cân bằng của các vi khuẩn tốt, giúp cải thiện và duy trì sức khỏe tổng thể cho phụ nữ."
+    },
+    {
+      "question": "Liều lượng sử dụng Optibac For Women như thế nào là phù hợp?",
+      "answer": "Đối với kết quả tốt nhất, hãy dùng 1 viên mỗi ngày, tốt nhất là vào buổi sáng. Liều lượng có thể tăng lên 2 viên mỗi ngày nếu muốn hoặc được chỉ định bởi chuyên gia y tế."
+    },
+    {
+      "question": "Nên dùng Optibac For Women vào thời điểm nào trong ngày?",
+      "answer": "Optibac For Women nên được uống vào buổi sáng, ưu tiên sau bữa ăn sáng."
+    },
+    {
+      "question": "Optibac For Women có thể dùng cho trẻ em không?",
+      "answer": "Optibac For Women thích hợp dùng cho nữ giới trưởng thành. Trẻ em không được khuyến cáo."
+    },
+    {
+      "question": "Nếu người dùng không thể nuốt viên được viên nang thì sử dụng Optibac For Women như thế nào?",
+      "answer": "Những người không thể nuốt viên có thể mở và trộn thành phần sản phẩm với thức ăn/đồ uống để nguội."
+    }
+  ]
+}

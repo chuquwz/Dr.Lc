@@ -1,0 +1,109 @@
+{
+  "sku": "00049030",
+  "name": "Thuốc Boncinco Hà Nam giúp bổ sung các vitamin và acid amin thiết yếu (20 ống x 7.5ml)",
+  "short_name": "BONCINCO HÀ NAM 20 ỐNG X 7.5ML",
+  "official_name": "BONCINCO",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/boncinco-ha-nam-20-ong-x-7-5-ml.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/DSC_05482_0e18fdae5f.png",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc bổ & vitamin"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc bổ"
+    }
+  ],
+  "brand": "Hà Nam",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Siro",
+  "registration_number": "893100224625",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Lysin hydrochlorid",
+      "amount": "150mg"
+    },
+    {
+      "name": "Thiamin hydroclorid",
+      "amount": "1.5mg"
+    },
+    {
+      "name": "Riboflavin sodium phosphate",
+      "amount": "1.75mg"
+    },
+    {
+      "name": "Pyridoxin hydroclorid",
+      "amount": "3mg"
+    },
+    {
+      "name": "Cholecalciferol",
+      "amount": "200iu"
+    },
+    {
+      "name": "DL-alpha tocopheryl acetate",
+      "amount": "7.5mg"
+    },
+    {
+      "name": "Niacinamide",
+      "amount": "10mg"
+    },
+    {
+      "name": "Dexpanthenol",
+      "amount": "5mg"
+    },
+    {
+      "name": "Calci",
+      "amount": "65mg"
+    }
+  ],
+  "ingredient_per": "7.5ml",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": 280000,
+      "currency": "đ",
+      "specs": "Hộp 20 Ống x 7.5ml"
+    },
+    {
+      "unit": "Ống",
+      "price": 14000,
+      "currency": "đ",
+      "specs": "20 Ống x 7.5ml"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc\nBoncinco\nđược chỉ định để bổ sung các vitamin và acid amin thiết yếu.\nSử dụng cho các trường hợp cần bổ sung vitamin:\nTrẻ em và thanh thiếu niên đang trong giai đoạn phát triển.\nNgười trong thời kỳ dưỡng bệnh, giảm ngon miệng, thể chất mệt mỏi cần tăng cường sức đề kháng.\nDược lực học\nMã ATC: A11AA03\nBoncinco chứa tới 7 vitamin, calci và lysin. Lysin là một acid amin thiết yếu, cùng với các chức năng khác, nó rất quan trọng cho sự hình thành xương. Các acid amin cơ thể không thể tự tổng hợp, do đó cần phải được cung cấp đủ lượng.\nCác vitamin nhóm B là cần thiết cho các quá trình trao đổi chất khác nhau.\nCalci không thể thiếu cho sự hình thành khối xương. Chúng được cung cấp bởisữa và thức ăn hàng ngày.\nDược động học\nChưa có dữ liệu.",
+  "dosage": "Cách dùng\nNên uống Boncinco trong bữa sáng hoặc trưa.\nCó thể được pha loãng với nước hoặc thức ăn. Lắc kỹ trước khi dùng.\nLiều dùng\nTrẻ em từ 1 - 5 tuổi: 7,5 ml/ngày.\nTrẻ em trên 6 tuổi và thanh thiếu niên: 15 ml/ngày.\nKhuyến cáo sử dụng thuốc có quy cách đóng gói và hàm lượng phù hợp với liều dùng.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nChưa có trường hợp quá liều được báo cáo.\nQuá liều hoặc sử dụng kéo dài quá mức calci và vitamin D, đặc biệt ở những bệnh nhân nhạy cảm, có thể dẫn tới quá liều vitamin D, tăng calci máu, tăng calci niệu và tăng phospho máu với triệu chứng như suy thận,“hội chứng kiềm sữa”, sỏi thận.\nCác triệu chứng ban đầu không phổ biến, như khởi phát đột ngột các triệu chứng:\nĐau đầu, lú lẫn, táo bón, tiêu chảy, buồn nôn và nôn, có thể chỉ là quá liều cấp tính.\nNếu có các triệu chứng quá liều xảy ra, nên ngừng điều trị và được bác sỹ, dược sỹ tư vấn.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc  Boncinco bạn có thể gặp các tác dụng không mong muốn (ADR):\nRối loạn hệ miễn dịch, da và mô dưới da: Ít gặp.\nHướng dẫn cách xử trí ADR:\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Boncinco chống chỉ định trong các trường hợp sau:\nBệnh nhân mẫn cảm với bất kỳ thành phần nào của thuốc.\nBệnh nhân rối loạn chuyển hóa calci (tăng calci máu hay tăng calci niệu).\nTrong thời gian điều trị với Vitamin D.\nBệnh nhân suy thận.\nSỏi calci thận.\nTrẻ em và thanh thiếu niên mắc các rối loạn di truyền hiếm gặp về dung nạp fructose hay rối loạn hấp thu glucose-galactose không nên dùng thuốc này.\nThận trọng khi sử dụng\nCần rất thận trọng khi dùng thuốc cho người bệnh trong các trường hợp sau:\nKhông nên dùng siro vượt quá liều khuyến cáo trong thời gian kéo dài, trừ khi có chỉ định khác của bác sỹ.\nUống một lượng lớn siro hàng ngày (khoảng 75 ml siro) trong một thời gian dài có thể gây ra quá liều vitamin D, làm tăng các triệu chứng độc tính mạn tính như nôn, đau đầu, chóng mặt và tiêu chảy.\nThận trọng trên những bệnh nhân tăng calci máu hoặc các bệnh lý liên quan đến tăng calci máu.\nChế phẩm có chứa sorbitol, đường kính, thận trọng với bệnh nhân không dung nap fructose.\nChế phẩm có chứa natri benzoat, có thể làm tăng vàng da (vàng da và mắt) ở trẻ sơ sinh (trên 4 tuần tuổi).\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nKhông có nghiên cứu nào về ảnh hưởng của thuốc đến khả năng lái xe hay sử dụng máy móc. Siro Boncinco có thể sử dụng cho các đối tượng làm các công việc liên quan đến lái xe và vận hành máy móc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nBoncinco dành cho trẻ em và thanh thiếu niên.\nCác nghiên cứu có kiểm soát của phụ nữ mang thai chưa được thực hiện. Do đó, cần thận trọng khi sử dụng cho phụ nữ có thai và phụ nữ cho con bú.\nTương tác thuốc\nVitamin B6 có thể làm giảm hiệu quả của L-Dopa bằng cách tăng decarboxy hóa ngoại biên.\nThuốc lợi tiểu thiazid làm giảm bài tiết calci thận. Do đó điều trị đồng thời với thiazid có nguy cơ tăng calci máu nên cần phải theo dõi nồng độ calci huyết thanh thường xuyên.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Thuốc Boncinco chống chỉ định trong những trường hợp nào?",
+      "answer": "Thuốc Boncinco chống chỉ định trong các trường hợp sau:\nBệnh nhân mẫn cảm với bất kỳ thành phần nào của thuốc.\nBệnh nhân rối loạn chuyển hóa calci (tăng calci máu hay tăng calci niệu).\nTrong thời gian điều trị với Vitamin D.\nBệnh nhân suy thận.\nSỏi calci thận.\nTrẻ em và thanh thiếu niên mắc các rối loạn di truyền hiếm gặp về dung nạp fructose hay rối loạn hấp thu glucose-galactose không nên dùng thuốc này."
+    },
+    {
+      "question": "Cách dùng và thời điểm tốt nhất để uống thuốc Boncinco là khi nào?",
+      "answer": "Nên uống Boncinco trong bữa sáng hoặc trưa. Thuốc có thể được pha loãng với nước hoặc thức ăn và cần lắc kỹ trước khi dùng."
+    },
+    {
+      "question": "Lysin và Calci trong Boncinco có vai trò dược lực học như thế nào?",
+      "answer": "Lysin là một acid amin thiết yếu quan trọng cho sự hình thành xương. Calci là chất không thể thiếu cho sự hình thành khối xương. Các vitamin nhóm B là cần thiết cho các quá trình trao đổi chất khác nhau."
+    },
+    {
+      "question": "Đối tượng nào nên sử dụng thuốc Boncinco?",
+      "answer": "Thuốc Boncinco được sử dụng cho các trường hợp cần bổ sung vitamin, bao gồm:\nTrẻ em và thanh thiếu niên đang trong giai đoạn phát triển.\nNgười trong thời kỳ dưỡng bệnh, giảm ngon miệng, thể chất mệt mỏi cần tăng cường sức đề kháng."
+    },
+    {
+      "question": "Thành phần chính của thuốc Boncinco là gì?",
+      "answer": "Thuốc Boncinco chứa tới 7 vitamin, calci và lysin. Các thành phần chính bao gồm: Lysin hydrochlorid (150mg), Thiamin hydroclorid (1.5mg), Riboflavin sodium phosphate (1.75mg), Pyridoxin hydroclorid (3mg), Cholecalciferol (200iu), DL-alpha tocopheryl acetate (7.5mg), Niacinamide (10mg), Dexpanthenol (5mg), và Calci (65mg) (cho 7.5ml)."
+    }
+  ]
+}

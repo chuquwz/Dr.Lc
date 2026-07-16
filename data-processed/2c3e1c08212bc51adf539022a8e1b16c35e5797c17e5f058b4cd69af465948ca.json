@@ -1,0 +1,83 @@
+{
+  "sku": "00039730",
+  "name": "Thuốc Warfarin 2mg SPM điều trị ngắn hạn huyết khối tĩnh mạch và nghẽn mạch phổi cấp tính (3 vỉ x 10 viên)",
+  "short_name": "WARFARIN 2MG SPM 3X10",
+  "official_name": "WARFARIN 2",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/warfarin-2-mg-spm-3-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00039730_ef849f1131.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc tim mạch & máu"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc chống đông máu"
+    }
+  ],
+  "brand": "SPM",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nén",
+  "registration_number": "893110047100",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Warfarin",
+      "amount": "2mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 3 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "3 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Warfarin 2 được chỉ định dùng trong các trường hợp sau:\nĐiều trị ngắn hạn: Huyết khối tĩnh mạch và nghẽn mạch phổi cấp tính, lúc bắt đầu điều trị phối hợp với heparin.\nPhòng huyết khối cho người bệnh phải bất động kéo dài sau phẫu thuật.\nNhồi máu cơ tim cấp: Phòng huyết khối tĩnh mạch, phẫu thuật và hỗ trợ điều trị tiêu cục huyết khối.\nPhòng bệnh dài hạn: Người bệnh huyết khối tĩnh mạch và nghẽn mạch phổi tái phát.\nBệnh tim có nguy cơ nghẽn mạch như rung thất, thay van tim, người bệnh thiếu máu cục bộ thoảng qua, nghẽn mạch não.\nBệnh mạch vành (cơn đau thắt ngực, nhồi máu cơ tim).\nDược lực học\nWarfarin là thuốc chống đông máu kháng vitamin K nhóm coumarin.\nWarfarin ngăn cản sự tổng hợp prothrombin (yếu tố đông máu II), proconvertin (yếu tố VII), yếu tố anti hemophilia B (yếu tố IX) và yếu tố Stuart - Prower (yếu tố X) bằng cách ngăn cản sự hoạt động của vitamin K vốn cần thiết cho sự tổng hợp các yếu tố đông máu này ở gan.\nThời gian bán thải của các yếu tố này rất khác nhau, tác dụng phòng đông máu của warfarin thường bắt đầu xuất hiện trong vòng 24 giờ, nhưng có thể phải 3 - 4 ngày mới đạt tác dụng cao nhất. Tác dụng dự phòng huyết khối thường đạt sau 5 ngày. Nếu cần tác dụng nhanh, dùng đồng thời heparin ngay lúc bắt đầu dùng warfarin cho đến lúc đạt được kết quả mong muốn.\nDược động học\nSau khi uống, warfarin được hấp thu nhanh và hoàn toàn. Tất cả các thuốc chống đông máu nhóm coumarin liên kết mạnh với protein huyết tương (98 - 99%).\nNửa đời thải trừ 22 - 35 giờ, chủ yếu qua thận sau khi chuyển hóa ở gan bởi cytochrom P450. Chuyển hóa này có thể bị ức chế bởi một số thuốc như cimetidin ức chế, gây nguy cơ chảy máu nguy hiểm. Một số thuốc khác ức chế chuyển hóa warfarin như propafenon, làm tăng nồng độ warfarin trong máu khoảng 40% và làm tăng thời gian prothrombin một cách tương ứng. Amiodaron làm tăng nồng độ warfarin; do amiodaron có thời gian bán thải rất dài, tới 50 ngày, nên có thể gây tương tác trầm trọng sau khi đã ngừng điều trị.\nPhải luôn luôn coi trọng nguy cơ tương tác thuốc. Sau khi ngừng dùng warfarin, prothrombin trở lại bình thường trong vòng 4 - 5 ngày.\nChất chuyển hóa không có tác dụng chống đông, và bài tiết trong nước tiểu sau tái hấp thu từ mật.",
+  "dosage": "Cách dùng\nDùng đường uống. Phải dùng thuốc vào cùng thời điểm đã quy định trong các ngày.\nLiều dùng\nLiều dùng phụ thuộc vào INR (tỷ số chuẩn hóa quốc tế).\nINR = (Thời gian Quick của người bệnh) / (Thời gian Quick chuẩn) = PTR(ISI).\nPT= thời gian Quick.\nPTR= tỷ số giữa thời gian Quick của người bệnh chia cho thời gian Quick chuẩn.\nISI là chỉ số độ nhạy quốc tế (của thromboplastin được dùng so với thromboplastin chuẩn quy chiếu quốc tế). Như vậy ISI của mẫu theo định nghĩa bằng 1.INR của người bình thường < 1,2. Nếu INR > 5: Nguy cơ chảy máu mạnh.\nLiều đầu tiên thông thường 5 - 10 mg/ngày trong 2 ngày đầu, sau đó điều chỉnh dựa vào kết quả xác định INR.\nNgười cao tuổi thường dùng liều ban đầu thấp.\nKhi cần chống đông nhanh thì dùng heparin trong những ngày đầu tiên (tiêm tĩnh mạch hoặc dưới da).\nViệc điều trị bằng warfarin có thể hoặc đồng thời với heparin, hoặc bắt đầu sau heparin.\nLiều duy trì: Phần lớn người bệnh được duy trì với liều 2 - 10 mg/ngày. Thời gian điều trị phụ thuộc vào từng người. Thông thường, liệu pháp chống đông phải kéo dài khi nguy cơ tắc mạch đã qua.\nPhạm vi dao động của INR được khuyến cáo:\nINR = 2,0 - 3,0: Phòng huyết khối - nghẽn mạch cho người bệnh nội hoặc ngoại khoa có nguy cơ cao; điều trị huyết khối tĩnh mạch gần và nghẽn mạch phổi, phòng nghẽn mạch toàn thân ở người bệnh rung nhĩ, bệnh van tim, đặt van tim sinh học hoặc nhồi máu cơ tim cấp.\nINR = 3,0 - 4,5: Phòng nghẽn mạch ở người đặt van tim cơ học hoặc ở người nghẽn mạch toàn thân tái phát.\nGiám sát PT/INR định kỳ: PT/INR phải được xác định trước khi điều trị. Trong 2 tuần đầu, xác định hàng ngày hoặc 2 đến 3 lần mỗi tuần. Sau đó, hàng tháng ở bệnh nhân đã được cân bằng hoặc 1/2 tháng một lần, nếu thấy cần.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nNếu chảy máu hoặc khả năng chảy máu xảy ra, tạm ngừng warfarin, nếu cần, truyền huyết thanh mới hoặc thay toàn bộ máu. Cho dùng vitamin K, uống hoặc tiêm 5 - 10 mg.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nNếu lỡ quên, không dùng thuốc một lần thì phải dùng thuốc bù ngay tức khắc trong ngày. Không được dùng gộp hai liều thuốc (liều bù quên và tiếp theo) vào cùng một thời điểm.",
+  "side_effects": "Khi sử dụng thuốc Warfarin 2 bạn có thể gặp các tác dụng không mong muốn (ADR) như:\nThường gặp, ADR > 1/100:\nChảy máu.\nÍt gặp, 1/1000 < ADR < 1/100:\nTiêu hóa: Ỉa chảy.\nDa: Ban đỏ.\nBộ phận khác: Rụng tóc.\nHiếm gặp, ADR < 1/1000:\nViêm mạch, hoại tử da.\nLưu ý:\nNguy cơ xảy ra các phản ứng có hại nặng, kể cả đe dọa tính mạng, là do liều lượng không tương ứng với thời gian prothrombin (thời gian Quick). Do đó, theo dõi liên tục thời gian prothrombin là điều tuyệt đối cần thiết đối với người bệnh điều trị bằng warfarin.\nTương tác với các thuốc khác là yếu tố gây nguy cơ khác cũng phải được quan tâm cần thận.\nTrước khi bắt đầu điều trị, bao giờ cũng phải loại trừ nguy cơ chảy máu thực thể, như loét, u ở đường tiêu hóa.\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Warfarin 2 chống chỉ định trong các trường hợp sau:\nNgười bệnh không chịu hợp tác tốt (không tuân thủ các chỉ định của thầy thuốc).\nHuyết áp cao ác tính.\nRối loạn cầm máu nặng, bệnh gan nặng, xơ gan, chứng phân mỡ.\nSuy thận nặng.\nU, loét đường tiêu hóa hoặc đường niệu sinh dục (dễ làm chảy máu).\nCó chấn thương cấp hoặc mới phẫu thuật ở hệ thần kinh trung ương.\nTuy nhiên, một số người bệnh nếu cần vẫn được dùng thuốc để điều trị, nhưng phải thật thận trọng.\nThận trọng khi sử dụng\nCần rất thận trọng khi dùng thuốc cho người bệnh trong các trường hợp sau:\nMột vài yếu tố ảnh hưởng đến tác dụng của thuốc: như chế độ ăn uống, môi trường sống.\nTheo dõi chặt chẽ người bị bệnh gan, suy tim nặng, rung nhĩ, cường giáp, sốt. Người cao tuổi dễ có nguy cơ chấn thương nặng (ví dụ gãy xương đùi) và thay đổi sinh lý ở các mô dưới da và khoang khớp, có thể làm chảy máu lan tỏa không kiểm soát được.\nCác yếu tố sau có thể làm tăng tác dụng của warfarin và cần giảm liều: Những người bị sút cân, người cao tuổi, ốm nặng, suy thận, ăn thiếu vitamin K.\nCác yếu tố có thể cần phải tăng liều duy trì: Tăng cân, ỉa chảy, nôn, dùng nhiều vitamin K, chất béo và dùng một số thuốc. Cần làm các xét nghiệm cần thiết khi thay đổi dạng thuốc. Tác dụng của warfarin bị vitamin K làm đảo ngược.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa ghi nhận được một trường hợp nào ảnh hưởng đến hoạt động vận hành máy móc tàu xe khi dùng thuốc này, nếu cần thêm thông tin xin hỏi ý kiến thầy thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nThời kỳ mang thai:\nKhông dùng cho phụ nữ mang thai.\nWarfarin và các chất chống đông máu thuộc nhóm cumarin qua được hàng rào nhau thai và gây loạn dưỡng sụn xương có chấm, chảy máu và thai chết lưu. Warfarin còn làm tăng nguy cơ xuất huyết ở người mẹ trong 3 tháng giữa và 3 tháng cuối thai kỳ. Không khuyến cáo dùng các thuốc chống đông máu nhóm cumarin trong thai kỳ.\nNếu cần phải dùng thuốc chống đông máu trong khi mang thai, nên dùng heparin, vì thuốc này không qua nhau thai.\nThời kỳ cho con bú:\nWarfarin không bài tiết qua sữa mẹ nên có thể dùng cho người cho con bú.\nTương tác thuốc\nPhải rất thận trọng khi dùng các thuốc chống đông máu đường uống, phối hợp với các thuốc khác.\nThuốc làm tăng tác dụng của warfarin:\nAmiodaron, amitryptylin/nortriptylin, steroid làm đồng hóa, azapropazon, bezafibrat, cefamandol, cloral hydrat, cloramphenicol, cimetidin, clofibrat, co- trimoxazol, danazol, dextropropoxyphen, dextrothyroxin, dipyridamol, erythromycin, feprazon, glucagon, latamoxef, metronidazol, miconazol, neomycin, oxyphenbutazon, phenformin, phenylbutazon, phenyramidol, quinidin, salicylat, sulfonamid (ví dụ: Sulfaphenazol, sulfinpyrazon), tamoxifen, tolbutamid và triclofos, thuốc chống trầm cảm 3 vòng, urokinase, vitamin E, vaccin chống cúm.\nThuốc làm tăng hoặc giảm tác dụng của warfarin:\nPhenytoin, ACTH, corticoid.\nThuốc làm giảm tác dụng của warfarin:\nRượu (nghiện rượu), aminoglutethimid, barbiturat, carbamazepin, ethclorvynol, glutethimid, griseofulvin, dicloralphenazon, methaqualon, primidon, rifampicin thuốc ngừa thai loại uống chứa oestrogen, spironolacton, sucralfat, vitamin K.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

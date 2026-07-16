@@ -1,0 +1,71 @@
+{
+  "sku": "00047072",
+  "name": "Thuốc tiêm Bocartin 50 Carboplatin 50mg Bidiphar điều trị ung thư buồng trứng, ung thư phổi (1 lọ x 5ml)",
+  "short_name": "BOCARTIN 50MG BIDIPHAR 5ML",
+  "official_name": "BOCARTIN 50",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/bocartin-50-mg-bidiphar-5-ml.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00047072_75cfb85c5c.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc ung thư"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc chống ung thư"
+    }
+  ],
+  "brand": "Bidiphar",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Thuốc tiêm đông khô",
+  "registration_number": "893114092623",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Carboplatin",
+      "amount": "50mg"
+    }
+  ],
+  "ingredient_per": "",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp x 5ml"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Bocartin 50\nchỉ định điều trị trong các trường hợp sau:\nUng thư buồng trứng\n(từ giai đoạn Ic đến IV, sau phẫu thuật, tái phát, di căn sau điều trị).\nUng thư phổi (cả ung thư phổi tế bào nhỏ, cả ung thư phổi không tế bào nhỏ).\nUng thư đầu và cổ.\nU Wilms, u não, u nguyên bào thần kinh.\nUng thư tinh hoàn\n, ung thư bàng quang, u nguyên bào võng mạc tiến triển và tái phát ở trẻ em.\nDược lực học\nChưa có dữ liệu.\nDược động học\nChưa có dữ liệu.",
+  "dosage": "Cách dùng\nCarboplatin thường được truyền tĩnh mạch trong 15 phút hoặc lâu hơn. Có thể truyền liên tục trong 24 giờ, hoặc tiêm màng bụng.\nCó thể pha loãng thuốc với dung dịch Dextrose 5% hoặc NaCl 0,9% để có nồng độ 0,5 mg/ml.\nPhải thận trọng khi pha thuốc và khi thao tác với thuốc, không được để thuốc dây bẩn lên da. Thuốc bắn vào mắt có thể bị mù.\nPhải tiêm thuốc vào trong mạch máu, nếu tiêm ra ngoài mạch có thể bị hoại tử.\nLiều dùng của carboplatin phải dựa vào đáp ứng lâm sàng, sự dung nạp thuốc và độc tính, sao cho có kết quả điều trị tối ưu với tác dụng có hại ít nhất.\nLiều khởi đầu phải dựa vào diện tích bề mặt cơ thể, và phải tính toán dựa vào chức năng thận. Liều thường dùng 300-450mg/m2\nHoặc tính tổng liều theo công thức sau (công thức Chatelut):\nTổng liều (mg) = AUC đích (mg/ml/phút) x Cl carboplatin (ml/phút).\nTrong đó, tỷ lệ lọc cầu thận được tính như sau:\nĐối với nam: Cl carboplatin (ml/phút) = (0,134 x p) + 218 x P (1 – 0,00457 x T) : Cr\nĐối với nữ: Cl carboplatin (ml/phút) = (0,134 x P) + 0,686 (218 x P x (1 – 0,00457 x T)) : Cr\nTrong đó:\nP = cân nặng (kg);\nT = tuổi bệnh nhân (năm);\nCr = nồng độ creatinin huyết thanh (micromol/lít).\nAUC đích điển hình từ 5 – 7 mg/ml/phút tùy thuộc vào điều trị trước đó và các thuốc dùng phối hợp hoặc tia xạ.\nTổng liều cao có thể dùng tới 1.600 mg/m\n2\nchia liều trong vài ngày, được sử dụng trong hóa trị liệu liều cao kết hợp với truyền tế bào gốc.\nDùng liều lặp lại phải sau ít nhất 4 tuần trở lên. Chỉ dùng khi các thông số huyết học đã phục hồi ở mức chấp nhận được. Phải chuẩn bị sẵn sàng các phương tiện xử lí các tai biến có thể xảy ra.\nUng thư buồng trứng:\nUng thư buồng trứng tiến triển (giai đoạn III và IV): liều khởi đầu carboplatin cho người lớn 300 mg/m\n2\n. Liều dùng lần sau phải sau 4 tuần hoặc lâu hơn nếu độc tính trên máu phục hồi chậm và điều chỉnh liều tùy theo mức giảm huyết cầu trong lần điều trị trước. Tổng 1 đợt điều trị là 6 lần.\nUng thư buồng trứng tái phát: liều khởi đầu là 360 mg/m\n2\n, 4 tuần/1 lần.\nĐiều chỉnh liều tùy theo mức độ giảm huyết cầu của lần dùng trước:\nNếu độc tính trên máu không đáng kể (tiểu cầu trên 100.000/mm\n3\nvà bạch cầu trung tính trên 2.000/mm\n3\n) dù dùng carboplatin đơn độc hay phối hợp thì cũng nên tăng liều 25%.\nNếu độc tính trên máu ở mức nhẹ đến vừa (tiểu cầu 50.000 – 100.000/mm\n3\nvà bạch cầu trung tính 500 – 2.000/mm\n3\n) liều dùng lần sau bằng liều dùng lần trước.\nNếu độc tính trên máu ở mức vừa đến nặng (tiểu cầu dưới 50.000/mm\n3\nvà bạch cầu trung tính dưới 500/mm\n3\n) thì giảm liều lần sau đi 25%.\nNếu sau 2 lần giảm liều chỉ còn bằng 50% liều ban đầu mà các huyết cầu vẫn giảm từ vừa đến nặng thì có thể thay carboplatin bằng cisplatin vì cisplatin có độc tính trên tủy xương thấp hơn.\nLiều carboplatin dùng điều trị các ung thư khác cũng tương tự như ung thư buồng trứng.\nPhải giảm liều cho người suy thận:\nĐộ thanh thải creatinin 41 - 59 (ml/phút): Liều khởi đầu 250mg/ml.\nĐộ thanh thải creatinin 16 - 40 (ml/phút): Liều khởi đầu 200mg/ml.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Thông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Bocartin 50 chống chỉ định trong các trường hợp sau:\nSuy tủy nặng, suy thận nặng.\nPhụ nữ mang thai hoặc thời kì cho con bú.\nDị ứng nặng với thuốc có platin.\nThận trọng khi sử dụng\nCarboplatin là thuốc rất độc có chỉ số điều trị thấp. Đáp ứng điều trị thường không xảy ra nếu không có biểu hiện độc.\nĐối với người cao tuổi (> 65 tuổi) biểu hiện độc thần kinh, suy tủy, suy thận dễ xảy ra hơn người trẻ.\nThuốc được dùng dưới sự theo dõi chặt chẽ của Bác sĩ chuyên khoa ung thư.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa rõ ảnh hưởng của thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nTuân theo chỉ định từ bác sĩ. Chỉ nên dùng thuốc khi lợi ích vượt trội nguy cơ có thể xảy ra.\nTương tác thuốc\nTương tác thuốc có thể ảnh hưởng đến hoạt động của thuốc hoặc gây ra các tác dụng phụ.\nBệnh nhân nên báo cho bác sĩ hoặc dược sĩ danh sách những thuốc và các thực phẩm chức năng bạn đang sử dụng. Không nên dùng hay tăng giảm liều lượng của thuốc mà không có sự hướng dẫn của bác sĩ.\nVui lòng xem thêm các thông tin về thuốc trong tờ hướng dẫn sử dụng thuốc đính kèm sản phẩm.",
+  "storage": "Kín, dưới 30˚C, tránh ánh sáng và tiếp xúc kim loại tự do.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

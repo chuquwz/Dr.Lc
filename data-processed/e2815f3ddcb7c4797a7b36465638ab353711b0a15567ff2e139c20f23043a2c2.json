@@ -1,0 +1,83 @@
+{
+  "sku": "00038725",
+  "name": "Thuốc Azicine 500 Stella Pharm điều trị nhiễm khuẩn do vi khuẩn nhạy cảm (1 vỉ x 6 viên)",
+  "short_name": "AZICINE 500MG STELLA 1X6",
+  "official_name": "AZICINE 500",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/azicine-500-mg-stella-1-x6.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00038725_ac482210c5.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc kháng sinh, kháng nấm"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc kháng sinh"
+    }
+  ],
+  "brand": "Stella Pharm",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nén bao phim",
+  "registration_number": "893110561024",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Azithromycin",
+      "amount": "500mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 1 Vỉ x 6 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "1 Vỉ x 6 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "6 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Azicine 500 chỉ định điều trị trong các trường hợp sau:\nĐiều trị các trường hợp nhiễm khuẩn gây ra bởi vi khuẩn nhạy cảm; trong nhiễm khuẩn đường hô hấp dưới bao gồm viêm phế quản và viêm phổi, trong nhiễm khuẩn răng miệng, trong nhiễm khuẩn da và mô mềm, trong viêm tai giữa cấp tính và trong nhiễm khuẩn đường hô hấp trên bao gồm viêm xoang, viêm hầu họng/viêm amiđan.\nĐiều trị nhiễm khuẩn cơ quan sinh dục không biến chứng do Chlamydia trachomatis. Nó còn được chỉ định điều trị bệnh hạ cam (chancroid) do Haemophilus ducreyi, và nhiễm khuẩn cơ quan sinh dục không biến chứng do Neisseria gonorrhoeae không đa kháng.\nDùng đơn độc azithromycin hoặc cùng với rifabutin để dự phòng nhiễm Mycobacterium avium-intracellulare complex (MAC) hoặc phối hợp với ethambutol để điều trị nhiễm MAC lan tỏa (DMAC) ở những bệnh nhân nhiễm HIV giai đoạn tiến triển.\nDược lực học\nChưa có dữ liệu.\nDược động học\nChưa có dữ liệu.",
+  "dosage": "Cách dùng\nAzicine 500 được uống một liều duy nhất trong ngày. Có thể uống thuốc cùng hoặc không cùng với thức ăn.\nLiều dùng\nNgười lớn và trẻ em nặng trên 45 kg\nĐiều trị bệnh lây truyền qua đường tình dục gây ra bởi:\nChlamydia trachomatis, Haemophilus ducreyi: Liều duy nhất 1000 mg.\nNeisseria gonorrhoeae nhạy cảm: 1000 mg hoặc 2000 mg azithromycin + 250 hoặc 500 mg ceftriaxone\nBệnh nhân nhiễm HIV giai đoạn tiến triển:\nDự phòng MAC: 1200 mg mỗi tuần một lần.\nĐiều trị DMAC: 600 mg, 1 lần/ngày, phối hợp azithromycin với các chất chống mycobacterium khác có hoạt tính chống MAC.\nVới các chỉ định khác, tổng liều 1500 mg, chia làm 3 ngày, 500 mg/ngày hoặc chia làm 5 ngày, ngày 1: 500 mg, từ ngày 2 đến ngày 5: 250 mg/ngày.\nBệnh nhân suy thận\nSuy thận nhẹ đến trung bình (GFR 10 – 80 ml/phút): Không cần chỉnh liều.\nSuy thận nặng (GFR < 10 mL/phút): Thận trọng.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Azicine 500 thường gặp các tác dụng không mong muốn (ADR) như:\nGiảm thính lực có thể hồi phục (khi sử dụng kéo dài liều cao);\nBuồn nôn, nôn, tiêu chảy, phân lỏng, bụng khó chịu (đau/co thắt), và đầy hơi;\nChức năng gan bất thường;\nCác phản ứng dị ứng bao gồm phát ban và phù mạch;\nBệnh nấm Candida và viêm âm đạo.\nDự phòng DMAC: Tiêu chảy, đau bụng, buồn nôn, phân lỏng, đầy hơi, nôn, khó tiêu, phát ban, ngứa, đau đầu, và đau khớp.\nĐiều trị nhiễm DMAC trong thời gian dài: Đau bụng, buồn nôn, nôn, tiêu chảy, đầy hơi, đau đầu, thị lực bất thường, và suy giảm thính lực.\nHướng dẫn cách xử trí ADR:\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Azicine 500 chống chỉ định trong các trường hợp sau:\nQuá mẫn với azithromycin, erythromycin, với bất kỳ kháng sinh nào thuộc họ macrolid hay ketolid, hoặc với bất kỳ tá dược nào.\nThận trọng khi sử dụng\nThận trọng khi sử dụng cho bệnh nhân suy gan/thận nặng.\nĐã có báo cáo về:\nCác phản ứng dị ứng nghiêm trọng hiếm gặp. Nếu bị phản ứng dị ứng, ngưng thuốc ngay và điều trị phù hợp. Bác sĩ cần biết các phản ứng dị ứng có thể xuất hiện lại khi đã ngừng điều trị triệu chứng.\nChức năng gan bất thường, viêm gan, vàng da do tắc mật, hoại tử gan và suy gan, một số trường hợp này đã dẫn đến tử vong. Khi thấy có các dấu hiệu và triệu chứng viêm gan, phải ngưng azithromycin ngay lập tức.\nĐợt cấp của các triệu chứng nhược cơ.\nMắc hẹp môn vị phì đại ở trẻ sơ sinh (dùng thuốc đến 42 ngày tuổi), thông báo ngay cho bác sĩ nếu trẻ nôn hoặc cáu gắt khi cho ăn.\nTiêu chảy do Clostridium difficile (CDAD) phải được xem xét ở tất cả các bệnh nhân có biểu hiện tiêu chảy sau khi dùng kháng sinh. Mức độ nghiêm trọng của CDAD có thể từ tiêu chảy nhẹ đến viêm đại tràng gây tử vong.\nCần theo dõi dấu hiệu bội nhiễm của vi sinh vật không nhạy cảm, bao gồm cả nấm.\nKhông nên dùng phối hợp các thuốc có nguồn gốc cựa lõa mạch (ergot) với azithromycin.\nCần xem xét nguy cơ kéo dài khoảng QT có thể gây tử vong khi kê đơn cho các nhóm bệnh nhân có nguy cơ cao:\nBệnh nhân bị kéo dài khoảng QT bẩm sinh hoặc có tiền sử mắc phải.\nBệnh nhân đang điều trị bằng thuốc chống loạn nhịp nhóm IA và nhóm III; chất chống loạn thần; thuốc điều trị trầm cảm; và fluoroquinolone.\nBệnh nhân bị rối loạn điện giải, đặc biệt giảm kali và magnesi máu.\nBệnh nhân bị chậm nhịp tim, loạn nhịp hoặc suy tim trên lâm sàng.\nBệnh nhân cao tuổi.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nCần chú ý tới đáp ứng của cơ thể với thuốc trước khi lái xe hay vận hành máy móc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nChỉ nên dùng azithromycin trong thời kỳ mang thai nếu thật sự cần thiết. Cần thận trọng khi cho phụ nữ cho con bú dùng azithromycin.\nTương tác thuốc\nTương tác thuốc có thể ảnh hưởng đến hoạt động của thuốc hoặc gây ra các tác dụng phụ.\nBệnh nhân nên báo cho bác sĩ hoặc dược sĩ danh sách những thuốc và các thực phẩm chức năng bạn đang sử dụng. Không nên dùng hay tăng giảm liều lượng của thuốc mà không có sự hướng dẫn của bác sĩ.\nVui lòng xem thêm các thông tin về thuốc trong tờ hướng dẫn sử dụng thuốc đính kèm sản phẩm.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Thuốc Azicine 500 chứa thành phần gì?",
+      "answer": "Thuốc Azicine 500 chứa thành phần Azithromycin (dưới dạng azithromycin dihydrate)."
+    },
+    {
+      "question": "Thuốc Azicine 500 dùng trong trường hợp nào?",
+      "answer": "Thuốc Azicine 500 điều trị các trường hợp nhiễm khuẩn gây ra bởi vi khuẩn nhạy cảm; trong nhiễm khuẩn đường hô hấp dưới bao gồm viêm phế quản và viêm phổi, trong nhiễm khuẩn răng miệng, trong nhiễm khuẩn da và mô mềm, trong viêm tai giữa cấp tính và trong nhiễm khuẩn đường hô hấp trên bao gồm viêm xoang, viêm hầu họng/viêm amiđan. Điều trị nhiễm khuẩn cơ quan sinh dục không biến chứng do Chlamydia trachomatis."
+    },
+    {
+      "question": "Thuốc Azicine 500 nên uống trước hay sau bữa ăn?",
+      "answer": "Thuốc Azicine 500 có thể uống thuốc cùng hoặc không cùng với thức ăn, nên uống thuốc sau bữa ăn."
+    },
+    {
+      "question": "Thuốc Azicine 500 có dùng được cho trẻ em hay không?",
+      "answer": "Thuốc Azicine 500 khuyến cáo liều dùng cho trẻ em nặng trên 45 kg. Trẻ em chỉ sử dụng khi có chỉ định của bác sĩ."
+    },
+    {
+      "question": "Trường hợp nào nên tránh dùng thuốc Azicine 500?",
+      "answer": "Bệnh nhân quá mẫn với azithromycin, erythromycin, với bất kỳ kháng sinh nào thuộc họ macrolid hay ketolid nên tránh dùng thuốc Azicine 500."
+    }
+  ]
+}

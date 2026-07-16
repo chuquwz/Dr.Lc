@@ -1,0 +1,71 @@
+{
+  "sku": "00502946",
+  "name": "Thuốc Immulimus 0.03% Medisun điều trị cách quãng eczema dị ứng thể vừa hoặc thể nặng (10g)",
+  "short_name": "IMMULIMUS 0.03% MEDISUN 10G",
+  "official_name": "IMMULIMUS 0.03%",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/immulimus-003-medisun-10g-37242.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00502946_f5d2a53e24.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc da liễu"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc bôi ngoài da"
+    }
+  ],
+  "brand": "Medisun",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Thuốc mỡ",
+  "registration_number": "893110064524",
+  "expiration_date": "03 năm",
+  "ingredients": [
+    {
+      "name": "Tacrolimus",
+      "amount": "0.003g"
+    }
+  ],
+  "ingredient_per": "10g",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp x 10g"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Immulimus 0.03% chỉ định điều trị trong các trường hợp sau:\nĐiều trị ngắn hạn hoặc điều trị cách quãng eczema dị ứng thể vừa hoặc thể nặng ở những người bệnh không có nguy cơ tiềm tàng về miễn dịch không đáp ứng với các điều trị thông thường, hoặc khi các phương pháp điều trị này không thích hợp.\nThuốc mỡ 0,03% để điều trị cho trẻ em từ 2 - 15 tuổi.\nDược lực học\nNhóm dược lý: Thuốc ức chế miễn dịch\nMã ATC: D11AH01\nTacrolimus là một macrolid (macrolactam) chiết xuất từ Streptomyces tsukubaensis, có tác dụng ức chế mạnh miễn dịch giống như cyclosporin về mặt dược lý nhưng không liên quan đến cấu trúc; thuốc cũng có hoạt tính kháng khuẩn nhưng rất hạn chế. Cơ chế chính xác tác dụng ức chế miễn dịch của tacrolimus chưa được biết rõ.\nTacrolimus có tác dụng ức chế tế bào lympho T thông qua ức chế sự sản sinh interleukin-2. Tacrolimus ức chế miễn dịch mạnh gấp 100 lần so với cyclosporin cùng liều lượng. Đã chứng minh rằng tacrolimus ức chế sự hoạt hóa các tế bào lympho T bằng cách gắn kết với một protein nội bào là FKBP-12. Phức hợp tacrolimus - FKBP-12, ion calci, calmodulin và calcineurin được tạo thành và ức chế hoạt tính phosphatase của calcineurin và do đó có khả năng ngăn chặn sự khử phosphoryl hóa và chuyển đoạn yếu tố nhân tế bào của tế bào T (NF-AT) được hoạt hóa, một thành phần của nhân tế bào thông qua sự khởi động quá trình phiên mã để tạo thành các lymphokin (ví dụ interleukin-2, gamma interferon). Tacrolimus cũng ức chế quá trình phiên mã các gen có ký hiệu IL-3, IL-4, IL-5, GM-CSF và TNF-a, tất cả các gen này đều tham gia vào quá trình hoạt hóa ở giai đoạn ban đầu các tế bào T. Thêm nữa, người ta cũng đã chứng minh rằng tacrolimus có khả năng ức chế sự giải phóng các chất trung gian đã được tạo thành trước từ các dưỡng bào của da, các bạch cầu ái kiềm và làm giảm biểu hiện của các thụ thể có ái lực cao đối với IgE trên các tế bào Langerhans. Tuy tacrolimus không gây độc cho gen và không tương tác trực tiếp với DNA, thuốc có thể gây tổn hại đến giám sát miễn dịch tại chỗ. Tacrolimus được sử dụng để phòng ngừa thải tổ chức ghép trong ghép thận, tim, gan khác gen cùng loài. Cần sử dụng phối hợp với corticosteroid.\nTacrolimus cũng được sử dụng để điều trị bệnh Crohn có lỗ dò và điều trị eczema dị ứng.\nDược động học\nHấp thu\nNồng độ trong huyết tương dao động từ mức không phát hiện đến dưới 20 nanogam/ml (ở người lớn, đa số dưới 5 nanogam/ml). Nhưng ở trẻ nhỏ bôi tại chỗ thuốc mỡ 0,1% một lần duy nhất để điều trị eczema mạn tính, nồng độ thuốc trong huyết thanh tăng cao (24 nanogam/ml). Sinh khả dụng dưới 0,5%.\nChuyển hóa\nTacrolimus chuyển hóa rất mạnh ở gan và đường tiêu hóa qua hệ thống enzyme oxidase, trước hết là hệ thống cytochrom P450 (CYP3A4) tạo thành 8 chất chuyển hóa (chất chuyển hóa chủ yếu là 31-demethyl tacrolimus, có tác dụng giống tacrolimus in vitro).\nThải trừ\nDưới 1% liều dùng được thải trừ nguyên vẹn qua nước tiểu. Đường thải trừ chủ yếu là vào mật dưới dạng hydroxyl hóa. Nửa đời thải trừ từ 21 - 61 giờ trên người tình nguyện khỏe mạnh.",
+  "dosage": "Cách dùng\nThuốc Immulimus 0.03% dùng bôi ngoài da.\nLiều dùng\nDùng thuốc mỡ 0,03% cho trẻ em từ 2 - 15 tuổi, bôi 2 lần/ngày.\nNếu có thể cố gắng sử dụng thuốc mỡ có hàm lượng thấp hơn hoặc giảm tần suất sử dụng. Cần tiếp tục điều trị cho đến khi hết các dấu hiệu hoặc triệu chứng bệnh.\nNếu không thấy triệu chứng cải thiện sau 2 tuần điều trị (ở Mỹ cho phép sau 6 tuần điều trị), cần phải khám lại để xác định chẩn đoán.\nThuốc mỡ 0,03%, bôi 2 - 3 lần/tuần có hiệu quả ngăn chặn eczema nặng ở trẻ em đến 12 tháng tuổi.\nKhông nên kéo dài thời gian điều trị tacrolimus tại chỗ do nguy cơ gây\nung thư\n.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nKhông có báo cáo về các phản ứng phụ liên quan đến việc sử dụng thuốc mỡ tacrolimus quá liều.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Immulimus 0.03% thường gặp các tác dụng không mong muốn (ADR) như:\nKích ứng tại chỗ, ngứa, cảm giác rát bỏng.\nTrứng cá, hay bị\nHerpes simplex\nvà Zona, viêm nang lông.\nViêm hạch bạch mạch.\nNhức đầu, bừng đỏ mặt, cần tránh ra nắng nhiều.\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Immulimus 0.03% chống chỉ định trong các trường hợp sau:\nQuá mẫn với bất cứ thành phần nào của thuốc.\nPhụ nữ cho con bú, trẻ em dưới 2 tuổi.\nThận trọng khi sử dụng\nBệnh nhân bị chàm thể tạng thường dễ bị mắc các bệnh nhiễm trùng da. Nếu có sự hiện diện của một nhiễm trùng da trên lâm sàng, nên cân nhắc nguy cơ và lợi ích của việc sử dụng\nthuốc mỡ tacrolimus\n.\nMặc dù chưa thiết lập được mối quan hệ nhân quả, một số hiếm các trường hợp có thể gặp bệnh lý ác tính bao gồm các bệnh lý ác tính của da và bạch huyết đã được báo cáo ở bệnh nhân dùng thuốc mỡ tacrolimus. Trong thời gian sử dụng thuốc mỡ tacrolimus, nên hạn chế sự tiếp xúc của da với ánh sáng tự nhiên hoặc ánh sáng nhân tạo.\nKhông nên sử dụng thuốc mỡ tacrolimus cho vùng da bị tổn thương vì nơi đó có khả năng làm tăng hấp thu tacrolimus vào hệ thống. Ví dụ: hội chứng Netherton, bệnh vảy cá, chứng đỏ da toàn thân hoặc bệnh thải ghép da (Graft Versus Host). Không dùng bôi ở vùng miệng. Đã có báo cáo về sự gia tăng nồng độ thuốc trong máu sau khi dùng thuốc mỡ tacrolimus cho những trường hợp nêu trên.\nNếu không có dấu hiệu, các triệu chứng của chàm thể tạng không được cải thiện, nên cân nhắc các phác đồ điều trị tiếp tục. Chưa thiết lập độ an toàn và hiệu quả của thuốc mỡ tacrolimus dùng tại chỗ ở trẻ em dưới 2 tuổi.\nTránh để thuốc mỡ tacrolimus tiếp xúc với mắt và niêm mạc. Nếu thuốc dính vào mắt và niêm mạc, cần lau và rửa sạch với nước. Không cho uống tacrolimus để điều trị bệnh về da.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nKhông ảnh hưởng lên khả năng lái xe và vận hành máy móc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nSử dụng thuốc ở phụ nữ có thai:\nTacrolimus có thể đi vào nhau thai và đạt nồng độ trong nhau thai cao gấp 4 lần nồng độ trong huyết tương. Đã có báo cáo về kali huyết cao và suy thận ở trẻ sơ sinh. Cần cân nhắc khi sử dụng thuốc.\nSử dụng thuốc ở phụ nữ cho con bú:\nTacrolimus có thể vào sữa mẹ. Chống chỉ định cho con bú khi sử dụng tacrolimus.\nTương tác thuốc\nCác thuốc ảnh hưởng đến các enzym tiểu thể của gan\nDo tacrolimus chủ yếu được chuyển hóa bằng isoenzym CYP3A4 của cytochrom P450, nên sử dụng đồng thời tacrolimus với các thuốc nêu trên đòi hỏi phải giám sát nồng độ của tacrolimus trong máu toàn phần nhằm điều chỉnh liều dùng tacrolimus cho phù hợp. Các thuốc sau đây đã được báo cáo có thể làm tăng hoặc giảm nồng độ tacrolimus trong máu:\nCác thuốc có thể làm tăng nồng độ tacrolimus trong máu\nNhôm hydroxyd-magnesi hydroxyd; bromocriptin; cloramphenicol; cimetidin; cisaprid; clarithromycin; lotrimazol; itraconazol; ketoconazol; lanzoprazol; methylprednisolon; metoclopramid; nefazodon; nicardipin; nifedipin; omeprazol; troleandomycin; verapamil; voriconazol; các chất ức chế enzym protease của HIV.\nCác thuốc có thể làm giảm nồng độ tacrolimus trong máu\nCarbamazepin; caspofungin; phenobarbital; phenytoin; rifabutin; rifampin; sirolimus; cây nữ lang (cỏ St. John's: Hypericum perforatum).\nCần sử dụng tacrolimus một cách thận trọng trên những người có dùng các thuốc kháng retrovirus có thể chuyển hóa bởi enzym CYP3A (ví dụ: Nelfinavir, ritonavir).\nCác thuốc được chuyển hóa bởi các enzym tiểu thể của gan: Sử dụng đồng thời tacrolimus với phenytoin có thể làm tăng nồng độ phenytoin trong huyết tương. Các thuốc ức chế miễn dịch: Rất thận trọng khi sử dụng liệu pháp ức chế miễn dịch kết hợp. Khuyến cáo không được kết hợp sử dụng tacrolimus và sirolimus.\nCác thuốc độc với thận (như kháng sinh aminoglycosid, amphotericin B, cisplatin, ganciclovir, cyclosporin): Do khả năng cộng lực làm suy yếu chức năng thận, cần thận trọng khi phối hợp.\nCác thuốc lợi tiểu giữ kali. Có thể làm tăng kali huyết nghiêm trọng, vì vậy cần phải tránh phối hợp.\nCác vắc xin: Cần lưu ý đến khả năng hệ thống miễn dịch của cơ thể người bệnh sử dụng tacrolimus giảm đáp ứng với tiêm chủng vắc xin. Khuyến cáo cần tránh tiêm chủng vắc xin sống như\nvắc xin sởi, quai bị, rubella\n, vắc xin polio uống, BCG, sốt vàng, thương hàn TY21a.\nIbuprofen khi phối hợp với tacrolimus đã gây suy thận ở 2 người ghép gan.\nMetronidazol có thể tăng gấp 2 lần nồng độ trong máu của cyclosporin và tacrolimus nên làm tăng nồng độ creatinin huyết trong cả 2 trường hợp.",
+  "storage": "Nơi khô thoáng, nhiệt độ dưới 30°C, tránh ánh sáng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

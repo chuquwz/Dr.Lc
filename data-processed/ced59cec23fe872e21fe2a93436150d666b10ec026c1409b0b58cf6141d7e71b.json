@@ -1,0 +1,87 @@
+{
+  "sku": "00050105",
+  "name": "Thuốc Kaclocide Khapharco ngừa hình thành cục máu đông (10 vỉ 10 viên)",
+  "short_name": "KACLOCIDE KHAPHARCO 10X10",
+  "official_name": "KACLOCIDE",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/kaclocide-khapharco-10-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/DSC_03061_48dcbfafbc.png",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc tim mạch & máu"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc chống đông máu"
+    }
+  ],
+  "brand": "Khapharco",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nén bao phim",
+  "registration_number": "893110272724",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Clopidogrel",
+      "amount": "75mg"
+    },
+    {
+      "name": "Aspirin",
+      "amount": "75mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc\nKaclocide\nđược chỉ định dùng trong các trường hợp sau:\nPhòng ngừa thứ phát do\nxơ vữa động mạch\nở bệnh nhân người lớn đã dùng cả clopidogrel và aspirin riêng lẻ. Đây là sản phẩm kết hợp cố định để tiếp tục điều trị trong:\nHội chứng mạch vành cấp không có ST chênh lên (đau thắt ngực không ổn định hay nhồi máu cơ tim không có sóng Q) bao gồm bệnh nhân đã đặt stent mạch vành.\nNhồi máu cơ tim cấp với ST chênh lên\nở bệnh nhân đã điều trị huyết khối tim mạch.\nDược lực học\nChưa có dữ liệu.\nDược động học\nChưa có dữ liệu.",
+  "dosage": "Cách dùng\nThuốc kê đơn, dùng theo chỉ định của thầy thuốc, dùng đường uống.\nLiều dùng\nNên uống 1 viên/ngày.\nHội chứng mạch vành cấp không có ST chênh lên (đau thắt ngực không ổn định hay nhồi máu cơ tim không có sóng Q) bao gồm bệnh nhân đã đặt stent mạch vành thời gian điều trị tối ưu chưa được thiết lập.\nDữ liệu nghiên cứu lâm sàng trong 12 tháng cho thấy, thuốc có tác dụng tối ưu nhất trong 3 tháng.\nNhồi máu cơ tim cấp với ST chênh lên ở bệnh nhân đã điều trị huyết khối tim mạch: việc điều trị nên bắt đầu càng sớm càng tốt sau khi có triệu chứng và tiếp tục trong ít nhất 4 tuần. Lợi ích của việc dùng phối hợp này sau hơn 4 tuần chưa được thiết lập.\nTrẻ em:\nAn toàn và hiệu quả của thuốc chưa được thiết lập trên đối tượng trẻ em và thanh thiếu niên dưới 18 tuổi. Do đó, không khuyên dùng cho đối tượng này.\nSuy thận:\nKhông nên dùng thuốc cho bệnh nhân suy thận nặng. Kinh nghiệm điều trị trên bệnh nhân suy thận nhẹ đến trung bình còn giới hạn. Do đó, nên thận trọng khi dùng cho đối tượng này.\nSuy gan:\nKhông nên dùng thuốc cho bệnh nhân suy gan nặng. Kinh nghiệm điều trị còn giới hạn trên bệnh nhân\nsuy gan\nvừa có thể có thể trạng xuất huyết.\nDo đó, nên thận trọng khi dùng cho đối tượng này.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nTrường hợp quên liều. Nếu bệnh nhân quên một liều trong vòng ít hơn 12 giờ sau giờ uống thuốc thường lệ, hãy uống ngay một viên và uống viên kế tiếp vào giờ thường lệ. Nếu bệnh nhân quên một liều sau hơn 12 giờ, chỉ cần uống liều kế tiếp vào giờ thường lệ. Không tăng gấp đôi liều thuốc để bù vào liều quên uống.",
+  "side_effects": "Thông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Kaclocide chống chỉ định trong các trường hợp sau:\nQuá mẫn với clopidogrel, aspirin hay bất kỳ thành phần nào của thuốc\nSuy gan nặng.\nChảy máu bệnh lý như loét dạ dày tá tràng hay xuất huyết nội sọ.\nThuốc có sự hiện diện của aspirin nên phải chống chỉ định với các trường hợp:\nQuá mẫn với\nthuốc kháng viêm không steroid\n(NSAIDs), hen suyễn, viêm mũi, bệnh polyp mũi.\nBệnh nhân có các bệnh dưỡng bào trước đó, trong đó việc sử dụng aspirin có thể gây phản ứng quá mẫn (bao gồm sốc tuần hoàn kèm theo đỏ bừng mặt, hạ huyết áp, nhịp tim nhanh và nôn mửa).\nSuy thận nặng (độ thanh thải creatinin < 30 ml/phút)\nPhụ nữ có thai ở 3 tháng cuối thai kỳ.\nThận trọng khi sử dụng\nVui lòng xem thêm các thông tin về thuốc trong tờ hướng dẫn sử dụng thuốc đính kèm sản phẩm.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa rõ ảnh hưởng của thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nTuân theo chỉ định từ bác sĩ. Chỉ nên dùng thuốc khi lợi ích vượt trội nguy cơ có thể xảy ra.\nTương tác thuốc\nTương tác thuốc có thể ảnh hưởng đến hoạt động của thuốc hoặc gây ra các tác dụng phụ.\nBệnh nhân nên báo cho bác sĩ hoặc dược sĩ danh sách những thuốc và các thực phẩm chức năng bạn đang sử dụng. Không nên dùng hay tăng giảm liều lượng của thuốc mà không có sự hướng dẫn của bác sĩ.\nVui lòng xem thêm các thông tin về thuốc trong tờ hướng dẫn sử dụng thuốc đính kèm sản phẩm.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

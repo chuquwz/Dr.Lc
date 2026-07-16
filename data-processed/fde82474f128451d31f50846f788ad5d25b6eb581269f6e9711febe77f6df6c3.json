@@ -1,0 +1,85 @@
+{
+  "sku": "00041418",
+  "name": "Thuốc Oxacillin IMP 500mg Imexpharm điều trị nhiễm khuẩn (3 vỉ x 10 viên)",
+  "short_name": "OXACILLIN 500MG IMEXPHARM 3x10",
+  "official_name": "OXACILLIN IMP 500 MG",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/oxacillin-500-mg-500-mg-imexpharm-3-x10.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/oxacillin_d791810f1c.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc kháng sinh, kháng nấm"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc kháng sinh"
+    }
+  ],
+  "brand": "Imexpharm",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nang cứng",
+  "registration_number": "893110437724",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Oxacillin",
+      "amount": "500mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 3 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "3 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Oxacillin IMP được chỉ định dùng trong các trường hợp sau:\nOxacilin được dùng trong điều trị các nhiễm khuẩn do tụ cầu đã kháng benzyl penicilin. Tuy nhiên, chỉ dùng trong những trường hợp xác định vi khuẩn sinh penicilinase còn nhạy cảm với thuốc.\nThuốc được chỉ định điều trị các trường hợp nhiễm khuẩn như viêm xương - tủy, viêm màng trong tim, nhiễm khuẩn huyết, viêm màng não do nhiễm khuẩn; các nhiễm khuẩn liên quan tới đặt ống thông nội mạch.\nOxacilin có hiệu quả trong điều trị các nhiễm khuẩn ở đường hô hấp trên và dưới, viêm da và cấu trúc da, các vết bỏng nhiễm khuẩn, viêm xương khớp, viêm đường tiết niệu.\nKhông được dùng oxacilin để điều trị nhiễm khuẩn do các tụ cầu kháng methicilin.\nDược lực học\nNhóm dược lý: Kháng sinh nhóm penicilin kháng penicilinase.\nMă ATC: J01CF04.\nCơ chế hoạt động:\nOxacilin là kháng sinh penicilin bán tổng hợp, thuộc nhóm các penicilin không bị mất hoạt tính bởi penicilinase. Giống như các kháng sinh beta-lactam khác, oxacilin có tác dụng diệt khuẩn theo cơ chế ức chế tổng hợp vách tế bào vi khuẩn.\nPhổ kháng khuẩn:\nCầu khuẩn Gram dương hiếu khí, trực khuẩn Gram dương và một số cầu khuẩn Gram âm hiếu khí. In vitro, oxacilin có tác dụng trên các chủng Staphylococcus aureus và S. epidermidis tiết và không tiết penicilinase, S. pyogenes (Streptococcus beta tan máu nhóm A), S. agalactiae (Streptococcus nhóm B), Streptococcus nhóm C và G, S. pneumoniae và một số Streptococcus viridans.\nĐề kháng thuốc:\nThuốc không có tác dụng đối với trực khuẩn Gram âm, vi khuẩn kỵ khí, các mycobacteria, Mycoplasma, Rickettsia, nấm, virus, các Enterococcus (bao gồm cả E. faecalis). Đến nay, đã xuất hiện nhiều chủng Staphylococcus kháng oxacilin.\nDược động học\nOxacilin được hấp thu nhanh nhưng không hoàn toàn (33%) qua đường tiêu hóa. Thức ăn làm giảm tốc độ và mức độ hấp thu của thuốc. Với mức liều 500 mg, nồng độ tối đa trong huyết tương đạt khoảng 3 - 4 microgam/ml trong vòng 0,5 - 2 giờ sau khi uống. Oxacilin chuyển hóa một phần trong cơ thể tạo thành các chất chuyển hóa có và không có tác dụng. Thuốc liên kết cao với protein huyết tương (khoảng 90%). Oxacilin phân bố rộng rãi trong cơ thể, tìm thấy trong cả nước ối, bào thai và sữa mẹ. Oxacilin bài tiết nhanh qua nước tiểu dưới dạng không đổi và chất chuyển hóa có tác dụng, chủ yếu qua ống thận và lọc ở tiểu cầu thận. Thời gian bán thải huyết thanh khoảng 0,3 - 0,8 giờ ở người bệnh có chức năng thận bình thường và kéo dài hơn ở người thiểu năng thận.",
+  "dosage": "Cách dùng\nOxacillin IMP dùng đường uống.\nUống nguyên viên thuốc với một ít nước.\nDo thức ăn ảnh hưởng đến hấp thu oxacilin qua đường tiêu hóa, nên uống thuốc ít nhất 1 giờ trước hoặc 2 giờ sau bữa ăn.\nKhông nên dùng dạng thuốc uống khi bắt đầu điều trị các nhiễm khuẩn nặng hoặc điều trị cho người có chứng buồn nôn, nôn, giãn dạ dày, không giãn được tâm vị (gây phình to thực quản) hoặc tăng nhu động ruột.\nLiều dùng\nNgười lớn:\nLiều thường dùng:\nUống 500 mg - 1 g (2 - 4 viên Oxacillin IMP 250 mg hoặc 1 - 2 viên Oxacillin IMP 500 mg)/lần, cách 4 - 6 giờ/lần. Tối đa 6 g (24 viên Oxacillin IMP 250 mg hoặc 12 viên Oxacillin IMP 500 mg)/ngày.\nTrẻ sinh non và sơ sinh: Dùng dạng bào chế khác phù hợp hơn.\nTrẻ em cân nặng dưới 40 kg: Uống 12,5 - 25 mg/kg thể trọng/lần, 6 giờ/lần.\nTrẻ em cân nặng 40 kg trở lên: Dùng như liều người lớn.\nHoặc liều được tính theo dạng bào chế:\nLiều tính theo dạng bào chế\nCân nặng\nOxacillin IMP 250 mg\nOxacillin IMP 500 mg\n< 10 kg\nKhông thích hợp\nKhông thích hợp\n10 kg - < 20 kg\n1 viên/lần, 6 giờ/lần\nKhông thích hợp\n20 kg - < 30 kg\n1 - 2 viên/lần, 6 giờ/lần\n1 viên/lần, 6 giờ/lần\n30 kg - < 40 kg\n2 - 3 viên/lần, 6 giờ/lần\n1 viên/lần, 6 giờ/lần\n≥ 40 kg\nNhư liều người lớn\nNhư liều người lớn\nBệnh nhân suy thận: Nếu Cl\ncr\n< 10 ml/phút, dùng mức thấp của liều thường dùng.\nThời gian điều trị: Thời gian điều trị bằng oxacilin phụ thuộc vào loại và mức độ nặng nhẹ của nhiễm khuẩn và được xác định tùy theo đáp ứng điều trị lâm sàng và xét nghiệm vi khuẩn.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTriệu chứng và dấu hiệu quá liều:\nChưa có dấu hiệu về sử dụng thuốc quá liều, không dùng quá liều chỉ định của thuốc.\nCách xử trí ngộ độc:\nTích cực theo dõi để có biện pháp xử trí kịp thời.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Oxacillin IMP, bạn có thể gặp các tác dụng không mong muốn (ADR) như:\nTác dụng không mong muốn của oxacilin giống như của những penicilin kháng penicilinase khác.\nSau khi uống, phản ứng ở đường tiêu hóa gặp nhiều hơn.\nThường gặp (ADR >1/100):\nTiêu hóa: Buồn nôn, tiêu chảy.\nDa: Ngoại ban.\nÍt gặp (1/1000 < ADR < 1/100):\nMáu: Tăng bạch cầu ưa eosin, giảm bạch cầu, giảm tiểu cầu.\nDa: Mày đay.\nGan: Tăng enzym gan.\nHiếm gặp (ADR <1/1000):\nDị ứng: Phản ứng phản vệ.\nTiêu hóa: Viêm đại tràng giả mạc.\nGan: Vàng da ứ mật.\nMáu: Mất bạch cầu hạt.\nThận: Viêm thận kẽ và tổn thương ống kẽ thận (phục hồi khi ngừng thuốc kịp thời).\nHướng dẫn cách xử trí ADR:\nPhải định kỳ đánh giá chức năng thận, gan và máu trong khi điều trị dài ngày bằng oxacilin. Vì các ADR về máu đã xảy ra trong khi điều trị bằng các penicilin kháng penicilinase, nên phải xét nghiệm số lượng và công thức bạch cầu trước khi bắt đầu điều trị và mỗi tuần 1 - 3 lần trong khi điều trị.\nNgoài ra, phải làm xét nghiệm nước tiểu, định kỳ định lượng nồng độ creatinin, AST (GOT) và ALT (GPT) trong huyết thanh trước và trong điều trị.\nNếu thấy có tăng bạch cầu ưa eosin, mày đay hoặc tăng creatinin huyết thanh không có nguyên nhân trong khi điều trị bằng oxacilin, phải dùng liệu pháp chống nhiễm khuẩn khác thay thế.\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Oxacillin IMP chống chỉ định trong các trường hợp sau:\nPhản ứng phản vệ trong lần điều trị trước với bất cứ một penicilin hoặc cephalosporin nào.\nQuá mẫn với hoạt chất hoặc bất kỳ thành phần nào của thuốc.\nThận trọng khi sử dụng\nOxacilin có thể gây dị ứng như penicilin do đó phải tuân thủ những thận trọng thống thường của liệu pháp penicilin. Trước khi bắt đầu điều trị với oxacilin, cần điều tra kỹ về những phản ứng dị ứng trước đây, đặc biệt phản ứng quá mẫn với penicilin, cephalosporin hoặc thuốc khác.\nThuốc có thể ảnh hưởng tới chức năng gan, thận và máu, cần kiểm tra chức năng gan, thận, công thức máu trước và định kỳ trong quá trình điều trị.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa có bằng chứng về ảnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nThời kỳ mang thai:\nĐã xác định oxacilin qua nhau thai. Sự an toàn khi dùng oxacilin cho bà mẹ mang thai chưa được khẳng định nên chỉ sử dụng khi thật cần thiết.\nThời kỳ cho con bú:\nThuốc có phân bố trong sữa, chưa rõ có gây hại cho trẻ hay không. Cân nhắc khi dùng thuốc cho phụ nữ đang cho con bú hoặc không nên cho con bú khi dùng thuốc.\nTương tác thuốc\nDùng đồng thời với các kháng sinh kìm khuẩn như tetracyclin làm giảm tác dụng của oxacilin.\nProbenecid làm tăng nồng độ oxacilin trong huyết thanh, có thể do probenecid làm giảm bài tiết thuốc qua lọc ở ống thận.\nCác penicilin có thể làm chậm thải trừ methotrexat ra khỏi cơ thể.\nTương kỵ của thuốc:\nHỗn hợp các kháng sinh nhóm beta-lactam với các aminoglycosid làm mất tác dụng của các beta-lactam, giảm nồng độ aminoglycosid trong huyết thanh. Do vậy, không dùng đồng thời oxacilin với các kháng sinh nhóm aminoglycosid. Nếu phải phối hợp trong điều trị, không nên dùng cùng thời điểm.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [
+    "Suy gan thận"
+  ],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

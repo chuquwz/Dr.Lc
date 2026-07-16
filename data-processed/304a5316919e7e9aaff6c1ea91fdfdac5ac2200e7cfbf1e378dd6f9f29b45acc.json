@@ -1,0 +1,83 @@
+{
+  "sku": "00039701",
+  "name": "Thuốc Kamoxazol KH điều trị nhiễm khuẩn đường tiết niệu, tuyến tiền liệt; nhiễm khuẩn đường hô hấp (10 vỉ x 10 viên)",
+  "short_name": "KAMOXAZOL KHAPHARCO PHARM 10X10",
+  "official_name": "KAMOXAZOL",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/kamoxazol-khapharco-pharm-10-x10-1.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/00039701_53033127a5.jpg",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc kháng sinh, kháng nấm"
+    }
+  ],
+  "brand": "Khánh Hòa",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "viên nén dài bao phim",
+  "registration_number": "VD-17470-12 ",
+  "expiration_date": "36 tháng",
+  "ingredients": [
+    {
+      "name": "Sulfamethoxazole",
+      "amount": "800mg"
+    },
+    {
+      "name": "Trimethoprim",
+      "amount": "160mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Kamoxazol được chỉ định dùng trong các trường hợp sau:\nNhiễm khuẩn đường tiết niệu, tuyến tiền liệt.\nNhiễm khuẩn đường hô hấp, viêm phế quản cấp và mạn tính.\nViêm phổi cấp ở trẻ em, viêm tai giữa ở trẻ em.\nNhiễm khuẩn đường tiêu hoá, nhiễm khuẩn do pneumocystis cardini.\nDược lực học\nTác dụng:\nKamoxazol là thuốc kháng khuẩn, hỗn hợp sulfamethoxazol và trimethoprim với tỷ lệ 5/1.\nCơ chế chính:\nSulfamethoxazol là 1 sulfonamid, ức chế cạnh trạnh sự tổng hợp acid folic của vi khuẩn.\nTrimethoprim là dẫn chất của pyrimidin, ức chế đặc hiệu enzym dihydrofolat reductase của vi khuẩn.\nSự phối hợp trimethoprim và sulfamethoxazol sẽ ức chế 2 giai đoạn liên tiếp của sự chuyển hoá acid folic, do đó ức chế có hiệu quả sự tổng hợp purin, thymin và cuối cùng DNA của vi khuẩn, sự ức chế nối tiếp này có tác dụng diệt khuẩn. Cơ chế hiệp đồng này cũng chống lại sự phát triển vi khuẩn kháng thuốc và làm cho thuốc có tác dụng ngay cả vi khuẩn kháng lại từng thành phần của thuốc.\nCác vi sinh vật sau đây thường nhạy cảm với thuốc: E.coli, Klebsiella sp., Enterobacter sp., Morganella morganii, Proteus mirabilis, Proteus indol dương tính, bao gồm cả P.vulgaris, H.influenzae (bao gồm các chủng kháng ampicillin). S.pneumoniae, Shigella flexneri và Shigella sonnel, Pneumocystis carini. Ngoài ra thuốc còn có vài tác dụng đối với Plasmodium falciparum và Toxoplasma gondii.\nCác vi sinh vật thường kháng thuốc: Enterococcus, Pseudomonas, Campylobacter, vi khuẩn kỵ khí, não mô cầu, lậu cầu, Mycoplasma.\nDược động học\nSau khi uống cả trimethoprim và sulfamethoxazol được hấp thu nhanh và có sinh khả dụng cao.\nSau khi uống 2 giờ với liều 800 mg sulfamethoxazol và 160 mg trimethoprim, nồng độ huyết thanh trung bình của trimethoprim là 2,5 mg/lít và của sulfamethoxazol là 100 mg/lít sau 2 - 3 ngày điều trị với 2 liều mỗi ngày. Nửa đời của trimethoprim là 9 – 10 giờ, của sulfamethoxazol là 11 giờ. Vì vậy cho thuốc cách nhau 12 giờ là thích hợp. Tỷ lệ 1:5 giữa trimethoprim và sulfamethoxazol thích hợp nhất cho viên nén. Tuy nhiên trong huyết thanh, tỷ lệ này là 1:20 do trimethoprim khuếch tán tốt hơn ra ngoài mạch máu, đi vào trong các mô. Trimethoprim đi vào trong các mô và các dịch tiết tốt hơn sulfamethoxazol. Nồng độ thuốc trong nước tiểu cao hơn 150 lần nồng độ thuốc trong huyết thanh.",
+  "dosage": "Cách dùng\nThuốc dạng viên dùng đường uống, uống thuốc trong bữa ăn. Uống trọn viên thuốc với một ly nước.\nLiều dùng\nLiều thông thường cho người lớn:\nNhiễm khuẩn đường tiết niệu: 1 viên x 2 lần/ngày, cách nhau 12 giờ, trong 10 ngày.\nNhiễm khuẩn đường hô hấp: 1 - 1,5 viên x 2 lần/ngày, trong 10 ngày.\nNhiễm khuẩn đường tiêu hoá do lỵ trực khuẩn: 1 viên x 2 lần/ngày, cách nhau 12 giờ, trong 5 ngày.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTriệu chứng\nChán ăn, buồn nôn, nôn, đau đầu, bất tỉnh. Loạn tạo máu và vàng da là biểu hiện muộn của dùng quá liều. Ức chế tuỷ.\nXử trí\nGây nôn, rửa dạ dày. Nếu có dấu hiệu ức chế tuỷ, người bệnh cần dùng acid folinic 5 - 15 mg/ngày đến khi hồi phục tạo máu.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Kamoxazol  bạn có thể gặp các tác dụng không mong muốn (ADR) như:\nCác tác dụng thường gặp: Sốt, buồn nôn, nôn mửa, ỉa chảy, viêm lưỡi. Ngứa, ngoại ban.\nÍt gặp: Đau đầu, mờ mắt, chóng mặt. Tăng bạch cầu ưa eosin, giảm bạch cầu, ban xuất huyết.\nHiếm gặp: Hội chứng Stevens-Johnson, hội chứng Lyell (hoại tử biểu bì nhiễm độc).\nHướng dẫn cách xử trí ADR:\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Kamoxazol chống chỉ định trong các trường hợp sau:\nQuá mẫn với bất cứ thành phần nào của thuốc.\nSuy thận nặng. Mẫn cảm với Sulfonamid hoặc Trimethoprim.\nThiếu hụt G6DP: Gây nguy cơ tan huyết.\nTrẻ sơ sinh, trẻ đẻ non, phụ nữ có thai, phụ nữ cho con bú.\nThận trọng khi sử dụng\nCần rất thận trọng khi dùng thuốc cho người bệnh trong các trường hợp sau:\nBệnh nhân có chức năng thận suy giảm.\nBệnh nhân cao tuổi dùng thuốc liều cao và kéo dài.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nChưa rõ ảnh hưởng của thuốc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nChống chỉ định.\nTương tác thuốc\nTương tác thuốc có thể ảnh hưởng đến hoạt động của thuốc hoặc gây ra các tác dụng phụ.\nBệnh nhân nên báo cho bác sĩ hoặc dược sĩ danh sách những thuốc và các thực phẩm chức năng bạn đang sử dụng. Không nên dùng hay tăng giảm liều lượng của thuốc mà không có sự hướng dẫn của bác sĩ.\nVui lòng xem thêm các thông tin về thuốc trong tờ hướng dẫn sử dụng thuốc đính kèm sản phẩm.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

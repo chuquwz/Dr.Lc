@@ -1,0 +1,87 @@
+{
+  "sku": "00047977",
+  "name": "Thuốc Nady-Spasmyl chống co thắt, giảm các cơn đau đường ruột, dạ dày ( 10 vỉ 10 viên )",
+  "short_name": "NADY-SPASMYL NADYPHAR 10X10",
+  "official_name": "NADY-SPASMYL",
+  "url": "https://nhathuoclongchau.com.vn/thuoc/nady-spasmyl-nadyphar-10-x10-1.html",
+  "image_url": "https://cdn.nhathuoclongchau.com.vn/v1/static/DSC_00017_84d7e93992.png",
+  "categories": [
+    {
+      "level": 1,
+      "name": "Thuốc"
+    },
+    {
+      "level": 2,
+      "name": "Thuốc tiêu hoá & gan mật"
+    },
+    {
+      "level": 3,
+      "name": "Thuốc tiêu hoá"
+    }
+  ],
+  "brand": "Nadyphar",
+  "manufacturer_country": "Việt Nam",
+  "dosage_form": "Viên nang cứng",
+  "registration_number": "893110627724",
+  "expiration_date": "24 tháng",
+  "ingredients": [
+    {
+      "name": "Alverin citrat",
+      "amount": "60mg"
+    },
+    {
+      "name": "Simethicon",
+      "amount": "80mg"
+    }
+  ],
+  "ingredient_per": "1 viên",
+  "prices": [
+    {
+      "unit": "Hộp",
+      "price": null,
+      "currency": "đ",
+      "specs": "Hộp 10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Vỉ",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Vỉ x 10 Viên"
+    },
+    {
+      "unit": "Viên",
+      "price": null,
+      "currency": "đ",
+      "specs": "10 Viên"
+    }
+  ],
+  "description": "",
+  "usage": "Chỉ định\nThuốc Nady-Spasmyl được chỉ định dùng trong các trường hợp sau:\nChống co thắt và giảm cơn đau đường tiêu hóa kèm theo trướng bụng.\nDược lực học\nSimethicon:\nSimethicon có tính chất phá bọt. Simethicon làm giảm sức căng bề mặt và khi dùng uống sẽ làm các bong bóng hơi trong dạ dày - ruột kết thành khối, như thế sẽ giúp loại bỏ các bọt khí này. Simethicon không có độc tính, là một chất trơ về mặt hóa học. Simethicon được dùng làm giảm chứng đầy hơi và giảm sự khó chịu ở bụng do những rối loạn hơi ở dạ dày - ruột vượt quá mức như: Chứng khó tiêu, bệnh trào ngược thực quản dạ dày.\nAlverin citrat:\nAlverin citrat có tác dụng trực tiếp đặc hiệu chống co thắt cơ trơn ở đường tiêu hóa và tử cung, nhưng không ảnh hưởng đến tim, mạch máu và cơ khí quản ở liều điều trị.\nKhi kết hợp alverin citrat và simethicon có tác dụng: Chống co thắt và giảm cơn đau đường tiêu hóa kèm theo trướng bụng.\nDược động học\nSimethicon:\nKhông được hấp thu qua đường tiêu hóa. Sau khi uống simethicon được thải trừ qua phân dưới dạng không đổi.\nAlverin citrat:\nSau khi được hấp thu từ đường tiêu hóa, alverin citrat chuyển hóa nhanh chóng thành chất chuyển hóa có hoạt tính, nồng độ cao nhất trong huyết tương đạt được sau khi uống 1 - 1,5 giờ. Sau đó thuốc được chuyển hóa tiếp thành các chất không còn hoạt tính và thải trừ ra nước tiểu bằng bài tiết tích cực ở thận.",
+  "dosage": "Cách dùng\nThuốc dùng đường uống.\nLiều dùng\nTheo sự hướng dẫn của thầy thuốc, trung bình:\nNgười lớn: Mỗi lần uống 1 -2 viên, ngày 1 - 3 lần.\nLưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ diễn tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.\nLàm gì khi dùng quá liều?\nTriệu chứng:\nHạ huyết áp và triệu chứng nhiễm độc giống atropin.\nXử trí:\nNhư ngộ độc atropin và biện pháp hỗ trợ điều trị hạ huyết áp.\nTrong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.\nLàm gì khi quên 1 liều?\nBổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.",
+  "side_effects": "Khi sử dụng thuốc Nady-Spasmyl bạn có thể gặp các tác dụng không mong muốn (ADR):\nBuồn nôn, đau đầu, chóng mặt, ngứa, phát ban, phản ứng dị ứng (kể cả phản vệ).\nHướng dẫn cách xử trí ADR:\nThông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.",
+  "precautions": "Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.\nChống chỉ định\nThuốc Nady-Spasmyl chống chỉ định trong các trường hợp sau:\nQuá mẫn với bất kỳ thành phần nào của thuốc.\nTắc ruột hoặc liệt ruột.\nTắc ruột do phân.\nMất trương lực đại tràng.\nThận trọng khi sử dụng\nCần rất thận trọng khi dùng thuốc cho người bệnh trong các trường hợp sau:\nKhông nên dùng cho trẻ em dưới 12 tuổi.\nẢnh hưởng của thuốc lên khả năng lái xe và vận hành máy móc\nThuốc không gây ảnh hưởng đến người lái xe và vận hành máy móc.\nSử dụng thuốc cho phụ nữ trong thời kỳ mang thai và cho con bú\nThời kỳ mang thai:\nThuốc không gây quái thai nhưng không nên dùng thuốc trong thời kỳ mang thai vì bằng chứng về độ an toàn trong các nghiên cứu tiền lâm sàng còn giới hạn.\nThời kỳ cho con bú:\nKhông nên dùng thuốc trong thời kỳ cho con bú vì bằng chứng về độ an toàn còn giới hạn.\nTương tác thuốc\nChưa có báo cáo về tương tác của alverin citrat, simethicon với các thuốc khác.",
+  "storage": "Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.\nĐể xa tầm tay trẻ em, đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+  "warnings": [],
+  "faq": [
+    {
+      "question": "Dược lực học là gì?",
+      "answer": "Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược lý phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến tác dụng của thuốc."
+    },
+    {
+      "question": "Dược động học là gì?",
+      "answer": "Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong và đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ."
+    },
+    {
+      "question": "Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của thuốc",
+      "answer": "Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ này có thể không nghiêm trọng, chẳng hạn chỉ gây\nđau đầu\nhoặc\nkhô miệng\n. Nhưng cũng có những tác dụng phụ đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của\nthuốc\nnhư: Thông báo các loại thuốc đang sử dụng với bác sĩ, các\nbệnh\nlý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ."
+    },
+    {
+      "question": "Sử dụng thuốc đúng cách như thế nào?",
+      "answer": "Sử dụng\nthuốc\nđúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước quả, nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì trong thành phần của sữa có chứa\ncanxi\n. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống cùng nước lọc."
+    },
+    {
+      "question": "Các dạng bào chế của thuốc?",
+      "answer": "Có các dạng bào chế thuốc như\nTheo thể chất:\nCác dạng thuốc thể rắn (thuốc bột, thuốc viên).\nCác dạng thuốc thể mềm (thuốc cao, thuốc mỡ, gel).\nCác dạng thuốc thể lỏng (dung dịch, hỗn dịch, nhũ dịch, xiro).\nTheo đường dùng:\nCác dạng thuốc uống (viên, bột, dung dịch, nhũ dịch, hỗn dịch).\nCác dạng thuốc tiêm (dung dịch, hỗn dịch, nhũ dịch, bột pha tiêm, dịch truyền).\nCác dạng thuốc dùng ngoài (thuốc bôi trên da, thuốc nhỏ lên niêm mạc, thuốc súc miệng).\nCác dạng thuốc đặt vào các hốc tự nhiên trên cơ thể (thuốc đặt hậu môn, thuốc trứng đặt âm đạo...)."
+    }
+  ]
+}

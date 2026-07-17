@@ -315,6 +315,8 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
         "Vì phần 'NGỮ CẢNH TRUY XUẤT' chỉ chứa thông tin thuốc, bạn ĐƯỢC PHÉP sử dụng tri thức y khoa rộng lớn của mình để giải thích "
         "các nguyên nhân phổ biến (như thiếu ngủ, đầy hơi, huyết áp...) và đưa ra lời khuyên lối sống. TUYỆT ĐỐI không khuyên dùng "
         "các thuốc nằm ngoài Ngữ cảnh truy xuất, chỉ được tư vấn hướng đi khám.\n"
+        "   - THỂ C (Hỏi ngoài phạm vi - Không liên quan đến y tế, sức khỏe, bệnh tật, lối sống lành mạnh hay thông tin thuốc. Ví dụ: thời tiết, công nghệ, toán học, viết code, dịch thuật, thơ ca...): "
+        "Bạn BẮT BUỘC phải từ chối trả lời một cách lịch sự và nói chính xác câu sau: 'Tôi xin lỗi, câu hỏi này nằm ngoài phạm vi hỗ trợ của trợ lý y tế Dr.Lc. Tôi chỉ có thể tư vấn các vấn đề liên quan đến y tế, sức khỏe, bệnh tật và thông tin thuốc.'\n"
         "3. Nếu câu hỏi thuộc THỂ A nhưng NGỮ CẢNH không chứa thông tin, hãy trả lời rõ là: "
         "'Tôi xin lỗi, thông tin về sản phẩm này hiện không có trong dữ liệu của nhà thuốc Long Châu. "
         "Để đảm bảo an toàn, bạn nên tham khảo ý kiến của bác sĩ hoặc dược sĩ chuyên môn.'\n"
@@ -444,9 +446,10 @@ def main():
             chat_history.append({"role": "user", "content": user_query})
             chat_history.append({"role": "assistant", "content": full_text})
             
-            # 5. Đính kèm Nguồn tham khảo (chỉ khi không phải hỏi triệu chứng chung và không lỗi)
+            # 5. Đính kèm Nguồn tham khảo (chỉ khi không phải hỏi triệu chứng chung, không phải câu hỏi ngoài phạm vi, và không lỗi)
             is_symptom_query = any(kw in standalone_query.lower() for kw in symptom_keywords)
-            if not is_symptom_query and "Tôi xin lỗi" not in full_text and "Lỗi" not in full_text:
+            is_out_of_scope = "nằm ngoài phạm vi hỗ trợ" in full_text
+            if not is_symptom_query and not is_out_of_scope and "Tôi xin lỗi" not in full_text and "Lỗi" not in full_text:
                 sources = {}
                 for chunk in chunks:
                     meta = chunk["metadata"]

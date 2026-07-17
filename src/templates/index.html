@@ -265,10 +265,10 @@
                         chatHistory = chatHistory.slice(-10);
                     }
                 } else {
-                    updateBotMessage(botMessageDiv, `⚠️ Lỗi: ${data.error || 'Không thể lấy phản hồi từ server.'}`);
+                    updateBotMessage(botMessageDiv, `Loi: ${data.error || 'Khong the lay phan hoi tu server.'}`);
                 }
             } catch (error) {
-                updateBotMessage(botMessageDiv, `⚠️ Lỗi kết nối: Không thể kết nối tới máy chủ API.`);
+                updateBotMessage(botMessageDiv, `Loi ket noi: Khong the ket noi toi may chu API.`);
             } finally {
                 setLoading(false);
             }

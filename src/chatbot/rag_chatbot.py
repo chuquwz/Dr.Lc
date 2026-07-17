@@ -1,16 +1,16 @@
 """
-Dr.Lc RAG Chatbot — Phiên bản Chat-RAG hoàn chỉnh (Hybrid Retrieval + RRF + Lịch sử Hội thoại)
+Dr.Lc RAG Chatbot - Phien ban Chat-RAG hoan chinh (Hybrid Retrieval + RRF + Lich su Hoi thoai)
 ========================================================================================
-Script này thực hiện sự kết hợp nâng cao nhất của pipeline RAG chạy Local (Không Reranker):
-1. Nhận câu hỏi từ người dùng qua terminal.
-2. Dùng LLM local (Ollama) viết lại câu hỏi thô thành Standalone Query (câu hỏi độc lập) dựa vào Lịch sử Hội thoại.
-3. Chạy song song 2 luồng truy xuất bằng Standalone Query:
-   - Dense Search (Vector): Dùng SentenceTransformer + ChromaDB để lấy Top-20 chunks theo ngữ nghĩa.
-   - Sparse Search (Từ khóa): Dùng thuật toán BM25Okapi local để lấy Top-20 chunks khớp từ khóa chính xác.
-4. Gộp và xếp hạng lại kết quả bằng thuật toán RRF (Reciprocal Rank Fusion) với hằng số K=60.
-5. Lấy Top-4 chunks có điểm RRF cao nhất làm ngữ cảnh đáng tin cậy.
-6. Xây dựng prompt y tế an toàn và gọi API `/api/chat` của Ollama ở chế độ Streaming để trả lời thời gian thực.
-7. Hiển thị chữ chạy, in nguồn tham khảo y khoa và cập nhật lịch sử chat.
+Script nay thuc hien su ket hop nang cao nhat cua pipeline RAG chay Local (Khong Reranker):
+1. Nhan cau hoi tu nguoi dung qua terminal.
+2. Dung LLM local (Ollama) viet lai cau hoi tho thanh Standalone Query (cau hoi doc lap) dua vao Lich su Hoi thoai.
+3. Chay song song 2 luong truy xuat bang Standalone Query:
+   - Dense Search (Vector): Dung SentenceTransformer + ChromaDB de lay Top-20 chunks theo nguoi nghia.
+   - Sparse Search (Tu khoa): Dung thuat toan BM25Okapi local de lay Top-20 chunks khop tu khoa chinh xac.
+4. Gop va xep hang lai ket qua bang thuat toan RRF (Reciprocal Rank Fusion) voi hang so K=60.
+5. Lay Top-4 chunks co diem RRF cao nhat lam nguoi canh dang tin cay.
+6. Xay dung prompt y te an toan va goi API /api/chat cua Ollama o che do Streaming de tra loi thoi gian thuc.
+7. Hien thi chu chay, in nguon tham khao y khoa va cap nhat lich su chat.
 
 Usage:
     python src/chatbot/rag_chatbot.py
@@ -28,12 +28,12 @@ import chromadb
 from rank_bm25 import BM25Okapi
 from dotenv import load_dotenv
 
-# Fix encoding cho Windows console (tiếng Việt không lỗi)
+# Fix encoding cho Windows console (tieng Viet khong loi)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
 
 # ============================================================
-# CẤU HÌNH & LOAD MÔI TRƯỜNG
+# CAU HINH & LOAD MOI TRUONG
 # ============================================================
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
@@ -42,22 +42,22 @@ VECTOR_STORE_DIR = os.path.join(PROJECT_ROOT, "vector-store")
 COLLECTION_NAME = "dr_lc_products"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
-# Ollama API URL cho Chat và Generate
+# Ollama API URL cho Chat va Generate
 OLLAMA_CHAT_URL = "http://localhost:11434/api/chat"
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
 LOCAL_LLM_MODEL = "qwen3:4b"
 
-# Số lượng lượt hội thoại tối đa được lưu trong bộ nhớ (tránh quá tải ngữ cảnh)
+# So luong luot hoi thoai toi da duoc luu trong bo nho (tranh qua tai ngu canh)
 MAX_HISTORY_TURNS = 5
 
 
 # ============================================================
-# HÀM BỔ TRỢ: TOKENIZER CHO TIẾNG VIỆT (DÙNG CHO BM25)
+# HAM BO TRO: TOKENIZER CHO TIENG VIET (DUNG CHO BM25)
 # ============================================================
 
 def clean_and_tokenize(text: str) -> list[str]:
     """
-    Tách từ (tokenizer) đơn giản cho tiếng Việt để dùng cho BM25.
+    Tach tu (tokenizer) don gian cho tieng Viet de dung cho BM25.
     """
     cleaned_text = re.sub(r'[^\w\s]', ' ', text.lower())
     tokens = [token for token in cleaned_text.split() if token.strip()]
@@ -65,87 +65,87 @@ def clean_and_tokenize(text: str) -> list[str]:
 
 
 # ============================================================
-# KHỞI TẠO MÔ HÌNH & DATABASE
+# KHOI TAO MO HINH & DATABASE
 # ============================================================
 
 def init_components():
     """
-    Khởi tạo đồng thời:
-    1. Kiểm tra kết nối tới Ollama local
-    2. Load mô hình embedding local (SentenceTransformer)
-    3. Kết nối tới ChromaDB local (Dense Search)
-    4. Load file chunks.json và build chỉ mục BM25 (Sparse Search)
+    Khoi tao dong thoi:
+    1. Kiem tra ket noi toi Ollama local
+    2. Load mo hinh embedding local (SentenceTransformer)
+    3. Ket noi toi ChromaDB local (Dense Search)
+    4. Load file chunks.json va build chi muc BM25 (Sparse Search)
     """
-    # 1. Kiểm tra kết nối Ollama
+    # 1. Kiem tra ket noi Ollama
     try:
         response = requests.get("http://localhost:11434/", timeout=2)
         if response.status_code == 200:
-            print("✅ Đã kết nối thành công tới Ollama (localhost:11434)")
+            print("Da ket noi thanh cong toi Ollama (localhost:11434)")
     except requests.exceptions.ConnectionError:
-        print("❌ LỖI: Không thể kết nối tới Ollama!")
-        print("   Vui lòng mở ứng dụng Ollama trên máy của bạn trước.")
-        print("   Hoặc chạy lệnh 'ollama serve' trong cmd.")
+        print("LOI: Khong the ket noi toi Ollama!")
+        print("   Vui long mo ung dung Ollama tren may cua ban truoc.")
+        print("   Hoac chay lenh 'ollama serve' trong cmd.")
         sys.exit(1)
         
-    # 2. Khởi tạo Embedding Model Local
-    print("🔄 Đang load mô hình embedding local (SentenceTransformer)...")
+    # 2. Khoi tao Embedding Model Local
+    print("Dang load mo hinh embedding local (SentenceTransformer)...")
     embed_model = SentenceTransformer(EMBEDDING_MODEL)
     
-    # 3. Khởi tạo ChromaDB
-    print("🔄 Đang kết nối tới Vector Database (ChromaDB)...")
+    # 3. Khoi tao ChromaDB
+    print("Dang ket noi toi Vector Database (ChromaDB)...")
     chroma_client = chromadb.PersistentClient(path=VECTOR_STORE_DIR)
     try:
         collection = chroma_client.get_collection(COLLECTION_NAME)
     except Exception as e:
-        print(f"❌ LỖI: Không tìm thấy collection '{COLLECTION_NAME}' trong ChromaDB!")
-        print("   Vui lòng chạy script 'src/embedding/embed_chunks.py' trước để nạp dữ liệu.")
+        print(f"LOI: Khong tim thay collection '{COLLECTION_NAME}' trong ChromaDB!")
+        print("   Vui long chay script 'src/embedding/embed_chunks.py' truoc de nap du lieu.")
         sys.exit(1)
         
-    # 4. Load chunks và xây dựng chỉ mục BM25
-    print(f"🔄 Đang đọc file chunks và xây dựng chỉ mục BM25...")
+    # 4. Load chunks va xay dung chi muc BM25
+    print(f"Dang doc file chunks va xay dung chi muc BM25...")
     start_time = time.time()
     
     with open(CHUNKS_FILE, "r", encoding="utf-8") as f:
         all_chunks = json.load(f)
         
-    # Tokenize toàn bộ corpus chunks
+    # Tokenize toan bo corpus chunks
     tokenized_corpus = [clean_and_tokenize(chunk["content"]) for chunk in all_chunks]
     
-    # Khởi tạo BM25Okapi (thuật toán BM25 chuẩn)
+    # Khoi tao BM25Okapi (thuat toan BM25 chuan)
     bm25_model = BM25Okapi(tokenized_corpus)
     
-    print(f"✅ Đã dựng xong chỉ mục BM25 cho {len(all_chunks)} chunks trong {time.time() - start_time:.2f} giây.")
+    print(f"Da dung xong chi muc BM25 cho {len(all_chunks)} chunks trong {time.time() - start_time:.2f} giay.")
     return embed_model, collection, all_chunks, bm25_model
 
 
 # ============================================================
-# BƯỚC 1: CONVERSE & CONDENSE QUERY (TÓM TẮT & VIẾT LẠI CÂU HỎI)
+# BUOC 1: CONVERSE & CONDENSE QUERY (TOM TAT & VIET LAI CAU HOI)
 # ============================================================
 
 def condense_query(raw_query: str, chat_history: list[dict]) -> str:
     """
-    Dựa vào lịch sử chat và câu hỏi thô mới, yêu cầu LLM viết lại thành 
-    một câu tìm kiếm độc lập (Standalone Query) chứa đầy đủ ngữ cảnh cũ.
+    Dua vao lich su chat va cau hoi tho moi, yeu cau LLM viet lai thanh 
+    mot cau tim kiem doc lap (Standalone Query) chua day du ngu canh cu.
     """
     if not chat_history:
         return raw_query
         
     history_str = ""
     for msg in chat_history[-MAX_HISTORY_TURNS*2:]:
-        role_label = "Người dùng" if msg["role"] == "user" else "Trợ lý Dược sĩ"
+        role_label = "Nguoi dung" if msg["role"] == "user" else "Tro ly Duoc si"
         history_str += f"{role_label}: {msg['content']}\n"
         
     system_prompt = (
-        "Nhiệm vụ của bạn là đọc LỊCH SỬ HỘI THOẠI và CÂU HỎI MỚI dưới đây, sau đó viết lại câu hỏi "
-        "thành một câu hỏi tìm kiếm ĐỘC LẬP, ĐẦY ĐỦ Ý NGHĨA (không dùng từ thay thế mơ hồ như 'nó', 'chúng', 'cho tôi', 'như thế nào').\n"
-        "Chỉ trả về câu hỏi đã được viết lại bằng tiếng Việt, không giải thích gì thêm."
+        "Nhiem vu cua ban la doc LICH SU HOI THOAI va CAU HOI MOI duoi day, sau do viet lai cau hoi "
+        "thanh mot cau hoi tim kiem DOC LAP, DAY DU Y NGHIA (khong dung tu thay the mo ho nhu 'no', 'chung', 'cho toi', 'nhu the nao').\n"
+        "Chi tra ve cau hoi da duoc viet lai bang tieng Viet, khong giai thich gi them."
     )
     
     prompt = (
-        f"LỊCH SỬ HỘI THOẠI:\n"
+        f"LICH SU HOI THOAI:\n"
         f"{history_str}\n"
-        f"CÂU HỎI MỚI: {raw_query}\n\n"
-        f"CÂU HỎI ĐỘC LẬP SAU KHI VIẾT LẠI:"
+        f"CAU HOI MOI: {raw_query}\n\n"
+        f"CAU HOI DOC LAP SAU KHI VIET LAI:"
     )
     
     payload = {
@@ -171,12 +171,12 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
 
 
 # ============================================================
-# BƯỚC 2: HYBRID RETRIEVAL & RRF (TRUY XUẤT HỖN HỢP)
+# BUOC 2: HYBRID RETRIEVAL & RRF (TRUY XUAT HON HOP)
 # ============================================================
 
 def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model, k: int = 4) -> list[dict]:
     """
-    Thực hiện Hybrid Retrieval kết hợp Dense (Vector) + Sparse (BM25) sử dụng RRF.
+    Thuc hien Hybrid Retrieval ket hop Dense (Vector) + Sparse (BM25) su dung RRF.
     """
     # ── 1. DENSE SEARCH (ChromaDB) ───────────────────────────
     query_vector = embed_model.encode([query], show_progress_bar=False)[0].tolist()
@@ -237,7 +237,7 @@ def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model,
         chunks_map[cid] = hit
         rrf_scores[cid] = rrf_scores.get(cid, 0.0) + (1.0 / (RRF_K + (rank + 1)))
 
-    # ── 4. SẮP XẾP & LỌC TOP-K KẾT QUẢ ────────────────────────
+    # ── 4. SAP XEP & LOC TOP-K KET QUA ────────────────────────
     sorted_cids = sorted(rrf_scores.keys(), key=lambda cid: rrf_scores[cid], reverse=True)
     
     final_chunks = []
@@ -257,42 +257,42 @@ def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model,
 
 
 # ============================================================
-# BƯỚC 3: GENERATION (GỌI /API/CHAT OLLAMA DẠNG STREAMING)
+# BUOC 3: GENERATION (GOI /API/CHAT OLLAMA DANG STREAMING)
 # ============================================================
 
 def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history: list[dict]):
     """
-    Sử dụng endpoint `/api/chat` để duy trì lịch sử hội thoại.
-    Tích hợp prompt y tế và ngữ cảnh y khoa vào tin nhắn hiện tại.
+    Su dung endpoint `/api/chat` de duy tri lich su hoi thoai.
+    Tich hop prompt y te va ngu canh y khoa vao tin nhan hien tai.
     """
     context_items = []
     for i, chunk in enumerate(retrieved_chunks, 1):
         meta = chunk["metadata"]
-        p_name = meta.get("product_name", "Thuốc")
+        p_name = meta.get("product_name", "Thuoc")
         context_items.append(
-            f"--- TÀI LIỆU {i} (Sản phẩm: {p_name} | Nguồn tìm thấy: {chunk['source_type']}) ---\n"
+            f"--- TAI LIEU {i} (San pham: {p_name} | Nguon tim thay: {chunk['source_type']}) ---\n"
             f"{chunk['content']}\n"
         )
     context_str = "\n".join(context_items)
     
     system_instruction = (
-        "Bạn là Dr.Lc (Doctor Long Châu) - một trợ lý dược sĩ ảo thông minh chuyên tư vấn y tế "
-        "và hỗ trợ mua thuốc dựa trên dữ liệu sản phẩm của nhà thuốc Long Châu.\n\n"
-        "Nhiệm vụ của bạn:\n"
-        "1. Trả lời câu hỏi của người dùng một cách chính xác, chuyên nghiệp, dễ hiểu bằng tiếng Việt.\n"
-        "2. PHÂN LOẠI CÂU HỎI & XỬ LÝ NGUỒN TRI THỨC:\n"
-        "   - THỂ A (Hỏi về Thuốc - Ví dụ: liều dùng, tác dụng phụ, giá cả, cách uống của một thuốc cụ thể): Bạn BẮT BUỘC chỉ sử dụng thông tin "
-        "được cung cấp trong phần 'NGỮ CẢNH TRUY XUẤT' dưới đây. Tuyệt đối không tự ý bịa thông tin thuốc nằm ngoài ngữ cảnh.\n"
-        "   - THỂ B (Hỏi về Triệu chứng, Bệnh học hoặc Lời khuyên sức khỏe - Ví dụ: đau bụng là bệnh gì, tôi nên làm gì): "
-        "Vì phần 'NGỮ CẢNH TRUY XUẤT' chỉ chứa thông tin thuốc, bạn ĐƯỢC PHÉP sử dụng tri thức y khoa rộng lớn của mình để giải thích "
-        "các nguyên nhân phổ biến (như thiếu ngủ, đầy hơi, huyết áp...) và đưa ra lời khuyên lối sống. TUYỆT ĐỐI không khuyên dùng "
-        "các thuốc nằm ngoài Ngữ cảnh truy xuất, chỉ được tư vấn hướng đi khám.\n"
-        "   - THỂ C (Hỏi ngoài phạm vi - Không liên quan đến y tế, sức khỏe, bệnh tật, lối sống lành mạnh hay thông tin thuốc. Ví dụ: thời tiết, công nghệ, toán học, viết code, dịch thuật, thơ ca...): "
-        "Bạn BẮT BUỘC phải từ chối trả lời một cách lịch sự và nói chính xác câu sau: 'Tôi xin lỗi, câu hỏi này nằm ngoài phạm vi hỗ trợ của trợ lý y tế Dr.Lc. Tôi chỉ có thể tư vấn các vấn đề liên quan đến y tế, sức khỏe, bệnh tật và thông tin thuốc.'\n"
-        "3. Nếu câu hỏi thuộc THỂ A nhưng NGỮ CẢNH không chứa thông tin, hãy trả lời rõ là: "
-        "'Tôi xin lỗi, thông tin về sản phẩm này hiện không có trong dữ liệu của nhà thuốc Long Châu. "
-        "Để đảm bảo an toàn, bạn nên tham khảo ý kiến của bác sĩ hoặc dược sĩ chuyên môn.'\n"
-        "4. CẢNH BÁO AN TOÀN: Khi tư vấn y tế, luôn khuyên người dùng đi khám bác sĩ để được chẩn đoán chính xác."
+        "Ban la Dr.Lc (Doctor Long Chau) - mot tro ly duoc si ao thong minh chuyen tu van y te "
+        "va ho tro mua thuoc dua tren du lieu san pham cua nha thuoc Long Chau.\n\n"
+        "Nhiem vu cua ban:\n"
+        "1. Tra loi cau hoi cua nguoi dung mot cach chinh xac, chuyen nghiep, de hieu bang tieng Viet.\n"
+        "2. PHAN LOAI CAU HOI & XU LY NGUON TRI THUC:\n"
+        "   - THE A (Hoi ve Thuoc - Vi du: lieu dung, tac dung phu, gia ca, cach uong cua mot thuoc cu the): Ban BAT BUOC chi su dung thong tin "
+        "duoc cung cap trong phan 'NGUOC CANH TRUY XUAT' duoi day. Tuyet doi khong tu y bia thong tin thuoc nam ngoai ngu canh.\n"
+        "   - THE B (Hoi ve Trieu chung, Benh hoc hoac Loi khuyen suc khoe - Vi du: dau bung la benh gi, toi nen lam gi): "
+        "Vi phan 'NGUOC CANH TRUY XUAT' chi chua thong tin thuoc, ban DUOC PHEP su dung tri thuc y khoa rong lon cua minh de giai thich "
+        "cac nguyen nhan pho bien (nhu thieu ngu, day hoi, huyet ap...) va dua ra loi khuyen loi song. TUYET DOI khong khuyen dung "
+        "cac thuoc nam ngoai Nguoc canh truy xuat, chi duoc tu van huong di kham.\n"
+        "   - THE C (Hoi ngoai pham vi - Khong lien quan den y te, suc khoe, benh tat, loi song lanh manh hay thong tin thuoc. Vi du: thoi tiet, cong nghe, toan hoc, viet code, dich thuat, tho ca...): "
+        "Ban BAT BUOC phai tu choi tra loi mot cach lich su va noi chinh xac cau sau: 'Toi xin loi, cau hoi nay nam ngoai pham vi ho tro cua tro ly y te Dr.Lc. Toi chi co the tu van cac van de lien quan den y te, suc khoe, benh tat va thong tin thuoc.'\n"
+        "3. Neu cau hoi thuoc THE A nhung NGUOC CANH khong chua thong tin, hay tra loi ro la: "
+        "'Toi xin loi, thong tin ve san pham nay hien khong co trong du lieu cua nha thuoc Long Chau. "
+        "De dam bao an toan, ban nen tham khao y kien cua bac si hoac duoc si chuyen mon.'\n"
+        "4. CANH BAO AN TOAN: Khi tu van y te, luon khuyen nguoi dung di kham bac si de duoc chan doan chinh xac."
     )
     
     messages = []
@@ -300,9 +300,9 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
     messages.extend(chat_history[-MAX_HISTORY_TURNS*2:])
     
     current_content = (
-        f"NGỮ CẢNH TRUY XUẤT:\n"
+        f"NGUOC CANH TRUY XUAT:\n"
         f"{context_str}\n\n"
-        f"CÂU HỎI HIỆN TẠI:\n"
+        f"CAU HOI HIEN TAI:\n"
         f"{query}"
     )
     messages.append({"role": "user", "content": current_content})
@@ -321,8 +321,8 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
         
         if response.status_code != 200:
             yield (
-                f"⚠️ Lỗi Ollama (HTTP {response.status_code}): {response.text}\n\n"
-                f"💡 Gợi ý khắc phục: Đổi model lại thành một model nhẹ hơn hoặc khởi động lại Ollama."
+                f"Loi Ollama (HTTP {response.status_code}): {response.text}\n\n"
+                f"Goi y khac phuc: Doi model lai thanh mot model nhe hon hoac khoi dong lai Ollama."
             )
             return
             
@@ -331,7 +331,7 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
                 res_json = json.loads(line.decode('utf-8'))
                 
                 if "error" in res_json:
-                    yield f"⚠️ Lỗi từ Ollama API: {res_json['error']}"
+                    yield f"Loi tu Ollama API: {res_json['error']}"
                     return
                 
                 message_chunk = res_json.get("message", {})
@@ -342,59 +342,59 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
                     break
                     
     except requests.exceptions.Timeout:
-        yield "⚠️ Lỗi: Thời gian phản hồi từ Ollama quá hạn (Timeout). Bạn hãy thử lại."
+        yield "Loi: Thoi gian phan hoi tu Ollama qua han (Timeout). Ban hay thu lai."
     except Exception as e:
-        yield f"⚠️ Lỗi kết nối tới Ollama: {e}"
+        yield f"Loi ket noi toi Ollama: {e}"
 
 
 # ============================================================
-# CHƯƠNG TRÌNH CHÍNH (GIAO DIỆN CONSOLE)
+# CHUONG TRINH CHINH (GIAO DIEN CONSOLE)
 # ============================================================
 
 def main():
     print("=" * 70)
-    print("🏥 DR.LC CHATBOT — PHIÊN BẢN HYBRID RETRIEVAL (DENSE + SPARSE) + RRF")
+    print("DR.LC CHATBOT - PHIEN BAN HYBRID RETRIEVAL (DENSE + SPARSE) + RRF")
     print("=" * 70)
     
-    # Khởi tạo các thành phần
+    # Khoi tao ca thanh phan
     embed_model, collection, all_chunks, bm25_model = init_components()
     
-    print(f"\nSystem: Đang sử dụng mô hình local: '{LOCAL_LLM_MODEL}' qua Ollama.")
-    print("System: Công nghệ tìm kiếm: Hybrid Search (ChromaDB Vector + BM25 Local) + Xếp hạng RRF.")
-    print("System: Gõ 'exit' hoặc 'quit' để thoát chương trình.")
+    print(f"\nSystem: Dang su dung mo hinh local: '{LOCAL_LLM_MODEL}' qua Ollama.")
+    print("System: Cong nghe tim kiem: Hybrid Search (ChromaDB Vector + BM25 Local) + Xep hang RRF.")
+    print("System: Go 'exit' hoac 'quit' de thoat chuong trinh.")
     print("-" * 70)
     
     chat_history = []
-    symptom_keywords = ["là dấu hiệu", "là bệnh gì", "bị bệnh gì", "nguyên nhân", "dấu hiệu của", "triệu chứng của"]
+    symptom_keywords = ["la dau hieu", "la benh gi", "bi benh gi", "nguyen nhan", "dau hieu cua", "trieu chung cua", "là dấu hiệu", "là bệnh gì", "bị bệnh gì", "nguyên nhân", "dấu hiệu của", "triệu chứng của"]
     
     while True:
         try:
-            user_query = input("\n👤 Bạn: ").strip()
+            user_query = input("\nBan: ").strip()
             if not user_query:
                 continue
             if user_query.lower() in ["exit", "quit"]:
-                print("👋 Tạm biệt bạn! Chúc bạn nhiều sức khỏe!")
+                print("Tam biet ban! Chuc ban nhieu suc khoe!")
                 break
                 
-            print("🔍 Dr.Lc đang phân tích ngữ cảnh câu hỏi...")
+            print("Dr.Lc dang phan tich nguoc canh cau hoi...")
             standalone_query = condense_query(user_query, chat_history)
             
             if standalone_query != user_query:
-                print(f"   [Debug: Câu hỏi đã được làm rõ thành -> '{standalone_query}']")
+                print(f"   [Debug: Cau hoi da duoc lam ro thanh -> '{standalone_query}']")
             
-            print("🤖 Dr.Lc đang truy xuất thông tin (Hybrid + RRF)...")
+            print("Dr.Lc dang truy xuat thong tin (Hybrid + RRF)...")
             chunks = hybrid_retrieve(standalone_query, embed_model, collection, all_chunks, bm25_model, k=4)
             
             if not chunks:
-                print("🤖 Dr.Lc: Tôi xin lỗi, tôi không tìm thấy thông tin liên quan đến câu hỏi trong dữ liệu của nhà thuốc Long Châu.")
+                print("Dr.Lc: Toi xin loi, toi khong tim thay thong tin lien quan den cau hoi trong du lieu cua nha thuoc Long Chau.")
                 continue
             
-            print("   [Debug: Top Chunks tìm thấy bằng RRF]")
+            print("   [Debug: Top Chunks tim thay bang RRF]")
             for i, c in enumerate(chunks):
-                print(f"     {i+1}. Score: {c['rrf_score']:.4f} | Nguồn: {c['source_type']:6s} | {c['metadata']['product_name'][:40]}... ({c['metadata']['section']})")
+                print(f"     {i+1}. Score: {c['rrf_score']:.4f} | Nguon: {c['source_type']:6s} | {c['metadata']['product_name'][:40]}... ({c['metadata']['section']})")
             
-            print("🤖 Dr.Lc đang suy nghĩ trả lời (chạy local)...")
-            print("\n🤖 Dr.Lc: ", end="", flush=True)
+            print("Dr.Lc dang suy nghi tra loi (chay local)...")
+            print("\nDr.Lc: ", end="", flush=True)
             
             full_response = []
             for token in generate_chat_stream(user_query, chunks, chat_history):
@@ -407,18 +407,18 @@ def main():
             chat_history.append({"role": "assistant", "content": full_text})
             
             is_symptom_query = any(kw in standalone_query.lower() for kw in symptom_keywords)
-            is_out_of_scope = "nằm ngoài phạm vi hỗ trợ" in full_text
-            if not is_symptom_query and not is_out_of_scope and "Tôi xin lỗi" not in full_text and "Lỗi" not in full_text:
+            is_out_of_scope = "nam ngoai pham vi ho tro" in full_text or "nằm ngoài phạm vi hỗ trợ" in full_text
+            if not is_symptom_query and not is_out_of_scope and "Toi xin loi" not in full_text and "Loi" not in full_text and "Tôi xin lỗi" not in full_text:
                 sources = {}
                 for chunk in chunks:
                     meta = chunk["metadata"]
-                    p_name = meta.get("product_name", "Thuốc")
+                    p_name = meta.get("product_name", "Thuoc")
                     p_url = meta.get("product_url", "")
                     if p_name and p_url:
                         sources[p_name] = p_url
                 
                 if sources:
-                    print("\n\n🔗 **Thông tin sản phẩm tham khảo:**", end="")
+                    print("\n\nThong tin san pham tham khao:", end="")
                     for name, url in sources.items():
                         short_name = name.split("(")[0].strip() if "(" in name else name
                         print(f"\n- [{short_name}]({url})", end="")
@@ -427,10 +427,10 @@ def main():
             print("-" * 70)
             
         except KeyboardInterrupt:
-            print("\n👋 Tạm biệt bạn!")
+            print("\nTam biet ban!")
             break
         except Exception as e:
-            print(f"\n❌ LỖI HỆ THỐNG: {e}")
+            print(f"\nLOI HE THONG: {e}")
             print("-" * 60)
 
 

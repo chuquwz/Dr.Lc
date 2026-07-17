@@ -13,9 +13,9 @@ from src.chatbot.rag_chatbot import init_components, condense_query, hybrid_retr
 app = Flask(__name__, template_folder="templates")
 
 # Khởi tạo các thành phần RAG duy nhất một lần khi máy chủ khởi động
-print("🚀 Đang khởi động Dr.Lc RAG Backend Server...")
+print("Dang khoi dong Dr.Lc RAG Backend Server...")
 embed_model, collection, all_chunks, bm25_model = init_components()
-print("🚀 Máy chủ Dr.Lc RAG đã sẵn sàng phục vụ tại http://127.0.0.1:5000")
+print("May chu Dr.Lc RAG da san sang phuc vu tai http://127.0.0.1:5000")
 
 
 @app.route('/')

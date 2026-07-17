@@ -1,14 +1,16 @@
 """
-Dr.Lc RAG Chatbot — Phiên bản Chatbot RAG hoàn chỉnh (Có Lịch sử Hội thoại)
-========================================================================
-Script này thực hiện Bước 4.3 trong lộ trình:
+Dr.Lc RAG Chatbot — Phiên bản Chat-RAG hoàn chỉnh (Hybrid Retrieval + RRF + Lịch sử Hội thoại)
+========================================================================================
+Script này thực hiện sự kết hợp nâng cao nhất của pipeline RAG chạy Local:
 1. Nhận câu hỏi từ người dùng qua terminal.
-2. Nếu có lịch sử chat, gọi LLM local (Ollama) viết lại câu hỏi thô thành
-   câu hỏi độc lập đầy đủ nghĩa (Standalone Query) dựa vào lịch sử hội thoại.
-3. Dùng Standalone Query đó để truy xuất Top-4 chunks liên quan từ ChromaDB.
-4. Xây dựng danh sách tin nhắn (messages) chứa: System Instruction, Lịch sử chat, Ngữ cảnh y tế và Câu hỏi mới.
-5. Gọi API `/api/chat` của Ollama ở chế độ STREAMING để sinh câu trả lời ghi nhớ ngữ cảnh.
-6. Hiển thị chữ chạy thời gian thực và cập nhật lịch sử chat.
+2. Dùng LLM local (Ollama) viết lại câu hỏi thô thành Standalone Query (câu hỏi độc lập) dựa vào Lịch sử Hội thoại.
+3. Chạy song song 2 luồng truy xuất bằng Standalone Query:
+   - Dense Search (Vector): Dùng SentenceTransformer + ChromaDB để lấy Top-20 chunks theo ngữ nghĩa.
+   - Sparse Search (Từ khóa): Dùng thuật toán BM25Okapi local để lấy Top-20 chunks khớp từ khóa chính xác.
+4. Gộp và xếp hạng lại kết quả bằng thuật toán RRF (Reciprocal Rank Fusion) với hằng số K=60.
+5. Lấy Top-4 chunks có điểm RRF cao nhất làm ngữ cảnh đáng tin cậy.
+6. Xây dựng prompt y tế an toàn và gọi API `/api/chat` của Ollama ở chế độ Streaming để trả lời thời gian thực.
+7. Hiển thị chữ chạy, in nguồn tham khảo y khoa và cập nhật lịch sử chat.
 
 Usage:
     python src/chatbot/rag_chatbot.py
@@ -18,9 +20,12 @@ import sys
 import io
 import os
 import json
+import re
+import time
 import requests
 from sentence_transformers import SentenceTransformer
 import chromadb
+from rank_bm25 import BM25Okapi
 from dotenv import load_dotenv
 
 # Fix encoding cho Windows console (tiếng Việt không lỗi)
@@ -32,11 +37,12 @@ sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
 # ============================================================
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
+CHUNKS_FILE = os.path.join(PROJECT_ROOT, "data-processed", "chunks.json")
 VECTOR_STORE_DIR = os.path.join(PROJECT_ROOT, "vector-store")
 COLLECTION_NAME = "dr_lc_products"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
-# Ollama API URL cho Chat
+# Ollama API URL cho Chat và Generate
 OLLAMA_CHAT_URL = "http://localhost:11434/api/chat"
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
 LOCAL_LLM_MODEL = "qwen3:4b"
@@ -46,13 +52,42 @@ MAX_HISTORY_TURNS = 5
 
 
 # ============================================================
+# HÀM BỔ TRỢ: TOKENIZER CHO TIẾNG VIỆT (DÙNG CHO BM25)
+# ============================================================
+
+def clean_and_tokenize(text: str) -> list[str]:
+    """
+    Tách từ (tokenizer) đơn giản cho tiếng Việt để dùng cho BM25.
+    
+    Quy trình:
+    1. Chuyển thành chữ thường (lowercase).
+    2. Loại bỏ các ký tự đặc biệt (chỉ giữ lại chữ cái và số).
+    3. Tách từ theo khoảng trắng.
+    
+    Ví dụ:
+        "Thuốc Decolgen Forte United giảm cảm cúm, sốt!"
+        -> ["thuốc", "decolgen", "forte", "united", "giảm", "cảm", "cúm", "sốt"]
+    """
+    # Lowercase và dùng regex chỉ giữ lại chữ cái, số và khoảng trắng
+    cleaned_text = re.sub(r'[^\w\s]', ' ', text.lower())
+    # Split theo khoảng trắng và lọc bỏ các khoảng trắng thừa
+    tokens = [token for token in cleaned_text.split() if token.strip()]
+    return tokens
+
+
+# ============================================================
 # KHỞI TẠO MÔ HÌNH & DATABASE
 # ============================================================
 
 def init_components():
     """
-    Khởi tạo kết nối tới Ollama, load SentenceTransformer và kết nối tới ChromaDB.
+    Khởi tạo đồng thời:
+    1. Kiểm tra kết nối tới Ollama local
+    2. Load mô hình embedding local (SentenceTransformer)
+    3. Kết nối tới ChromaDB local (Dense Search)
+    4. Load file chunks.json và build chỉ mục BM25 (Sparse Search)
     """
+    # 1. Kiểm tra kết nối Ollama
     try:
         response = requests.get("http://localhost:11434/", timeout=2)
         if response.status_code == 200:
@@ -60,21 +95,38 @@ def init_components():
     except requests.exceptions.ConnectionError:
         print("❌ LỖI: Không thể kết nối tới Ollama!")
         print("   Vui lòng mở ứng dụng Ollama trên máy của bạn trước.")
+        print("   Hoặc chạy lệnh 'ollama serve' trong cmd.")
         sys.exit(1)
         
+    # 2. Khởi tạo Embedding Model Local
     print("🔄 Đang load mô hình embedding local (SentenceTransformer)...")
     embed_model = SentenceTransformer(EMBEDDING_MODEL)
     
+    # 3. Khởi tạo ChromaDB
     print("🔄 Đang kết nối tới Vector Database (ChromaDB)...")
     chroma_client = chromadb.PersistentClient(path=VECTOR_STORE_DIR)
     try:
         collection = chroma_client.get_collection(COLLECTION_NAME)
     except Exception as e:
         print(f"❌ LỖI: Không tìm thấy collection '{COLLECTION_NAME}' trong ChromaDB!")
+        print("   Vui lòng chạy script 'src/embedding/embed_chunks.py' trước để nạp dữ liệu.")
         sys.exit(1)
         
-    print("✅ Các thành phần đã sẵn sàng!")
-    return embed_model, collection
+    # 4. Load chunks và xây dựng chỉ mục BM25
+    print(f"🔄 Đang đọc file chunks và xây dựng chỉ mục BM25...")
+    start_time = time.time()
+    
+    with open(CHUNKS_FILE, "r", encoding="utf-8") as f:
+        all_chunks = json.load(f)
+        
+    # Tokenize toàn bộ corpus chunks
+    tokenized_corpus = [clean_and_tokenize(chunk["content"]) for chunk in all_chunks]
+    
+    # Khởi tạo BM25Okapi (thuật toán BM25 chuẩn)
+    bm25_model = BM25Okapi(tokenized_corpus)
+    
+    print(f"✅ Đã dựng xong chỉ mục BM25 cho {len(all_chunks)} chunks trong {time.time() - start_time:.2f} giây.")
+    return embed_model, collection, all_chunks, bm25_model
 
 
 # ============================================================
@@ -85,11 +137,6 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
     """
     Dựa vào lịch sử chat và câu hỏi thô mới, yêu cầu LLM viết lại thành 
     một câu tìm kiếm độc lập (Standalone Query) chứa đầy đủ ngữ cảnh cũ.
-    
-    Ví dụ:
-      - Lịch sử: User: "đau đầu chóng mặt là dấu hiệu của gì" -> Bot trả lời.
-      - User hỏi mới: "kê đơn cho tôi"
-      - Standalone Query viết lại: "Thuốc kê đơn điều trị triệu chứng đau đầu chóng mặt"
     """
     # Nếu chưa có lịch sử hội thoại, không cần viết lại
     if not chat_history:
@@ -97,7 +144,7 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
         
     # Tạo chuỗi lịch sử chat rút gọn cho LLM đọc
     history_str = ""
-    for msg in chat_history[-MAX_HISTORY_TURNS*2:]: # Lấy tối đa số lượt cấu hình
+    for msg in chat_history[-MAX_HISTORY_TURNS*2:]:
         role_label = "Người dùng" if msg["role"] == "user" else "Trợ lý Dược sĩ"
         history_str += f"{role_label}: {msg['content']}\n"
         
@@ -120,7 +167,7 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
         "system": system_prompt,
         "stream": False,
         "options": {
-            "temperature": 0.0 # temperature = 0.0 để viết lại chính xác nhất
+            "temperature": 0.0 # temperature = 0.0 để viết lại ổn định và chính xác nhất
         }
     }
     
@@ -128,45 +175,113 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
         response = requests.post(OLLAMA_GENERATE_URL, json=payload, timeout=20)
         if response.status_code == 200:
             standalone_query = response.json().get("response", "").strip()
-            # Làm sạch nếu LLM lỡ bao bọc câu hỏi trong ngoặc kép
             standalone_query = standalone_query.strip('"').strip("'")
             return standalone_query
     except Exception as e:
-        # Nếu lỗi viết lại, fallback dùng câu hỏi thô ban đầu để tránh crash
+        # Fallback dùng câu hỏi thô ban đầu nếu có lỗi xảy ra
         pass
         
     return raw_query
 
 
 # ============================================================
-# BƯỚC 2: RETRIEVAL (TRUY XUẤT VECTOR VỚI STANDALONE QUERY)
+# BƯỚC 2: HYBRID RETRIEVAL & RRF (TRUY XUẤT HỖN HỢP)
 # ============================================================
 
-def retrieve_chunks(query: str, embed_model, collection, k: int = 4) -> list[dict]:
+def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model, k: int = 4) -> list[dict]:
     """
-    Truy xuất Top-K chunks từ ChromaDB bằng vector của Standalone Query.
+    Thực hiện Hybrid Retrieval kết hợp Dense (Vector) + Sparse (BM25) sử dụng RRF.
+    
+    Quy trình:
+    1. Chạy Dense Search (ChromaDB) -> Lấy Top-20 chunks.
+    2. Chạy Sparse Search (BM25) -> Lấy Top-20 chunks.
+    3. Gộp và tính điểm xếp hạng lại bằng thuật toán RRF.
+    4. Trả về Top-K (4) chunks có điểm RRF cao nhất.
     """
+    # ── 1. DENSE SEARCH (ChromaDB) ───────────────────────────
     query_vector = embed_model.encode([query], show_progress_bar=False)[0].tolist()
-    results = collection.query(
+    dense_results = collection.query(
         query_embeddings=[query_vector],
-        n_results=k
+        n_results=20 # Lấy 20 kết quả để fusion
     )
     
-    retrieved_data = []
-    ids = results["ids"][0]
-    documents = results["documents"][0]
-    metadatas = results["metadatas"][0]
-    distances = results["distances"][0]
+    dense_hits = []
+    if dense_results["ids"] and dense_results["ids"][0]:
+        ids = dense_results["ids"][0]
+        documents = dense_results["documents"][0]
+        metadatas = dense_results["metadatas"][0]
+        distances = dense_results["distances"][0]
+        
+        for i in range(len(ids)):
+            dense_hits.append({
+                "chunk_id": ids[i],
+                "content": documents[i],
+                "metadata": metadatas[i],
+                "similarity": 1 - distances[i]
+            })
+
+    # ── 2. SPARSE SEARCH (BM25) ──────────────────────────────
+    query_tokens = clean_and_tokenize(query)
+    # Lấy điểm BM25 cho tất cả các chunks trong cơ sở dữ liệu
+    bm25_scores = bm25_model.get_scores(query_tokens)
     
-    for i in range(len(ids)):
-        similarity = 1 - distances[i]
-        retrieved_data.append({
-            "id": ids[i],
-            "content": documents[i],
-            "metadata": metadatas[i],
-            "similarity": similarity
+    # Lọc các index có điểm > 0
+    sparse_indices = [idx for idx, score in enumerate(bm25_scores) if score > 0]
+    # Sắp xếp các chỉ số chunks theo điểm số BM25 giảm dần, lấy top 20
+    sparse_indices = sorted(sparse_indices, key=lambda idx: bm25_scores[idx], reverse=True)[:20]
+    
+    sparse_hits = []
+    for idx in sparse_indices:
+        chunk = all_chunks[idx]
+        sparse_hits.append({
+            "chunk_id": chunk["chunk_id"],
+            "content": chunk["content"],
+            "metadata": {
+                "product_sku": chunk["product_sku"],
+                "product_name": chunk["product_name"],
+                "product_url": chunk["product_url"],
+                "section": chunk["section"]
+            },
+            "bm25_score": bm25_scores[idx]
         })
-    return retrieved_data
+
+    # ── 3. RECIPROCAL RANK FUSION (RRF) ──────────────────────
+    RRF_K = 60
+    rrf_scores = {} # Lưu điểm RRF của mỗi chunk_id
+    chunks_map = {} # Lưu thông tin chunk để map lại sau khi tính điểm
+    
+    # Duyệt danh sách Dense để tính điểm dựa trên thứ hạng (Rank)
+    for rank, hit in enumerate(dense_hits):
+        cid = hit["chunk_id"]
+        chunks_map[cid] = hit
+        # rrf = 1 / (60 + hạng) (hạng bắt đầu từ 0 nên cộng 1 để thành 1-indexed)
+        rrf_scores[cid] = rrf_scores.get(cid, 0.0) + (1.0 / (RRF_K + (rank + 1)))
+        
+    # Duyệt danh sách Sparse để tính điểm dựa trên thứ hạng (Rank)
+    for rank, hit in enumerate(sparse_hits):
+        cid = hit["chunk_id"]
+        chunks_map[cid] = hit
+        rrf_scores[cid] = rrf_scores.get(cid, 0.0) + (1.0 / (RRF_K + (rank + 1)))
+
+    # ── 4. SẮP XẾP & LỌC TOP-K KẾT QUẢ ────────────────────────
+    # Sắp xếp các chunk_id theo điểm RRF giảm dần
+    sorted_cids = sorted(rrf_scores.keys(), key=lambda cid: rrf_scores[cid], reverse=True)
+    
+    final_chunks = []
+    for cid in sorted_cids[:k]:
+        chunk_info = chunks_map[cid]
+        final_chunks.append({
+            "id": cid,
+            "content": chunk_info["content"],
+            "metadata": chunk_info["metadata"],
+            "rrf_score": rrf_scores[cid],
+            # Ghi nhận xem chunk này xuất hiện ở luồng nào để phục vụ debug
+            "source_type": ("Hybrid" if (cid in [d["chunk_id"] for d in dense_hits] and cid in [s["chunk_id"] for s in sparse_hits]) 
+                            else "Dense" if cid in [d["chunk_id"] for d in dense_hits] 
+                            else "Sparse")
+        })
+        
+    return final_chunks
 
 
 # ============================================================
@@ -178,18 +293,16 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
     Sử dụng endpoint `/api/chat` để duy trì lịch sử hội thoại.
     Tích hợp prompt y tế và ngữ cảnh y khoa vào tin nhắn hiện tại.
     """
-    # ── 1. Chuẩn bị khối ngữ cảnh từ các chunk đã tìm thấy ──────
     context_items = []
     for i, chunk in enumerate(retrieved_chunks, 1):
         meta = chunk["metadata"]
         p_name = meta.get("product_name", "Thuốc")
         context_items.append(
-            f"--- TÀI LIỆU {i} (Sản phẩm: {p_name}) ---\n"
+            f"--- TÀI LIỆU {i} (Sản phẩm: {p_name} | Nguồn tìm thấy: {chunk['source_type']}) ---\n"
             f"{chunk['content']}\n"
         )
     context_str = "\n".join(context_items)
     
-    # ── 2. Xây dựng System Instruction ────────────────────────
     system_instruction = (
         "Bạn là Dr.Lc (Doctor Long Châu) - một trợ lý dược sĩ ảo thông minh chuyên tư vấn y tế "
         "và hỗ trợ mua thuốc dựa trên dữ liệu sản phẩm của nhà thuốc Long Châu.\n\n"
@@ -208,17 +321,10 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
         "4. CẢNH BÁO AN TOÀN: Khi tư vấn y tế, luôn khuyên người dùng đi khám bác sĩ để được chẩn đoán chính xác."
     )
     
-    # ── 3. Xây dựng mảng Messages gửi đi ──────────────────────
     messages = []
-    
-    # a. Thêm System Message ở đầu
     messages.append({"role": "system", "content": system_instruction})
-    
-    # b. Thêm lịch sử chat từ bộ nhớ trượt (lấy tối đa MAX_HISTORY_TURNS lượt gần nhất)
-    # Lịch sử chat được lưu dưới dạng [{'role': 'user', 'content': '...'}, {'role': 'assistant', 'content': '...'}]
     messages.extend(chat_history[-MAX_HISTORY_TURNS*2:])
     
-    # c. Thêm tin nhắn hiện tại kèm theo Ngữ cảnh y tế mới truy xuất được
     current_content = (
         f"NGỮ CẢNH TRUY XUẤT:\n"
         f"{context_str}\n\n"
@@ -227,7 +333,6 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
     )
     messages.append({"role": "user", "content": current_content})
     
-    # ── 4. Gọi API /api/chat của Ollama ────────────────────────
     payload = {
         "model": LOCAL_LLM_MODEL,
         "messages": messages,
@@ -243,7 +348,7 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
         if response.status_code != 200:
             yield (
                 f"⚠️ Lỗi Ollama (HTTP {response.status_code}): {response.text}\n\n"
-                f"💡 Gợi ý khắc phục: Đổi model lại thành 'qwen2.5:3b' hoặc khởi động lại Ollama."
+                f"💡 Gợi ý khắc phục: Đổi model lại thành một model nhẹ hơn hoặc khởi động lại Ollama."
             )
             return
             
@@ -255,7 +360,6 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
                     yield f"⚠️ Lỗi từ Ollama API: {res_json['error']}"
                     return
                 
-                # Cấu trúc của /api/chat trả về token trong key 'message' -> 'content'
                 message_chunk = res_json.get("message", {})
                 token = message_chunk.get("content", "")
                 yield token
@@ -274,16 +378,17 @@ def generate_chat_stream(query: str, retrieved_chunks: list[dict], chat_history:
 # ============================================================
 
 def main():
-    print("=" * 60)
-    print("🏥 DR.LC CHATBOT — PHIÊN BẢN CHAT-RAG HOÀN CHỈNH (OLLAMA)")
-    print("=" * 60)
+    print("=" * 70)
+    print("🏥 DR.LC CHATBOT — PHIÊN BẢN HYBRID RETRIEVAL (DENSE + SPARSE) + RRF")
+    print("=" * 70)
     
-    embed_model, collection = init_components()
+    # Khởi tạo các thành phần
+    embed_model, collection, all_chunks, bm25_model = init_components()
     
     print(f"\nSystem: Đang sử dụng mô hình local: '{LOCAL_LLM_MODEL}' qua Ollama.")
-    print("System: Hệ thống đã bật bộ nhớ hội thoại. Chatbot sẽ nhớ được ngữ cảnh trò chuyện!")
+    print("System: Công nghệ tìm kiếm: Hybrid Search (ChromaDB Vector + BM25 Local) + Xếp hạng RRF.")
     print("System: Gõ 'exit' hoặc 'quit' để thoát chương trình.")
-    print("-" * 60)
+    print("-" * 70)
     
     # Khởi tạo Lịch sử Hội thoại
     chat_history = []
@@ -309,24 +414,26 @@ def main():
             if standalone_query != user_query:
                 print(f"   [Debug: Câu hỏi đã được làm rõ thành -> '{standalone_query}']")
             
-            # 2. Retrieval: Tìm kiếm các chunk liên quan bằng Standalone Query
-            print("🤖 Dr.Lc đang truy xuất thông tin thuốc...")
-            chunks = retrieve_chunks(standalone_query, embed_model, collection, k=4)
+            # 2. Hybrid Retrieval: Tìm kiếm các chunk liên quan bằng cả Vector và BM25 rồi gộp RRF
+            print("🤖 Dr.Lc đang truy xuất thông tin (Hybrid + RRF)...")
+            chunks = hybrid_retrieve(standalone_query, embed_model, collection, all_chunks, bm25_model, k=4)
             
             # Kiểm tra xem có lấy được gì không
-            if not chunks or chunks[0]["similarity"] < 0.15:
+            if not chunks:
                 print("🤖 Dr.Lc: Tôi xin lỗi, tôi không tìm thấy thông tin liên quan đến câu hỏi trong dữ liệu của nhà thuốc Long Châu.")
                 continue
             
-            print(f"   [Debug: Đã tìm thấy {len(chunks)} chunks. Độ tương đồng cao nhất: {chunks[0]['similarity']:.3f}]")
+            # In debug chi tiết nguồn gốc của các chunk để bạn quan sát hiệu quả RRF
+            print("   [Debug: Top Chunks tìm thấy bằng RRF]")
+            for i, c in enumerate(chunks):
+                print(f"     {i+1}. Score: {c['rrf_score']:.4f} | Nguồn: {c['source_type']:6s} | {c['metadata']['product_name'][:40]}... ({c['metadata']['section']})")
+            
             print("🤖 Dr.Lc đang suy nghĩ trả lời (chạy local)...")
             print("\n🤖 Dr.Lc: ", end="", flush=True)
             
             full_response = []
             
             # 3. Generation & Streaming: Gọi API chat Ollama
-            # Chú ý: Ở đây ta vẫn truyền `user_query` thô cho LLM chat, vì LLM chat sẽ đọc toàn bộ `chat_history`.
-            # Chúng ta chỉ dùng `standalone_query` để đi tìm kiếm vector chính xác ở bước trên!
             for token in generate_chat_stream(user_query, chunks, chat_history):
                 print(token, end="", flush=True)
                 full_response.append(token)
@@ -334,7 +441,6 @@ def main():
             full_text = "".join(full_response)
             
             # 4. Lưu lượt chat hiện tại vào lịch sử
-            # Lưu user_query thô để giữ đúng hội thoại tự nhiên của người dùng
             chat_history.append({"role": "user", "content": user_query})
             chat_history.append({"role": "assistant", "content": full_text})
             
@@ -356,7 +462,7 @@ def main():
                         print(f"\n- [{short_name}]({url})", end="")
             
             print() # Xuống dòng
-            print("-" * 60)
+            print("-" * 70)
             
         except KeyboardInterrupt:
             print("\n👋 Tạm biệt bạn!")

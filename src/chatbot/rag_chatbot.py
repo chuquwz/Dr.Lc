@@ -1,7 +1,7 @@
 """
 Dr.Lc RAG Chatbot — Phiên bản Chat-RAG hoàn chỉnh (Hybrid Retrieval + RRF + Lịch sử Hội thoại)
 ========================================================================================
-Script này thực hiện sự kết hợp nâng cao nhất của pipeline RAG chạy Local:
+Script này thực hiện sự kết hợp nâng cao nhất của pipeline RAG chạy Local (Không Reranker):
 1. Nhận câu hỏi từ người dùng qua terminal.
 2. Dùng LLM local (Ollama) viết lại câu hỏi thô thành Standalone Query (câu hỏi độc lập) dựa vào Lịch sử Hội thoại.
 3. Chạy song song 2 luồng truy xuất bằng Standalone Query:
@@ -58,19 +58,8 @@ MAX_HISTORY_TURNS = 5
 def clean_and_tokenize(text: str) -> list[str]:
     """
     Tách từ (tokenizer) đơn giản cho tiếng Việt để dùng cho BM25.
-    
-    Quy trình:
-    1. Chuyển thành chữ thường (lowercase).
-    2. Loại bỏ các ký tự đặc biệt (chỉ giữ lại chữ cái và số).
-    3. Tách từ theo khoảng trắng.
-    
-    Ví dụ:
-        "Thuốc Decolgen Forte United giảm cảm cúm, sốt!"
-        -> ["thuốc", "decolgen", "forte", "united", "giảm", "cảm", "cúm", "sốt"]
     """
-    # Lowercase và dùng regex chỉ giữ lại chữ cái, số và khoảng trắng
     cleaned_text = re.sub(r'[^\w\s]', ' ', text.lower())
-    # Split theo khoảng trắng và lọc bỏ các khoảng trắng thừa
     tokens = [token for token in cleaned_text.split() if token.strip()]
     return tokens
 
@@ -138,11 +127,9 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
     Dựa vào lịch sử chat và câu hỏi thô mới, yêu cầu LLM viết lại thành 
     một câu tìm kiếm độc lập (Standalone Query) chứa đầy đủ ngữ cảnh cũ.
     """
-    # Nếu chưa có lịch sử hội thoại, không cần viết lại
     if not chat_history:
         return raw_query
         
-    # Tạo chuỗi lịch sử chat rút gọn cho LLM đọc
     history_str = ""
     for msg in chat_history[-MAX_HISTORY_TURNS*2:]:
         role_label = "Người dùng" if msg["role"] == "user" else "Trợ lý Dược sĩ"
@@ -167,7 +154,7 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
         "system": system_prompt,
         "stream": False,
         "options": {
-            "temperature": 0.0 # temperature = 0.0 để viết lại ổn định và chính xác nhất
+            "temperature": 0.0
         }
     }
     
@@ -178,7 +165,6 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
             standalone_query = standalone_query.strip('"').strip("'")
             return standalone_query
     except Exception as e:
-        # Fallback dùng câu hỏi thô ban đầu nếu có lỗi xảy ra
         pass
         
     return raw_query
@@ -191,18 +177,12 @@ def condense_query(raw_query: str, chat_history: list[dict]) -> str:
 def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model, k: int = 4) -> list[dict]:
     """
     Thực hiện Hybrid Retrieval kết hợp Dense (Vector) + Sparse (BM25) sử dụng RRF.
-    
-    Quy trình:
-    1. Chạy Dense Search (ChromaDB) -> Lấy Top-20 chunks.
-    2. Chạy Sparse Search (BM25) -> Lấy Top-20 chunks.
-    3. Gộp và tính điểm xếp hạng lại bằng thuật toán RRF.
-    4. Trả về Top-K (4) chunks có điểm RRF cao nhất.
     """
     # ── 1. DENSE SEARCH (ChromaDB) ───────────────────────────
     query_vector = embed_model.encode([query], show_progress_bar=False)[0].tolist()
     dense_results = collection.query(
         query_embeddings=[query_vector],
-        n_results=20 # Lấy 20 kết quả để fusion
+        n_results=20
     )
     
     dense_hits = []
@@ -222,12 +202,9 @@ def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model,
 
     # ── 2. SPARSE SEARCH (BM25) ──────────────────────────────
     query_tokens = clean_and_tokenize(query)
-    # Lấy điểm BM25 cho tất cả các chunks trong cơ sở dữ liệu
     bm25_scores = bm25_model.get_scores(query_tokens)
     
-    # Lọc các index có điểm > 0
     sparse_indices = [idx for idx, score in enumerate(bm25_scores) if score > 0]
-    # Sắp xếp các chỉ số chunks theo điểm số BM25 giảm dần, lấy top 20
     sparse_indices = sorted(sparse_indices, key=lambda idx: bm25_scores[idx], reverse=True)[:20]
     
     sparse_hits = []
@@ -247,24 +224,20 @@ def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model,
 
     # ── 3. RECIPROCAL RANK FUSION (RRF) ──────────────────────
     RRF_K = 60
-    rrf_scores = {} # Lưu điểm RRF của mỗi chunk_id
-    chunks_map = {} # Lưu thông tin chunk để map lại sau khi tính điểm
+    rrf_scores = {}
+    chunks_map = {}
     
-    # Duyệt danh sách Dense để tính điểm dựa trên thứ hạng (Rank)
     for rank, hit in enumerate(dense_hits):
         cid = hit["chunk_id"]
         chunks_map[cid] = hit
-        # rrf = 1 / (60 + hạng) (hạng bắt đầu từ 0 nên cộng 1 để thành 1-indexed)
         rrf_scores[cid] = rrf_scores.get(cid, 0.0) + (1.0 / (RRF_K + (rank + 1)))
         
-    # Duyệt danh sách Sparse để tính điểm dựa trên thứ hạng (Rank)
     for rank, hit in enumerate(sparse_hits):
         cid = hit["chunk_id"]
         chunks_map[cid] = hit
         rrf_scores[cid] = rrf_scores.get(cid, 0.0) + (1.0 / (RRF_K + (rank + 1)))
 
     # ── 4. SẮP XẾP & LỌC TOP-K KẾT QUẢ ────────────────────────
-    # Sắp xếp các chunk_id theo điểm RRF giảm dần
     sorted_cids = sorted(rrf_scores.keys(), key=lambda cid: rrf_scores[cid], reverse=True)
     
     final_chunks = []
@@ -275,7 +248,6 @@ def hybrid_retrieve(query: str, embed_model, collection, all_chunks, bm25_model,
             "content": chunk_info["content"],
             "metadata": chunk_info["metadata"],
             "rrf_score": rrf_scores[cid],
-            # Ghi nhận xem chunk này xuất hiện ở luồng nào để phục vụ debug
             "source_type": ("Hybrid" if (cid in [d["chunk_id"] for d in dense_hits] and cid in [s["chunk_id"] for s in sparse_hits]) 
                             else "Dense" if cid in [d["chunk_id"] for d in dense_hits] 
                             else "Sparse")
@@ -392,40 +364,31 @@ def main():
     print("System: Gõ 'exit' hoặc 'quit' để thoát chương trình.")
     print("-" * 70)
     
-    # Khởi tạo Lịch sử Hội thoại
     chat_history = []
-    
     symptom_keywords = ["là dấu hiệu", "là bệnh gì", "bị bệnh gì", "nguyên nhân", "dấu hiệu của", "triệu chứng của"]
     
     while True:
         try:
-            # Nhận query thô từ user
             user_query = input("\n👤 Bạn: ").strip()
-            
             if not user_query:
                 continue
-                
             if user_query.lower() in ["exit", "quit"]:
                 print("👋 Tạm biệt bạn! Chúc bạn nhiều sức khỏe!")
                 break
                 
-            # 1. Condense Query: Viết lại câu hỏi thô thành Standalone Query dựa vào lịch sử
             print("🔍 Dr.Lc đang phân tích ngữ cảnh câu hỏi...")
             standalone_query = condense_query(user_query, chat_history)
             
             if standalone_query != user_query:
                 print(f"   [Debug: Câu hỏi đã được làm rõ thành -> '{standalone_query}']")
             
-            # 2. Hybrid Retrieval: Tìm kiếm các chunk liên quan bằng cả Vector và BM25 rồi gộp RRF
             print("🤖 Dr.Lc đang truy xuất thông tin (Hybrid + RRF)...")
             chunks = hybrid_retrieve(standalone_query, embed_model, collection, all_chunks, bm25_model, k=4)
             
-            # Kiểm tra xem có lấy được gì không
             if not chunks:
                 print("🤖 Dr.Lc: Tôi xin lỗi, tôi không tìm thấy thông tin liên quan đến câu hỏi trong dữ liệu của nhà thuốc Long Châu.")
                 continue
             
-            # In debug chi tiết nguồn gốc của các chunk để bạn quan sát hiệu quả RRF
             print("   [Debug: Top Chunks tìm thấy bằng RRF]")
             for i, c in enumerate(chunks):
                 print(f"     {i+1}. Score: {c['rrf_score']:.4f} | Nguồn: {c['source_type']:6s} | {c['metadata']['product_name'][:40]}... ({c['metadata']['section']})")
@@ -434,19 +397,15 @@ def main():
             print("\n🤖 Dr.Lc: ", end="", flush=True)
             
             full_response = []
-            
-            # 3. Generation & Streaming: Gọi API chat Ollama
             for token in generate_chat_stream(user_query, chunks, chat_history):
                 print(token, end="", flush=True)
                 full_response.append(token)
                 
             full_text = "".join(full_response)
             
-            # 4. Lưu lượt chat hiện tại vào lịch sử
             chat_history.append({"role": "user", "content": user_query})
             chat_history.append({"role": "assistant", "content": full_text})
             
-            # 5. Đính kèm Nguồn tham khảo (chỉ khi không phải hỏi triệu chứng chung, không phải câu hỏi ngoài phạm vi, và không lỗi)
             is_symptom_query = any(kw in standalone_query.lower() for kw in symptom_keywords)
             is_out_of_scope = "nằm ngoài phạm vi hỗ trợ" in full_text
             if not is_symptom_query and not is_out_of_scope and "Tôi xin lỗi" not in full_text and "Lỗi" not in full_text:
@@ -464,7 +423,7 @@ def main():
                         short_name = name.split("(")[0].strip() if "(" in name else name
                         print(f"\n- [{short_name}]({url})", end="")
             
-            print() # Xuống dòng
+            print()
             print("-" * 70)
             
         except KeyboardInterrupt:

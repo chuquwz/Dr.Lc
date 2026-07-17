@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Lc — Trợ lý Dược sĩ Ảo</title>
+    <style>
+        /* MINIMALIST DESIGN SYSTEM */
+        :root {
+            --bg-color: #fafafa;
+            --container-bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-muted: #757575;
+            --border-color: #eaeaea;
+            --accent-color: #0d9488; /* Xanh ngọc y tế tối giản */
+            --accent-hover: #0f766e;
+            --chat-user-bg: #f4f4f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* KHUNG CHAT TỐI GIẢN */
+        .chat-container {
+            width: 100%;
+            max-width: 650px;
+            height: 100vh;
+            max-height: 850px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        /* HEADER */
+        .chat-header {
+            padding: 24px 32px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .chat-header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .chat-header .subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* VÙNG HIỂN THỊ TIN NHẮN */
+        .chat-messages {
+            flex: 1;
+            padding: 32px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* BỌC TIN NHẮN */
+        .message {
+            display: flex;
+            flex-direction: column;
+            max-width: 85%;
+        }
+
+        /* Tin nhắn của User (khung xám nhạt bên phải) */
+        .message.user {
+            align-self: flex-end;
+            background-color: var(--chat-user-bg);
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Tin nhắn của Bot (chữ thô tinh giản bên trái trên nền trắng trực tiếp) */
+        .message.bot {
+            align-self: flex-start;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-main);
+        }
+
+        .message.bot .sender {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-color);
+            margin-bottom: 6px;
+        }
+
+        /* Định dạng các nguồn tham khảo */
+        .sources-section {
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px dashed var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .sources-section a {
+            color: var(--accent-color);
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 12px;
+        }
+
+        .sources-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Trạng thái Loading */
+        .loading-text {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        /* FOOTER NHẬP TIN NHẮN */
+        .chat-input-area {
+            padding: 24px 32px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .chat-form {
+            display: flex;
+            gap: 16px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.1s ease;
+        }
+
+        .chat-input:focus {
+            border-color: var(--accent-color);
+        }
+
+        .send-button {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .send-button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .send-button:disabled {
+            background-color: var(--border-color);
+            color: var(--text-muted);
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- HEADER -->
+        <div class="chat-header">
+            <h1>Dr.Lc</h1>
+            <span class="subtitle">Trợ lý y khoa Long Châu</span>
+        </div>
+
+        <!-- TIN NHẮN -->
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot">
+                <span class="sender">Dr.Lc</span>
+                <div class="content">Xin chào! Tôi là Dr.Lc, trợ lý dược sĩ ảo của bạn. Bạn cần tôi hỗ trợ tra cứu thuốc hay tư vấn triệu chứng sức khỏe nào hôm nay không?</div>
+            </div>
+        </div>
+
+        <!-- Ô NHẬP LIỆU -->
+        <div class="chat-input-area">
+            <form class="chat-form" id="chat-form">
+                <input type="text" class="chat-input" id="chat-input" placeholder="Nhập câu hỏi y tế hoặc tên thuốc..." autocomplete="off" required>
+                <button type="submit" class="send-button" id="send-button">Gửi</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const chatMessages = document.getElementById('chat-messages');
+        const sendButton = document.getElementById('send-button');
+
+        // Mảng lưu lịch sử trò chuyện cục bộ trên client
+        // Cấu trúc: [{"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}]
+        let chatHistory = [];
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const messageText = chatInput.value.trim();
+            if (!messageText) return;
+
+            // 1. Hiển thị tin nhắn của User
+            appendUserMessage(messageText);
+            chatInput.value = '';
+
+            // Khóa nút gửi khi đang xử lý
+            setLoading(true);
+
+            // 2. Hiển thị tin nhắn chờ của Bot
+            const botMessageDiv = appendBotLoading();
+
+            try {
+                // 3. Gửi request API
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: messageText,
+                        history: chatHistory
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // Cập nhật câu trả lời từ API
+                    updateBotMessage(botMessageDiv, data.answer, data.sources);
+                    
+                    // Cập nhật lịch sử chat trên client
+                    chatHistory.push({ role: 'user', content: messageText });
+                    chatHistory.push({ role: 'assistant', content: data.answer });
+
+                    // Giới hạn bộ nhớ lịch sử 5 lượt để đồng bộ với backend
+                    if (chatHistory.length > 10) {
+                        chatHistory = chatHistory.slice(-10);
+                    }
+                } else {
+                    updateBotMessage(botMessageDiv, `⚠️ Lỗi: ${data.error || 'Không thể lấy phản hồi từ server.'}`);
+                }
+            } catch (error) {
+                updateBotMessage(botMessageDiv, `⚠️ Lỗi kết nối: Không thể kết nối tới máy chủ API.`);
+            } finally {
+                setLoading(false);
+            }
+        });
+
+        // Hàm thêm tin nhắn của User
+        function appendUserMessage(text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message user';
+            msgDiv.innerText = text;
+            chatMessages.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        // Hàm thêm tin nhắn chờ của Bot
+        function appendBotLoading() {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message bot';
+            msgDiv.innerHTML = `
+                <span class="sender">Dr.Lc</span>
+                <div class="content loading-text">Đang suy nghĩ...</div>
+            `;
+            chatMessages.appendChild(msgDiv);
+            scrollToBottom();
+            return msgDiv;
+        }
+
+        // Hàm cập nhật tin nhắn Bot sau khi nhận dữ liệu từ API
+        function updateBotMessage(msgDiv, answerText, sources = []) {
+            const contentDiv = msgDiv.querySelector('.content');
+            contentDiv.className = 'content';
+            
+            // Xử lý xuống dòng sang thẻ br cho định dạng markdown đơn giản
+            contentDiv.innerHTML = answerText.replace(/\n/g, '<br>');
+
+            // Nếu có nguồn tham khảo sản phẩm
+            if (sources && sources.length > 0) {
+                const sourcesDiv = document.createElement('div');
+                sourcesDiv.className = 'sources-section';
+                sourcesDiv.innerHTML = '<strong>Sản phẩm tham khảo:</strong><br>';
+                sources.forEach(src => {
+                    const link = document.createElement('a');
+                    link.href = src.url;
+                    link.target = '_blank';
+                    link.innerText = src.name;
+                    sourcesDiv.appendChild(link);
+                });
+                msgDiv.appendChild(sourcesDiv);
+            }
+            scrollToBottom();
+        }
+
+        // Khóa/Mở ô nhập liệu
+        function setLoading(isLoading) {
+            chatInput.disabled = isLoading;
+            sendButton.disabled = isLoading;
+            if (!isLoading) {
+                chatInput.focus();
+            }
+        }
+
+        // Tự động cuộn xuống cuối (tối giản, không hiệu ứng smooth để phản hồi tức thì)
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    </script>
+</body>
+</html>
